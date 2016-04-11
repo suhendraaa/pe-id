@@ -32,7 +32,7 @@ title: Problems
 		{% for problem in problems %}
 			<div class="row problem list-group-item" data-problem="{{ problem.problemId }}">
 				<div class="col-md-6 col-sm-7">
-					<a class="" href="/pe-id-en/{{ problem.url }}">
+					<a class="" href="/pe-id-en{{ problem.url }}">
 						<strong>{{ problem.problemId }} -</strong> {{ problem.title }}
 					</a>
 				</div>
