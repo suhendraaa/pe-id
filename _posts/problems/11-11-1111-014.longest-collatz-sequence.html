@@ -2,18 +2,21 @@
 layout: problem
 category: problems
 difficulty: 5
-title: "بزرگترین توالی  کولاتز"
+title: Longest Collatz sequence
 problemId: 14
 answer: 837799
 ---
 
-توالی زیر برای مجموعه اعداد طبیعی مثبت تعریف شده است:
-<p style="margin-right:50px;"><var>n</var> &rarr; <var>n</var>/2 (اگر <var>n</var> زوج باشد)<br />
-<var>n</var> &rarr; 3<var>n</var> + 1 (اگر <var>n</var> فرد باشد)</p>
-با استفاده از قانون بالا و با شروع از ۱۳، دنباله زیر را خواهیم داشت:
-<div style="text-align:center;">1 → 2 → 4 → 8 → 16 → 5 → 10 → 20 → 40 → 13</div>
-میبینیم که این توالی (که از ۱۳ شروع و به ۱ ختم میشود) شامل ۱۰ عدد است. با وجود آن که هنوز اثبات نشده، گمان میرود
-با شروع از هر عدد صحیح مثبت به ۱ خواهیم رسید (مساله Collatz).
+Sebuah barisan berulang dinyatakan untuk himpunan bilangan bulat positif dengan aturan berikut:
+<p style="margin-right:50px;"><var>n</var> &rarr; <var>n</var>/2 (<var>n</var> ∈ genap)<br />
+<var>n</var> &rarr; 3<var>n</var> + 1 (<var>n</var> ∈ ganjil)</p>
 
-<p>کدام عدد زیر یک میلیون بزرگترین دنباله را میسازد؟ توجه کنید وقتی دنباله شروع شد، اعداد داخل آن میتوانند از یک میلیون بزرگتر شوند.
-</p>
+Menggunakan aturan di atas, dimulai dari 13, maka kita akan mendapatkan barisan:
+
+<div style="text-align:center;">13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1</div>
+
+Dapat terlihat bahwa barisan ini (yang dimulai dari 13 dan selesai di 1) memiliki 10 suku. Dan dapat diasumsikan bahwa angka mulai apapun akan selalu berakhir di 1 (Collatz Problem).
+Berapakah angka mulai kurang dari satu juta yang memiliki suku terpanjang?
+
+Catatan : Setelah perhitungan di mulai, angka boleh melebihi satu juta.
+
