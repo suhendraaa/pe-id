@@ -93,7 +93,7 @@ answer: 101524
 <li>Masuk ke PENJARA</li>
 </ol>
 </li>
-<li>Chance (10/16 cards):
+<li>Chance/Kesempatan (10/16 cards):
 <ol>
 <li>Pindah ke kotak GO</li>
 <li>Masuk ke PENJARA</li>
@@ -108,8 +108,8 @@ answer: 101524
 </ol>
 </li>
 </ul>
-<p>Masalah utama dari soal ini berkaitan dengan kemungkinan untuk mengunjungi kotak tertentu setelah melakukan putaran dadu. Perlu dijelaskan, bahwa dengan mengabaikan kotak G2J, karena kotak ini tidak mungkin menjadi kotak yang ditempati setelah pemain memutar dadu, kotak CH akan memiliki peluang paling kecil untuk ditempati, as 5/8 request a movement to another square, and it is the final square that the player finishes at on each roll that we are interested in. We shall make no distinction between &quot;Just Visiting&quot; and being sent to JAIL, and we shall also ignore the rule about requiring a double to &quot;get out of jail&quot;, assuming that they pay to get out on their next turn.</p>
-<p>By starting at GO and numbering the squares sequentially from 00 to 39 we can concatenate these two-digit numbers to produce strings that correspond with sets of squares.</p>
-<p>Statistically it can be shown that the three most popular squares, in order, are JAIL (6.24%) = Square 10, E3 (3.18%) = Square 24, and GO (3.09%) = Square 00. So these three most popular squares can be listed with the six-digit modal string: 102400.</p>
-<p>If, instead of using two 6-sided dice, two 4-sided dice are used, find the six-digit modal string.</p>
+<p>Masalah utama dari soal ini berkaitan dengan kemungkinan untuk mengunjungi kotak tertentu setelah melakukan putaran dadu. Perlu dijelaskan, bahwa dengan mengabaikan kotak G2J, karena kotak ini tidak mungkin menjadi kotak yang ditempati setelah pemain memutar dadu, sehingga kotak G2J akan mempunyai nol kemungkinan untuk disinggahi setelah dadu diputar. Kotak CH akan memiliki peluang paling kecil untuk ditempati, karena 10 dari 16 kartu pada chance/kesempatan akan membuat pemain pindah ke kotak lain, dan kita hanya akan menghitung posisi paling akhir dari setiap putaran dadu pemain. Kita tidak akan membuat perbedaan antara &quot;hanya sekedar lewat&quot; dengan masuk ke PENJARA, dan kita juga akan mengabaikan aturan yang mengharuskan pemain memiliki dadu kembar untuk  &quot;keluar dari penjara&quot;, dengan asumsi semua pemain pasti membayar untuk keluar dari penjara.</p>
+<p>Dengan memulai dari kotak GO, lalu memberi nomor untuk setiap kotak secara berurutan dari 00 ke 39, kita dapat menggabungkan dua angka tersebut, untuk membentuk tulisan baru yang akan melambangkan kotak-kotak yang telah dikunjungi.</p>
+<p>Secara statistik, dapat ditunjukan tiga kotak yang paling populer dikunjungi. Secara berurutan kotak tersebut adalah, PENJARA (6.24%) = kotak ke-10, E3 (3.18%) = kotak ke-24, dan kotak GO (3.09%) = kotak ke-00. Sehingga ketiga kotak yang paling sering dikunjungi tersebut dapat ditulis dengan bilangan enam angka: 102400.</p>
+<p>Jika kita tidak menggunakan dadu dengan sisi 6, melainkan kedua dadu diganti menjadi dadu dengan banyak sisi 4, carilah bilangan enam angka yang melambangkan kotak yang paling sering dikunjungi seperti di atas.</p>
 
