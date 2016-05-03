@@ -2,51 +2,49 @@
 layout: problem
 category: problems
 difficulty: 65
-title: "Investigating Gaussian Integers"
+title: "Menyelidiki Bilangan Bulat Gaussian"
 problemId: 153
 answer: -1
 ---
 
-<p>As we all know the equation <var>x</var><sup>2</sup>=-1 has no solutions for real <var>x</var>.
+<p>Seperti yang kita ketahui, persamaan <var>x</var><sup>2</sup>=-1 tidak mempunyai solusi untuk <var>x</var> bilangan real.
 <br />
-If we however introduce the imaginary number <var>i</var> this equation has two solutions: <var>x=i</var> and <var>x=-i</var>.
+Namun apabila kita mengenalkan bilangan imajiner <var>i</var>, persamaan ini akan memiliki dua solusi: <var>x=i</var> dan <var>x=-i</var>.
 <br />
-If we go a step further the equation (<var>x</var>-3)<sup>2</sup>=-4 has two complex solutions: <var>x</var>=3+2<var>i</var> and <var>x</var>=3-2<var>i</var>.
+Jika kita melangkah lebih jauh, persamaan (<var>x</var>-3)<sup>2</sup>=-4 memiliki dua solusi bilangan kompleks: <var>x</var>=3+2<var>i</var> dan <var>x</var>=3-2<var>i</var>.
 <br />
-<var>x</var>=3+2<var>i</var> and <var>x</var>=3-2<var>i</var> are called each others' complex conjugate.
+<var>x</var>=3+2<var>i</var> dan <var>x</var>=3-2<var>i</var> keduanya akan disebut konjugat kompleks.
 <br />
-Numbers of the form <var>a</var>+<var>bi</var> are called complex numbers.
+Semua bilangan yang berbentuk <var>a</var>+<var>bi</var> akan disebut sebagai bilangan kompleks.
 <br />
-In general <var>a</var>+<var>bi</var> and <var>a</var>&minus;<var>bi</var> are each other's complex conjugate.</p>
-<p>A Gaussian Integer is a complex number <var>a</var>+<var>bi</var> such that both <var>a</var> and <var>b</var> are integers.
+Secara umum <var>a</var>+<var>bi</var> dan <var>a</var>&minus;<var>bi</var> adalah pasangan konjugat kompleks.</p>
+<p>Bilangan bulat Gaussian adalah sebuah bilangan kompleks <var>a</var>+<var>bi</var> yang nilai <var>a</var> dan <var>b</var> nya merupakan bilangan bulat.
 <br />
-The regular integers are also Gaussian integers (with <var>b</var>=0).
+Bilangan bulat yang biasa kita gunakan juga merupakan bilangan bulat Gaussian (dengan nilai <var>b</var>=0).
 <br />
-To distinguish them from Gaussian integers with <var>b</var> &ne; 0 we call such integers &quot;rational integers.&quot;
+Untuk membedakannya, maka bilangan bulat Gaussian dengan <var>b</var> &ne; 0 akan kita sebut sebagai &quot;bilangan bulat rasional.&quot;
 <br />
-A Gaussian integer is called a divisor of a rational integer <var>n</var> if the result is also a Gaussian integer.
+Sebuah bilangan bulat Gaussian akan disebut pembagi dari bilangan bulat rasional <var>n</var>, apabila hasil pembagiannya juga merupakan bilangan bulat Gaussian.
 <br />
-If for example we divide 5 by 1+2<var>i</var> we can simplify <img src="{{ site.baseurl }}project/images/p153_formule1.gif" border="0" style="vertical-align:middle" alt="" /> in the following manner:
+Sebagai contoh, kita akan membagi 5 dengan 1+2<var>i</var>, kita dapat mengerjakan <img src="{{ site.baseurl }}project/images/p153_formule1.gif" border="0" style="vertical-align:middle" alt="" /> dengan cara sebagai berikut:
 <br />
-Multiply numerator and denominator by the complex conjugate of 1+2<var>i</var>: 1&minus;2<var>i</var>.
+Kalikan pembilang dan penyebut dengan konjugat kompleks dari 1+2<var>i</var>: yaitu 1&minus;2<var>i</var>.
 <br />
-The result is 
+Hasilnya adalah
 <img src="{{ site.baseurl }}project/images/p153_formule2.gif" border="0" alt="" style="vertical-align:middle;" />.
 <br />
-So 1+2<var>i</var> is a divisor of 5.
+Sehingga 1+2<var>i</var> adalah merupakan pembagi dari 5.
 <br />
-Note that 1+<var>i</var> is not a divisor of 5 because <img src="{{ site.baseurl }}project/images/p153_formule5.gif" border="0" style="vertical-align:middle;" alt="" />.
+Perlu diingat bahwa 1+<var>i</var> bukanlah pembagi dari 5 karena <img src="{{ site.baseurl }}project/images/p153_formule5.gif" border="0" style="vertical-align:middle;" alt="" />.
 <br />
-Note also that if the Gaussian Integer (<var>a</var>+<var>bi</var>) is a divisor of a rational integer <var>n</var>, then its complex conjugate (<var>a</var>&minus;<var>bi</var>) is also a divisor of <var>n</var>.</p>
-<p>In fact, 5 has six divisors such that the real part is positive: {1, 1 + 2<var>i</var>, 1 &minus; 2<var>i</var>, 2 + <var>i</var>, 2 &minus; <var>i</var>, 5}.
+Perlu diingat juga bahwa jika sebuah bilangan bulat Gaussian (<var>a</var>+<var>bi</var>) merupakan pembagi dari suatu bilangan bulat rasional <var>n</var>, maka konjugat kompleksnya (<var>a</var>&minus;<var>bi</var>) juga merupakan pembagi dari <var>n</var>.</p>
+<p>Pada kenyataannya, 5 memiliki enam buah pembagi yang memiliki bagian real <i>a</i> positif: {1, 1 + 2<var>i</var>, 1 &minus; 2<var>i</var>, 2 + <var>i</var>, 2 &minus; <var>i</var>, 5}.
 <br />
-The following is a table of all of the divisors for the first five positive rational integers:</p>
+Tabel berikut ini berisi semua pembagi dari lima bilangan bulat rasional positif pertama:</p>
 <table align="center" border="1">
 <tr><td width="20">
-<var>n</var></td><td> Gaussian integer divisors<br />
-with positive real part</td><td>Sum s(<var>n</var>) of <br />these
-
-divisors</td></tr><tr>
+<var>n</var></td><td> Pembagi bilangan bulat Gaussian<br />
+dengan bagian real <i>a</i> positif</td><td>Banyaknya s(<var>n</var>) dari <br />pembagi tersebut</td></tr><tr>
 <td>1</td><td>1</td><td>1</td>
 </tr><tr>
 <td>2</td><td>1, 1+<var>i</var>, 1-<var>i</var>, 2</td><td>5</td>
@@ -57,6 +55,6 @@ divisors</td></tr><tr>
 </tr><tr>
 <td>5</td><td>1, 1+2<var>i</var>, 1-2<var>i</var>, 2+<var>i</var>, 2-<var>i</var>, 5</td><td>12</td>
 </tr></table>
-<p>For divisors with positive real parts, then, we have: <img src="{{ site.baseurl }}project/images/p153_formule6.gif" border="0" style="vertical-align:middle" alt="" />.</p>
-<p>For 1 &le; <var>n</var> &le; 10<sup>5</sup>, &sum; s(<var>n</var>)=17924657155.</p>
-<p>What is &sum; s(<var>n</var>) for 1 &le; <var>n</var> &le; 10<sup>8</sup>?</p>
+<p>Untuk pembagi dengan bagian real <i>a</i> positif, kita bisa mendapatkan: <img src="{{ site.baseurl }}project/images/p153_formule6.gif" border="0" style="vertical-align:middle" alt="" />.</p>
+<p>Untuk 1 &le; <var>n</var> &le; 10<sup>5</sup>, &sum; s(<var>n</var>)=17924657155.</p>
+<p>Berapakah &sum; s(<var>n</var>) untuk 1 &le; <var>n</var> &le; 10<sup>8</sup>?</p>
