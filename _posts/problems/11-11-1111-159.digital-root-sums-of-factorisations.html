@@ -2,13 +2,13 @@
 layout: problem
 category: problems
 difficulty: 60
-title: "Digital root sums of factorisations"
+title: "Angka Akar Penjumlahan Angka-Angka Hasil Faktorisasi"
 problemId: 159
 answer: -1
 ---
 
-<p>A composite number can be factored many different ways.  
-For instance, not including multiplication by one, 24 can be factored in 7 distinct ways:</p>
+<p>Sebuah bilangan komposit dapat difaktorkan dengan berbagai cara.  
+Sebagai contoh, dengan mengabaikan perkalian dengan angka satu, bilangan 24 dapat dengan mudah difaktorkan dengan 7 cara berbeda:</p>
 <div style="margin-left:50px;">
 24 = 2x2x2x3<br />
 24 = 2x3x4<br />
@@ -18,11 +18,11 @@ For instance, not including multiplication by one, 24 can be factored in 7 disti
 24 = 2x12<br />
 24 = 24
 </div>
-<p>Recall that the digital root of a number, in base 10, is found by adding together the digits of that number, 
-and repeating that process until a number is arrived at that is less than 10.  
-Thus the digital root of 467 is 8.</p>
-<p>We shall call a Digital Root Sum (DRS) the sum of the digital roots of the individual factors of our number.<br />
- The chart below demonstrates all of the DRS values for 24.</p>
+<p>Untuk mencari angka akar dari suatu bilangan, kita dapat menjumlahkan semua angka yang ada pada bilangan tersebut, 
+kemudian mengulang proses tersebut sampai hasil penjumlahannya kurang dari 10.  
+Sehingga angka akar dari 467 adalah 8.</p>
+<p>Kita akan menyebut Angka Akar dari Penjumlahan/Digital Root Sum (DRS) sebagai hasil penjumlahan semua angka akar dari faktor-faktor suatu bilangan.<br />
+ Diagram berikut akan menunjukkan semua nilai DRS untuk bilangan 24.</p>
 <table align="center" border="1" cellpadding="2" cellspacing="0">
 <tr><th>Factorisation</th><th>Digital Root Sum</th></tr>
 <tr><td><div style="margin-left:20px;">2x2x2x3</div></td>
@@ -40,6 +40,6 @@ Thus the digital root of 467 is 8.</p>
 <tr><td><div style="margin-left:20px;">24</div></td>
 <td><div style="text-align:center;">6</div></td></tr>
 </table>
-<p>The maximum Digital Root Sum  of 24 is 11.<br />
-The function mdrs(<var>n</var>) gives the maximum Digital Root Sum of <var>n</var>. So  mdrs(24)=11.<br />
-Find &sum;mdrs(<var>n</var>) for 1 &lt; <var>n</var> &lt; 1,000,000.</p>
+<p>Nilai DRS terbesar dari 24 adalah 11.<br />
+Fungsi mdrs(<var>n</var>) akan memberikan nilai DRS terbesar untuk bilangan <var>n</var>. Sehingga mdrs(24)=11.<br />
+Carilah &sum;mdrs(<var>n</var>) untuk 1 &lt; <var>n</var> &lt; 1,000,000.</p>
