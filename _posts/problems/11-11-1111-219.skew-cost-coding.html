@@ -7,16 +7,16 @@ problemId: 219
 answer: -1
 ---
 
-<p>Let <span style="font-weight:bold">A</span> and <span style="font-weight:bold">B</span> be bit strings (sequences of 0's and 1's).<br />
-If <span style="font-weight:bold">A</span> is equal to the <span style="text-decoration:underline;">left</span>most length(<span style="font-weight:bold">A</span>) bits of <span style="font-weight:bold">B</span>, then <span style="font-weight:bold">A</span> is said to be a <span style="font-style:italic">prefix</span> of <span style="font-weight:bold">B</span>.<br />
-For example, 00110 is a prefix of <span style="text-decoration:underline;">00110</span>1001, but not of 00111 or 100110.</p>
+<p><span style="font-weight:bold">A</span> dan <span style="font-weight:bold">B</span> merupakan string biner (hanya berisi angka 0 dan 1).<br />
+Jika <span style="font-weight:bold">A</span> sama dengan bagian paling <span style="text-decoration:underline;">kiri</span> sepanjang length(<span style="font-weight:bold">A</span>) bit dari <span style="font-weight:bold">B</span>, maka <span style="font-weight:bold">A</span> dapat disebut sebagai <span style="font-style:italic">prefix</span> dari <span style="font-weight:bold">B</span>.<br />
+Sebagai contoh, 00110 adalah prefix dari <span style="text-decoration:underline;">00110</span>1001, tapi bukan prefix dari 00111 atau 100110.</p>
 
-<p>A <span style="font-style:italic">prefix-free code of size</span> <var>n</var> is a collection of <var>n</var> distinct bit strings such that no string is a prefix of any other.  For example, this is a prefix-free code of size 6:</p>
+<p>Sebuah <span style="font-style:italic">kode bebas prefix dengan ukuran</span> <var>n</var> adalah kumpulan <var>n</var> buah string biner berbeda, sehingga tidak ada string yang merupakan prefix string lainnya. Sebagai contoh, ini adalah sebuah kode bebas prefix dengan ukuran 6:</p>
 
 <p style="text-align:center;">0000, 0001, 001, 01, 10, 11</p>
 
-<p>Now suppose that it costs one penny to transmit a '0' bit, but four pence to transmit a '1'.<br />
-Then the total cost of the prefix-free code shown above is 35 pence, which happens to be the cheapest possible for the skewed pricing scheme in question.<br />
-In short, we write Cost(6) = 35.</p>
+<p>Sekarang misalkan kita perlu membayar satu penny untuk mengirimkan sebuah bit '0', namun perlu empat penny untuk mengirimkan sebuah bit '1'.<br />
+Maka total biaya yang diperlukan pada kode bebas prefix di atas adalah 35 penny, yang merupakan kemungkinan biaya paling murah untuk pertanyaan ini.<br />
+Secara singkat, kita akan menulis biaya dengan cara Cost(6) = 35.</p>
 
-<p>What is Cost(10<sup>9</sup>) ?</p>
+<p>Berapakah Cost(10<sup>9</sup>) ?</p>
