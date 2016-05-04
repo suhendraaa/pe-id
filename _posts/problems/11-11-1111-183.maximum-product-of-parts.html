@@ -2,25 +2,25 @@
 layout: problem
 category: problems
 difficulty: 45
-title: "Maximum product of parts"
+title: "Hasil Kali Terbesar Setelah Membagi Menjadi Beberapa Bagian"
 problemId: 183
 answer: -1
 ---
 
-<p>Let N be a positive integer and let N be split into <var>k</var> equal parts, <var>r</var> = N/<var>k</var>, so that N = <var>r</var> + <var>r</var> + ... + <var>r</var>.<br />
-Let P be the product of these parts, P = <var>r</var> &times; <var>r</var> &times; ... &times; <var>r</var> = <var>r</var><sup><var>k</var></sup>.</p>
+<p>Misalkan terdapat bilangan bulat positif N, dan misalkan N akan kita pisah menjadi <var>k</var> bagian sama besar, <var>r</var> = N/<var>k</var>, Sehingga N = <var>r</var> + <var>r</var> + ... + <var>r</var>.<br />
+Misalkan P adalah hasil kali dari semua bagian-bagian tersebut, maka P = <var>r</var> &times; <var>r</var> &times; ... &times; <var>r</var> = <var>r</var><sup><var>k</var></sup>.</p>
 
-<p>For example, if 11 is split into five equal parts, 11 = 2.2 + 2.2 + 2.2 + 2.2 + 2.2, then P = 2.2<sup>5</sup> = 51.53632.</p>
+<p>Sebagai contoh, jika 11 dibagi menjadi lima bagian sama besar, 11 = 2.2 + 2.2 + 2.2 + 2.2 + 2.2, maka P = 2.2<sup>5</sup> = 51.53632.</p>
 
-<p>Let M(N) = P<sub>max</sub> for a given value of N.</p>
+<p>Misalkan M(N) = P<sub>max</sub> untuk nilai N yang diberikan.</p>
 
-<p>It turns out that the maximum for N = 11 is found by splitting eleven into four equal parts which leads to P<sub>max</sub> = (11/4)<sup>4</sup>; that is, M(11) = 14641/256 = 57.19140625, which is a terminating decimal.</p>
+<p>Ternyata hasil perkalian terbesar untuk N = 11 dapat ditemukan dengan cara membagi sebelas menjadi empat bagian sama besar, yang akan menghasilkan P<sub>max</sub> = (11/4)<sup>4</sup>; sehingga M(11) = 14641/256 = 57.19140625, dimana hasil tersebut merupakan desimal tidak berulang.</p>
 
-<p>However, for N = 8 the maximum is achieved by splitting it into three equal parts, so M(8) = 512/27, which is a non-terminating decimal.</p>
+<p>Tetapi untuk N = 8, hasil perkalian terbesar didapatkan dengan membagi bilangan menjadi tiga bagian sama besar, sehingga M(8) = 512/27, dan hasil tersebut merupakan bilangan desimal berulang.</p>
 
-<p>Let D(N) = N if M(N) is a non-terminating decimal and D(N) = -N if M(N) is a terminating decimal.</p>
+<p>Diketahui D(N) = N, jika M(N) adalah bilangan desimal berulang, dan D(N) = -N jika M(N) adalah bilangan desimal yang tidak berulang.</p>
 
-<p>For example, &Sigma;D(N) for 5 &le; N &le; 100 is 2438.</p>
+<p>Sebagai contoh, &Sigma;D(N) untuk 5 &le; N &le; 100 adalah 2438.</p>
 
-<p>Find &Sigma;D(N) for 5 &le; N &le; 10000.</p>
+<p>Carilah &Sigma;D(N) untuk 5 &le; N &le; 10000.</p>
 
