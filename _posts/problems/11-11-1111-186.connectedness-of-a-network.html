@@ -2,30 +2,30 @@
 layout: problem
 category: problems
 difficulty: 60
-title: "Connectedness of a network"
+title: "Ketersambungan Sebuah Jaringan"
 problemId: 186
 answer: 2325629
 ---
 
-<p>Here are the records from a busy telephone system with one million users:</p>
+<p>Ini adalah catatan dari sistem jaringan telepon dengan satu juta pengguna:</p>
 <div style='text-align:center;'>
 <table cellspacing='0' cellpadding='2' border='1' align='center'>
 <tr style='background-color:#c1daf9;'>
-<td>RecNr</td><td width='60' align='center'>Caller</td><td width='60' align='center'>Called</td></tr>
+<td>RecNr</td><td width='60' align='center'>Penelepon</td><td width='60' align='center'>Penerima</td></tr>
 <tr><td align='center'>1</td><td align='center'>200007</td><td align='center'>100053</td></tr>
 <tr><td align='center'>2</td><td align='center'>600183</td><td align='center'>500439</td></tr>
 <tr><td align='center'>3</td><td align='center'>600863</td><td align='center'>701497</td></tr>
 <tr><td align='center'>...</td><td align='center'>...</td><td align='center'>...</td></tr>
 </table>
 </div>
-<p>The telephone number of the caller and the called number in record n are Caller(n) = S<sub>2n-1</sub> and Called(n) = S<sub>2n</sub> where S<sub>1,2,3,...</sub> come from the "Lagged Fibonacci Generator":</p>
+<p>Nomor telepon dari penelepon (caller) dan penerima (called) ke-n adalah Caller(n) = S<sub>2n-1</sub> dan Called(n) = S<sub>2n</sub> dimana S<sub>1,2,3,...</sub> dibuat dengan metode "Lagged Fibonacci Generator":</p>
 
-<p>For 1 &le; k &le; 55, S<sub>k</sub> = [100003 - 200003k + 300007k<sup>3</sup>] (modulo 1000000)<br />
-For 56 &le; k, S<sub>k</sub> = [S<sub>k-24</sub> + S<sub>k-55</sub>] (modulo 1000000)</p>
+<p>Untuk 1 &le; k &le; 55, S<sub>k</sub> = [100003 - 200003k + 300007k<sup>3</sup>] (modulo 1000000)<br />
+Untuk 56 &le; k, S<sub>k</sub> = [S<sub>k-24</sub> + S<sub>k-55</sub>] (modulo 1000000)</p>
 
-<p>If Caller(n) = Called(n) then the user is assumed to have misdialled and the call fails; otherwise the call is successful.</p>
+<p>Jika Caller(n) = Called(n), maka penelepon dianggap salah sambung, dan proses telepon tersebut dianggap gagal; sebaliknya, jika nomor penelepon dan penerima tidak sama, proses telepon dianggap sukses.</p>
 
-<p>From the start of the records, we say that any pair of users X and Y are friends if X calls Y or vice-versa. Similarly, X is a friend of a friend of Z if X is a friend of Y and Y is a friend of Z; and so on for longer chains.</p>
+<p>Dari awal catatan, kita dapat mengatakan bahwa semua pasangan pengguna telepon X dan Y adalah saling berteman apabila X menelepon Y atau sebaliknya. Hal yang sama, X adalah teman dari Z jika X merupakan teman dari Y, dan Y merupakan teman dari Z; dan begitu seterusnya terbentuk rantai yang lebih panjang.</p>
 
-<p>The Prime Minister's phone number is 524287. After how many successful calls, not counting misdials, will 99% of the users (including the PM) be a friend, or a friend of a friend etc., of the Prime Minister?</p>
+<p>Nomor telepon perdana menteri adalah 524287. Setelah beberapa telepon yang berhasil tersambung, telepon yang salah sambung tidak dihitung, apakah 99% dari pengguna telepon (termasuk sang perdana menteri) akan menjadi teman, atau temannya teman, dan seterusnya..., dari sang perdana menteri?</p>
 
