@@ -2,27 +2,27 @@
 layout: problem
 category: problems
 difficulty: 65
-title: "Intersections"
+title: "Perpotongan"
 problemId: 165
 answer: -1
 ---
 
-<p>A segment is uniquely defined by its two endpoints.<br /> By considering two line segments in plane geometry there are three possibilities:<br /> 
-the segments have zero points, one point, or infinitely many points in common.</p>
-<p>Moreover when two segments have exactly one point in common it might be the case that that common point is an endpoint of either one of the segments or of both. If a common point of two segments is not an endpoint of either of the segments it is an interior point of both segments.<br />
-We will call a common point T of two segments L<sub>1</sub> and L<sub>2</sub> a true intersection point of L<sub>1</sub> and L<sub>2</sub>  if T is the only common point of L<sub>1</sub> and L<sub>2</sub>  and T is an interior point of both segments.
+<p>Sebuah segmen garis ditentukan oleh dua titik ujungnya.<br /> Apabila terdapat dua segmen garis dalam sebuah bidang geometri, maka terdapat tiga kemungkinan:<br /> 
+kedua segmen tidak bertemu di titik manapun, bertemu di satu titik, atau bertemu di tak hingga buah titik.</p>
+<p>Selanjutnya, saat dua segmen garis bertemu di satu titik, ada kemungkinan titik temu tersebut merupakan ujung dari salah satu segmen, atau bahkan ujung dari kedua segmen. Jika titik temu kedua segmen garis bukan merupakan ujung dari kedua segmen, maka kita akan menyebut titik tersebut sebagai titik interior segmen.<br />
+Kita akan menyebut titik temu T antara dua segmen L<sub>1</sub> dan L<sub>2</sub> sebagai titik potong sejati dari L<sub>1</sub> dan L<sub>2</sub> apabila T merupakan salah satu titik yang terdapat pada L<sub>1</sub> dan L<sub>2</sub>, dan T merupakan titik interior dari kedua segmen.
 </p>
-<p>Consider the three segments L<sub>1</sub>, L<sub>2</sub>, and L<sub>3</sub>:</p>
-<p style="margin-left:20px;">L<sub>1</sub>: (27, 44) to (12, 32)<br />
-L<sub>2</sub>: (46, 53) to (17, 62)<br />
-L<sub>3</sub>: (46, 70) to (22, 40)</p>
-<p>It can be verified that line segments L<sub>2</sub> and L<sub>3</sub> have a true intersection point. We note that as the one of the end points of L<sub>3</sub>: (22,40) lies on L<sub>1</sub> this is not considered to be a true point of intersection. L<sub>1</sub> and L<sub>2</sub> have no common point. So among the three line segments, we find one true intersection point.</p>
-<p>Now let us do the same for 5000 line segments. To this end, we generate 20000 numbers using the so-called &quot;Blum Blum Shub&quot; pseudo-random number generator.</p>
+<p>Misalkan terdapat tiga segmen garis L<sub>1</sub>, L<sub>2</sub>, dan L<sub>3</sub>:</p>
+<p style="margin-left:20px;">L<sub>1</sub>: (27, 44) sampai (12, 32)<br />
+L<sub>2</sub>: (46, 53) sampai (17, 62)<br />
+L<sub>3</sub>: (46, 70) sampai (22, 40)</p>
+<p>Dapat dibuktikan bahwa segmen garis L<sub>2</sub> dan L<sub>3</sub> mempunyai sebuah titik potong sejati. Perlu diingat bahwa walaupun titik ujung dari L<sub>3</sub>: (22,40) terdapat pada L<sub>1</sub>, tapi titik ini tidak dianggap sebagai titik potong sejati. Sedangkan L<sub>1</sub> dan L<sub>2</sub> tidak memiliki titik temu sama sekali. Sehingga antar ketiga segmen garis tersebut, kita bisa menemukan satu titik potong sejati.</p>
+<p>Sekarang kita akan melakukan hal yang sama untuk 5000 segmen garis. Kita akan membuat 20000 bilangan menggunakan metode &quot;Blum Blum Shub&quot;, sebuah metode untuk membentuk bilangan acak.</p>
 <p style="margin-left:50px;">s<sub>0</sub> = 290797<br /><br />
 s<sub>n+1</sub> = s<sub>n</sub>&times;s<sub>n</sub> (modulo 50515093)<br /><br />
 t<sub>n</sub> = s<sub>n</sub> (modulo 500)</p>
-<p>To create each line segment, we use four consecutive numbers t<sub>n</sub>. That is, the first line segment is given by:</p>
+<p>Untuk membuat sebuah segmen garis, kita akan menggunakan empat bilangan berurutan t<sub>n</sub>. Sehingga, segmen garis pertama yang ada adalah:</p>
 <p>(t<sub>1</sub>, t<sub>2</sub>) to (t<sub>3</sub>, t<sub>4</sub>)</p>
-<p>The first four numbers computed according to the above generator should be: 27, 144, 12 and 232. The first segment would thus be (27,144) to (12,232).</p>
-<p>How many distinct true intersection points are found among the 5000 line segments?</p>
+<p>Empat bilangan pertama yang dibuat secara acak dengan cara di atas adalah: 27, 144, 12 dan 232. Sehingga segmen garis pertamanya akan menjadi (27,144) sampai (12,232).</p>
+<p>Berapakah banyaknya titik potong sejati berbeda, yang terdapat pada 5000 segmen garis tersebut?</p>
 
