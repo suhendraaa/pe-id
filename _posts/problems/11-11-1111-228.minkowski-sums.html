@@ -2,12 +2,12 @@
 layout: problem
 category: problems
 difficulty: 70
-title: "Minkowski Sums"
+title: "Penjumlahan Minkowski"
 problemId: 228
 answer: -1
 ---
 
-<p>Let <var>S</var><sub>n</sub> be the regular <var>n</var>-sided polygon &ndash; or <i>shape</i> &ndash; whose vertices 
+<p><var>S</var><sub>n</sub> adalah bangun berjumlah sisi <var>n</var> yang memiliki titik sudut 
 
 <var>v</var><sub><var>k</var></sub> (<var>k</var>&thinsp;=&thinsp;1,2,&hellip;,<var>n</var>) have coordinates:</p>
 <table>
@@ -22,17 +22,15 @@ answer: -1
   </tr>
 </table>
 
-<p>Each <var>S</var><sub><var>n</var></sub> is to be interpreted as a filled shape consisting of all points on the perimeter and in the interior.</p>
+<p>Setiap <var>S</var><sub><var>n</var></sub> akan dianggap memiliki bagian sebelah dalam keliling yang terisi penuh.</p>
 
-<p>The <i>Minkowski sum</i>, <var>S</var>+<var>T</var>, of two shapes <var>S</var> and <var>T</var> is the result of 
-
-adding every point in <var>S</var> to every point in <var>T</var>, where point addition is performed coordinate-wise: 
+<p>Hasil <i>penjumlahan Minkowski</i> <var>S</var>+<var>T</var>, dari dua buah bangun <var>S</var> dan <var>T</var> bisa didapat dengan cara menjumlahkan setiap titik di <var>S</var> kepada setiap titik di <var>T</var>, sesuai dengan koordinat masing-masing: 
 
 (<var>u</var>,&thinsp;<var>v</var>) + (<var>x</var>,&thinsp;<var>y</var>) = (<var>u</var>+<var>x</var>,&thinsp;<var>v</var>+<var>y</var>).</p>
 
-<p>For example, the sum of <var>S</var><sub>3</sub> and <var>S</var><sub>4</sub> is the six-sided shape shown in pink below:</p>
+<p>Sebagai contoh, hasil penjumlahan dari <var>S</var><sub>3</sub> dan <var>S</var><sub>4</sub> adalah bangun dengan enam sisi bewarna pink berikut:</p>
 
 <div style="text-align:center;">
 <img src="{{ site.baseurl }}project/images/p228.png" alt="picture showing S_3 + S_4" /></div>
 
-<p>How many sides does <var>S</var><sub>1864</sub>&thinsp;+&thinsp;<var>S</var><sub>1865</sub>&thinsp;+&thinsp;&hellip;&thinsp;+&thinsp;<var>S</var><sub>1909</sub> have?</p>
+<p>Berapakah banyaknya sisi yang dimiliki oleh <var>S</var><sub>1864</sub>&thinsp;+&thinsp;<var>S</var><sub>1865</sub>&thinsp;+&thinsp;&hellip;&thinsp;+&thinsp;<var>S</var><sub>1909</sub>?</p>
