@@ -2,20 +2,20 @@
 layout: problem
 category: problems
 difficulty: 70
-title: "Sliders"
+title: "Penggeser"
 problemId: 244
 answer: -1
 ---
 
-<p>You probably know the game <i>Fifteen Puzzle</i>. Here, instead of numbered tiles, we have seven red tiles and eight blue tiles.</p>
-<p>A move is denoted by the uppercase initial of the direction (Left, Right, Up, Down) in which the tile is slid, e.g. starting from configuration (<b>S</b>), by the sequence <b>LULUR</b> we reach the configuration (<b>E</b>):</p>
+<p>Anda mungkin telah mengetahui permainan <i>Fifteen Puzzle</i>. Disini, bukan menggunakan kotak bernomor, kita akan menggunakan tujuh kotak merah dan delapan kotak biru.</p>
+<p>Sebuah gerakan dilambangkan dengan huruf kapital dari arah yang di inginkan (Left/Kiri, Right/Kanan, Up/Atas, Down/Bawah), yang akan melambangkan arah kotak bergeser untuk mengisi kotak kosong, sebagai contoh, dimulai dari konfigurasi (<b>S</b>), dengan urutan <b>LULUR</b> kita akan mencapai konfigurasi (<b>E</b>):</p>
 <p><div style="text-align: center;">
 <table cellspacing='0' cellpadding='2' border='0' align='center'>
 <tr><td width = '25'>(<b>S</b>)</td><td width='100'><img src="{{ site.baseurl }}project/images/p244_start.gif" /></td><td width = '25'>,&nbsp;(<b>E</b>)</td><td width='100'><img src="{{ site.baseurl }}project/images/p244_example.gif" /></td>
 </table>
 </div>
 </p>
-<p>For each path, its checksum is calculated by (pseudocode):
+<p>Untuk setiap jalan, nilai checksum dapat dihitung dengan:
 <div style="margin-left: 100px;">
 checksum = 0<br />
 checksum = (checksum &times; 243 + <var>m</var><sub>1</sub>) mod 100&thinsp;000&thinsp;007<br />
@@ -23,7 +23,7 @@ checksum = (checksum &times; 243 + <var>m</var><sub>2</sub>) mod 100&thinsp;000&
 &nbsp;&nbsp;&nbsp;&hellip;<br />
 checksum = (checksum &times; 243 + <var>m</var><sub><var>n</var></sub>) mod 100&thinsp;000&thinsp;007<br />
 </div>
-where <var>m</var><sub><var>k</var></sub> is the ASCII value of the <var>k</var><sup><var>th</var></sup> letter in the move sequence and the ASCII values for the moves are:
+Dimana <var>m</var><sub><var>k</var></sub> adalah nilai ASCII dari huruf ke-<var>k</var><sup></sup>, pada urutan gerak, dan nilai ASCII untuk masing-masing gerakan adalah:
 
 <div style='text-align:center;'>
 <table cellspacing='0' cellpadding='2' border='1' align='center'>
@@ -34,13 +34,13 @@ where <var>m</var><sub><var>k</var></sub> is the ASCII value of the <var>k</var>
 </table>
 </div>
 </p>
-<p>For the sequence <b>LULUR</b> given above, the checksum would be 19761398.</p>
-<p>Now, starting from configuration (<b>S</b>),
-find all shortest ways to reach configuration (<b>T</b>).</p>
+<p>Untuk urutan <b>LULUR</b> di atas, nilai chekcsum yang ada adalah 19761398.</p>
+<p>Sekarang, dimulai dengan konfigurasi (<b>S</b>),
+carilah semua jalur terpendek untuk mencapai konfigurasi (<b>T</b>).</p>
 <p><div style="text-align: center;">
 <table cellspacing='0' cellpadding='2' border='0' align='center'>
 <tr><td width = '25'>(<b>S</b>)</td><td width='100'><img src="{{ site.baseurl }}project/images/p244_start.gif" /></td><td width = '25'>,&nbsp;(<b>T</b>)</td><td width='100'><img src="{{ site.baseurl }}project/images/p244_target.gif" /></td>
 </table>
 </div>
 </p>
-<p>What is the sum of all checksums for the paths having the minimal length?</p>
+<p>Berapakah hasil penjumlahan dari semua checksums untuk jalur yang memiliki jarak terpendek?</p>
