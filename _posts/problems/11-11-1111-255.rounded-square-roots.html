@@ -2,18 +2,18 @@
 layout: problem
 category: problems
 difficulty: 75
-title: "Rounded Square Roots"
+title: "Akar Kuadrat Yang Dibulatkan"
 problemId: 255
 answer: -1
 ---
 
-<p>We define the <i>rounded-square-root</i> of a positive integer <var>n</var> as the square root of <var>n</var> rounded to the nearest integer.</p>
+<p>Kita akan menyatakan suatu <i>akar-kuadrat-dibulatkan</i> sebuah bilangan bulat positif <var>n</var>, sebagai akar kuadrat dari <var>n</var> yang dibulatkan ke bilangan bulat terdekat.</p>
 
-<p>The following procedure (essentially Heron&#39;s method adapted to integer arithmetic) finds the rounded-square-root of <var>n</var>:</p>
-<p>Let <var>d</var> be the number of digits of the number <var>n</var>.<br />
-If <var>d</var> is odd, set <var>x</var><sub>0</sub> = 2&times;10<sup>(<var>d</var>-1)&frasl;2</sup>.<br />
-If <var>d</var> is even, set <var>x</var><sub>0</sub> = 7&times;10<sup>(<var>d</var>-2)&frasl;2</sup>.<br />
-Repeat:</p>
+<p>Prosedur berikut ini (didasari dari metode Heron yang diadaptasikan dengan aritmatika bilangan bulat) akan menemukan akar-kuadrat-dibulatkan dari <var>n</var>:</p>
+<p><var>d</var> adalah banyaknya angka (digit) dari bilangan <var>n</var>.<br />
+Jika <var>d</var> bernilai ganjil, tetapkan <var>x</var><sub>0</sub> = 2&times;10<sup>(<var>d</var>-1)&frasl;2</sup>.<br />
+Jika <var>d</var> bernilai genap, tetapkan <var>x</var><sub>0</sub> = 7&times;10<sup>(<var>d</var>-2)&frasl;2</sup>.<br />
+Ulangi:</p>
 <p align='center'>
 <img src="{{ site.baseurl }}project/images/p255_Heron.gif" /></p>
 <!--
@@ -25,21 +25,21 @@ Repeat:</p>
 2</td><td><td style='font-size:220%'>&#8971;</td></tr>
 </table> -->
 
-<p>until <var>x</var><sub><var>k</var>+1</sub> = <var>x</var><sub><var>k</var></sub>.
+<p>sampai <var>x</var><sub><var>k</var>+1</sub> = <var>x</var><sub><var>k</var></sub>.
 </p>
-<p>As an example, let us find the rounded-square-root of <var>n</var> = 4321.<br />
-<var>n</var> has 4 digits, so <var>x</var><sub>0</sub> = 7&times;10<sup>(4-2)&frasl;2</sup> = 70.<br />
+<p>Sebagai contoh, kita akan mencari akar-kuadrat-dibulatkan dari <var>n</var> = 4321.<br />
+<var>n</var> mempunyai 4 angka (digit), sehingga <var>x</var><sub>0</sub> = 7&times;10<sup>(4-2)&frasl;2</sup> = 70.<br />
 <img src='{{ site.baseurl }}project/images/p255_Example.gif'>
 <!--<var>x</var><sub>1</sub> = &lfloor;(70 + &lceil;4321&frasl;70&rceil;)&frasl;2&rfloor; = 66.<br />
 <var>x</var><sub>2</sub> = &lfloor;(66 + &lceil;4321&frasl;66&rceil;)&frasl;2&rfloor; = 66.--><br />
-Since <var>x</var><sub>2</sub> = <var>x</var><sub>1</sub>, we stop here.<br />
-So, after just two iterations, we have found that the rounded-square-root of 4321 is 66 (the actual square root is 65.7343137&hellip;).
+Karena <var>x</var><sub>2</sub> = <var>x</var><sub>1</sub>, maka kita berhenti sampai di sini.<br />
+Sehingga, setelah dua kali pengulangan (iterasi), kita telah menemukan akar-kuadrat-dibulatkan dari 4321 adalah 66 (akar kuadrat aslinya adalah 65.7343137&hellip;).
 </p>
-<p>The number of iterations required when using this method is surprisingly low.<br />
-For example, we can find the rounded-square-root of a 5-digit integer (10,000 &le; <var>n</var> &le; 99,999) with an average of 3.2102888889 iterations (the average value was rounded to 10 decimal places).
+<p>Banyaknya pengulangan (iterasi) yang diperlukan saat menggunakan metode ini cukup rendah.<br />
+Sebagai contoh, kita dapat mencari akar-kuadrat-dibulatkan dari bilangan bulat 5 angka (digit) (10,000 &le; <var>n</var> &le; 99,999) dengan rata-rata 3.2102888889 kali pengulangan (rata-rata tersebut telah dibulatkan 10 angka di belakang koma).
 </p>
-<p>Using the procedure described above, what is the average number of iterations required to find the rounded-square-root of a 14-digit number (10<sup>13</sup> &le; <var>n</var> &lt; 10<sup>14</sup>)?<br />
-Give your answer rounded to 10 decimal places.
+<p>Dengan menggunakan prosedur seperti di atas, berapakah rata-rata banyaknya pengulangan (iterasi) yang diperlukan untuk mencari akar-kuadrat-dibulatkan dari bilangan 14 angka (digit) (10<sup>13</sup> &le; <var>n</var> &lt; 10<sup>14</sup>)?<br />
+Berikan jawaban Anda dibulatkan 10 angka di belakang koma.
 </p>
-<p>Note: The symbols &lfloor;<var>x</var>&rfloor; and &lceil;<var>x</var>&rceil; represent the <dfn title='the largest integer not greater than x'>floor function</dfn> and <dfn title='the smallest integer not less than x'>ceiling function</dfn> respectively.
+<p>Catatan: Lambang &lfloor;<var>x</var>&rfloor; dan &lceil;<var>x</var>&rceil; memiliki arti masing-masing <dfn title='the largest integer not greater than x'>dibulatkan ke bawah</dfn> dan <dfn title='the smallest integer not less than x'>dibulatkan ke atas</dfn>.
 </p>
