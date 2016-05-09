@@ -2,21 +2,21 @@
 layout: problem
 category: problems
 difficulty: 75
-title: "Tidying up"
+title: "Merapikan"
 problemId: 253
 answer: -1
 ---
 
-<p>A small child has a &ldquo;number caterpillar&rdquo; consisting of forty jigsaw pieces, each with one number on it, which, when connected together in a line, reveal the numbers 1 to 40 in order.</p>
+<p>Seorang anak kecil memiliki &ldquo;ulat nomor&rdquo; yang berisi empat puluh buah jigsaw puzzle, setiap potong puzzle memiliki sebuah nomor padanya, sehingga, saat semua puzzle digabung dalam satu garis, akan muncul nomor 1 sampai 40 secara berurutan.</p>
 
-<p>Every night, the child&#39;s father has to pick up the pieces of the caterpillar that have been scattered across the play room. He picks up the pieces at random and places them in the correct order.<br /> As the caterpillar is built up in this way, it forms distinct segments that gradually merge together.<br /> The number of segments starts at zero (no pieces placed), generally increases up to about eleven or twelve, then tends to drop again before finishing at a single segment (all pieces placed).<p>
+<p>Setiap malam, ayah dari anak tersebut harus mengambil potongan puzzle ulat yang telah tersebar di ruang bermain. Ia mengambil potongan puzzle secara acak, lalu meletakannya di urutan yang benar.<br /> Maka lama kelamaan ulat akan terbentuk, akan terbentuk segmen ulat berbeda yang lama kelamaan akan tersambung menjadi satu ulat utuh.<br /> Banyaknya segmen ulat dimulai dari nol buah (tidak ada segmen tercipta sama sekali), hingga terdapat sebelas atau dua belas buah segmen ulat, lalu kembali menjadi nol lagi sebelum semua segmen bergabung menjadi satu (semua potongan telah diletakkan dengan benar).<p>
 
 <p>For example:</p>
 <div align='center'>
 <table cellspacing='0' cellpadding='2' border='1' align='center'>
 <tr style='background-color:#c1daf9;'>
-<td width='80' align='center'><b>Piece Placed</b></td>
-<td width='80' align='center'><b>Segments So Far</b></td></tr>
+<td width='80' align='center'><b>Banyak Potongan Puzzle</b></td>
+<td width='80' align='center'><b>Banyak Segmen Tercipta Sejauh ini</b></td></tr>
 <tr><td align='center'>12</td><td align='center'>1</td></tr>
 <tr><td align='center'>4</td><td align='center'>2</td></tr>
 <tr><td align='center'>29</td><td align='center'>3</td></tr>
@@ -27,13 +27,13 @@ answer: -1
 <tr><td align='center'>&hellip;</td><td align='center'>&hellip;</td></tr>
 </table></div>
 
-<p>Let <var>M</var> be the maximum number of segments encountered during a random tidy-up of the caterpillar.<br />
-For a caterpillar of ten pieces, the number of possibilities for each <var>M</var> is</p>
+<p><var>M</var> adalah banyak maksimal dari segmen ulat yang bisa terbentuk pada saat puzzle ulat dirapikan secara acak.<br />
+Untuk ulat dengan sepuluh potong puzzle, besarnya kemungkinan untuk setipa <var>M</var> adalah</p>
 <div align='center'>
 <table cellspacing='0' cellpadding='2' border='1' align='center'>
 <tr style='background-color:#c1daf9;'>
 <td width='50' align='center'><b><var>M</var></b></td>
-<td width='90' align='center'><b>Possibilities</b></td></tr>
+<td width='90' align='center'><b>Kemungkinan</b></td></tr>
 <tr><td align='center'>1</td><td align='right'>512&nbsp; &nbsp;&nbsp; &nbsp;</td></tr>
 <tr><td align='center'>2</td><td align='right'>250912&nbsp; &nbsp;&nbsp; &nbsp;</td></tr>
 <tr><td align='center'>3</td><td align='right'>1815264&nbsp; &nbsp;&nbsp; &nbsp;</td></tr>
@@ -42,8 +42,8 @@ For a caterpillar of ten pieces, the number of possibilities for each <var>M</va
 </table>
 </div>
 
-<p>so the most likely value of <var>M</var> is 3 and the average value is <sup>385643</sup>&frasl;<sub>113400</sub> = 3.400732, rounded to six decimal places.</p>
+<p>sehingga nilai <var>M</var> yang paling sering muncul adalah 3 dan rata-ratanya adalah <sup>385643</sup>&frasl;<sub>113400</sub> = 3.400732, dibulatkan hingga enam angka di belakang koma.</p>
 
-<p>The most likely value of <var>M</var> for a forty-piece caterpillar is 11; but what is the average value of <var>M</var>?</p>
-<p>Give your answer rounded to six decimal places.</p>
+<p>nilai <var>M</var> yang paling sering muncul untuk puzzle ulat dengan empat puluh potong puzzle adalah 11; namun berapakah nilai rata-rata dari <var>M</var>?</p>
+<p>Berikan jawaban Anda dibulatkan hingga enam angka di belakang koma.</p>
 
