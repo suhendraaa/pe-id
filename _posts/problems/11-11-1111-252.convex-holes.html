@@ -2,17 +2,17 @@
 layout: problem
 category: problems
 difficulty: 80
-title: "Convex Holes"
+title: "Lubang Konveks"
 problemId: 252
 answer: -1
 ---
 
 <p>
-Given a set of points on a plane, we define a convex hole to be a convex polygon having as vertices any of the given points and not containing any of the given points in its interior (in addition to the vertices, other given points may lie on the perimeter of the polygon). 
+Diberikan himpunan titik-titk pada suatu bidang, kita akan menyatakan lubang konveks sebagai poligon konveks yang dibentuk dari titik apapun, dan tidak berisi titik lain di sebelah dalamnya (titik masih boleh berada di keliling poligon). 
 </p>
 <p>
-As an example, the image below shows a set of twenty points and a few such convex holes. 
-The convex hole shown as a red heptagon has an area equal to 1049694.5 square units, which is the highest possible area for a convex hole on the given set of points.
+Sebagai contoh, gambar di bawah ini menunjukkan himpunan dari dua puluh buah titik, dan beberapa lubang konveks seperti yang dijelaskan di atas. 
+Lubang konveks ditunjukkan oleh segi tujuh berwarna merah memiliki luas 1049694.5 satuan luas, dimana luas ini adalah luas terbesar yang memungkinkan dibentuk oleh lubang konveks pada titik-titik yang diberikan.
 </p>
 <div style="text-align:center;">
 <img src="{{ site.baseurl }}project/images/p252_convexhole.gif" alt="" /></div>
@@ -25,7 +25,7 @@ table.p252 td {
 }
 </style>
 
-<p>For our example, we used the first 20 points (<var>T</var><sub>2<var>k</var>&minus;1</sub>,&thinsp;<var>T</var><sub>2<var>k</var></sub>), for <var>k</var>&thinsp;=&thinsp;1,2,&hellip;,20, produced with the pseudo-random number generator:</p>
+<p>Pada contoh di atas, 20 titik pertama (<var>T</var><sub>2<var>k</var>&minus;1</sub>,&thinsp;<var>T</var><sub>2<var>k</var></sub>), untuk <var>k</var>&thinsp;=&thinsp;1,2,&hellip;,20, dicari dengan alat pembuat bilangan acak:</p>
 
 <center><table class="p252">
   <tr>
@@ -44,10 +44,10 @@ table.p252 td {
 </table></center>
 
 <p>
-<i>i.e.</i> (527,&thinsp;144), (&minus;488,&thinsp;732), (&minus;454,&thinsp;&minus;947), &hellip;
+<i>sehingga didapat</i> (527,&thinsp;144), (&minus;488,&thinsp;732), (&minus;454,&thinsp;&minus;947), &hellip;
 </p>
 <p>
-What is the maximum area for a convex hole on the set containing the first 500 points in the pseudo-random sequence?<br /> Specify your answer including one digit after the decimal point.
+Berapakah luas lubang konveks terbesar, pada kumpulan 500 titik pertama yang dibentuk dengan alat pembuat bilangan acak di atas?<br /> Jawab hingga ketelitian satu angka di belakang koma.
 </p>
 
 
