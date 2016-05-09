@@ -2,28 +2,28 @@
 layout: problem
 category: problems
 difficulty: 70
-title: "Stone Game"
+title: "Permainan Batu"
 problemId: 260
 answer: -1
 ---
 
-<p>A game is played with three piles of stones and two players.<br>
-At her turn, a player removes one or more stones from the piles. However, if she takes stones from more than one pile, she must remove the same number of stones from each of the selected piles.</p>
+<p>Sebuah permainan dimainkan dengan tiga tumpuk batu dan dua pemain.<br>
+Saat gilirannya, seorang pemain mengambil satu atau lebih batu dari tumpukan. Tetapi, apabila ia mengambil batu di lebih dari satu tumpukan, ia harus mengambil jumlah batu dengan banyak yang sama pada setiap tumpukan.</p>
 
-<p>In other words, the player chooses some N>0 and removes:
-<ul><li>N stones from any single pile; or</li>
-<li>N stones from each of any two piles (2N total); or</li>
-<li>N stones from each of the three piles (3N total).</li></ul>
-The player taking the last stone(s) wins the game.</p>
+<p>Dengan kata lain, pemain memilih N>0 dan mengambil:
+<ul><li>N buah batu dari salah satu tumpukan; atau</li>
+<li>masing-masing N buah batu dari dua buah tumpukan (total 2N); atau</li>
+<li>masing-masing N buah batu dari tiga buah tumpukan (total 3N).</li></ul>
+Pemain yang mengambil batu paling terakhir yang akan memenangkan permainan.</p>
 
-<p>A <i>winning configuration</i> is one where the first player can force a win.<br>
-For example, (0,0,13), (0,11,11) and (5,5,5) are winning configurations because the first player can immediately remove all stones.</p>
+<p>Sebuah <i>susunan kemenangan</i> adalah cara menyusun batu untuk membuat pemain pertama menjadi menang.<br>
+Sebagai contoh, (0,0,13), (0,11,11) dan (5,5,5) adalah susunan kemenangan, karena pemain pertama dapat dengan segera mengambil semua batu  yang ada.</p>
 
-<p>A <i>losing configuration</i> is one where the second player can force a win, no matter what the first player does.<br> 
-For example, (0,1,2) and (1,3,3) are losing configurations: any legal move leaves a winning configuration for the second player.</p>
+<p>Sebuah <i>susunan kekalahan</i> adalah cara menyusun batu untuk membuat pemain kedua menjadi pemenang, tidak peduli apapun yang dilakukan oleh pemain pertama.<br> 
+Sebagai contoh, (0,1,2) dan (1,3,3) adalah susunan kekalahan: setiap langkah yang sah akan meninggalkan susunan kemenangan untuk pemain kedua.</p>
 
-<p>Consider all  losing configurations (x<sub>i</sub>,y<sub>i</sub>,z<sub>i</sub>) where x<sub>i</sub> &le; y<sub>i</sub> &le; z<sub>i</sub> &le; 100.<br>
-We can verify that &Sigma;(x<sub>i</sub>+y<sub>i</sub>+z<sub>i</sub>) = 173895 for these.</p>
+<p>Misalkan susunan kekalahan dinyatakan dengan (x<sub>i</sub>,y<sub>i</sub>,z<sub>i</sub>) dimana x<sub>i</sub> &le; y<sub>i</sub> &le; z<sub>i</sub> &le; 100.<br>
+Dapat dibuktikan bahwa &Sigma;(x<sub>i</sub>+y<sub>i</sub>+z<sub>i</sub>) = 173895.</p>
 
-<p>Find &Sigma;(x<sub>i</sub>+y<sub>i</sub>+z<sub>i</sub>) where (x<sub>i</sub>,y<sub>i</sub>,z<sub>i</sub>) ranges over the losing configurations<br>
+<p>Carilah &Sigma;(x<sub>i</sub>+y<sub>i</sub>+z<sub>i</sub>) dimana (x<sub>i</sub>,y<sub>i</sub>,z<sub>i</sub>) adalah susunan kekalhan yang memenuhi<br>
 with x<sub>i</sub> &le; y<sub>i</sub> &le; z<sub>i</sub> &le; 1000.</p>
