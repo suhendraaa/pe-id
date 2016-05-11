@@ -2,26 +2,26 @@
 layout: problem
 category: problems
 difficulty: 80
-title: "Mountain Range"
+title: "Jarak Pegunungan"
 problemId: 262
 answer: -1
 ---
 
-<p>The following equation represents the <i>continuous</i> topography of a mountainous region, giving the <dfn title="height above sea level">elevation</dfn> <var>h</var> at any point (<var>x</var>,<var>y</var>):</p>
+<p>Fungsi berikut ini akan menggambarkan topografi dari daerah <i>kontinu</i> suatu pegunungan, nilai <dfn title="height above sea level">ketinggian</dfn> <var>h</var> di titik (<var>x</var>,<var>y</var>) manapun adalah:</p>
 
 <div align='center'>
 <img src="{{ site.baseurl }}project/images/p262_formula1.gif" /><br />
 </div>
 
-<p>A mosquito intends to fly from A(200,200) to B(1400,1400), without leaving the area given by 0&nbsp;&#8804;&nbsp;<var>x</var>,&nbsp;<var>y</var>&nbsp;&#8804;&nbsp;1600.</p>
+<p>Seekor nyamuk akan terbang dari A(200,200) ke B(1400,1400), tanpa keluar dari daerah yang dibatasi 0&nbsp;&#8804;&nbsp;<var>x</var>,&nbsp;<var>y</var>&nbsp;&#8804;&nbsp;1600.</p>
 
-<p>Because of the intervening mountains, it first rises straight up to a point A', having elevation <var>f</var>. Then, while remaining at the same elevation <var>f</var>, it flies around any obstacles until it arrives at a point B' directly above B.</p>
+<p>Karena adanya halangan pada daerah pegunungan, nyamuk tersebut akan terbang ke atas pada titik A dengan ketinggian <var>f</var>. Lalu, dengan ketinggian <var>f</var> yang konstan, nyamuk tersebut akan terbang lurus melewati semua rintangan sampai tiba di titik B, persis di atas titik B.</p>
 
-<p>First, determine <var>f<sub>min</sub></var> which is the minimum constant elevation allowing such a trip from A to B, while remaining in the specified area.<br />
-Then, find the length of the shortest path between A' and B', while flying at that constant elevation <var>f<sub>min</sub></var>.</p>
+<p>Pertama-tama, tentukan <var>f<sub>min</sub></var>, yaitu ketinggian minimum yang memungkinkan nyamuk melakukan perjalanan dari A ke B, pada batas yang telah ditentukan.<br />
+Lalu, carilah jarak terpendek antara A dan B yang bisa didapat dengan cara terbang pada ketinggian konstan <var>f<sub>min</sub></var>.</p>
 
-<p>Give that length as your answer, rounded to three decimal places.</p>
+<p>Jarak terpendek tersebut adalah jawaban Anda, bulatkan hingga tiga angka di belakang koma.</p>
 
-<p><font "size=2"><u>Note</u>: For convenience, the elevation function shown above is repeated below, in a form suitable for most programming languages:<br />
+<p><font "size=2"><u>Catatan</u>: Untuk memudahkan, fungsi ketinggian di atas diketik ulang di bawah, namun dalam bentuk yang cocok untuk sebagian besar bahasa pemrograman:<br />
 h=( 5000-0.005*(x*x+y*y+x*y)+12.5*(x+y) ) * exp( -abs(0.000001*(x*x+y*y)-0.0015*(x+y)+0.7) )</font></p>
 
