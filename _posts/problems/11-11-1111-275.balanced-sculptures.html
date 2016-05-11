@@ -2,21 +2,21 @@
 layout: problem
 category: problems
 difficulty: 85
-title: "Balanced Sculptures"
+title: "Patung Seimbang"
 problemId: 275
 answer: -1
 ---
 
-<p>Let us define a <i>balanced sculpture</i> of order <var>n</var> as follows:
+<p>Kita akan menyatakan sebuah <i>patung seimbang</i> dengan orde <var>n</var> sebagai berikut:
 <ul>
-<li>A <dfn title="An arrangement of identical squares connected through shared edges; holes are allowed.">polyomino</dfn> made up of <var>n</var>+1 tiles known as the <i>blocks</i> (<var>n</var> tiles)<br /> and the <i>plinth</i> (remaining tile);</li>
-<li>the plinth has its centre at position (<var>x</var>&thinsp;=&thinsp;0, <var>y</var>&thinsp;=&thinsp;0);</li>
-<li>the blocks have <var>y</var>-coordinates greater than zero (so the plinth is the unique lowest tile);</li>
-<li>the centre of mass of all the blocks, combined, has <var>x</var>-coordinate equal to zero.</li>
+<li>Sebuah <dfn title="An arrangement of identical squares connected through shared edges; holes are allowed.">polyomino</dfn> yang dibuat dari <var>n</var>+1 persegi yang dikenal sebagai <i>blok</i> (<var>n</var> persegi)<br /> dan sebuah <i>alas tiang</i> (persegi sisanya);</li>
+<li>Alas tiang terletak pada posisi (<var>x</var>&thinsp;=&thinsp;0, <var>y</var>&thinsp;=&thinsp;0);</li>
+<li>Blok mempunyai koordinat <var>y</var> yang lebih besar dari nol (sehingga alas tiang harus menjadi satu-satunya persegi di paling bawah);</li>
+<li>Pada sumbu x, pusat massa dari seluruh blok yang digabungkan harus sama dengan nol.</li>
 </ul></p>
 
-<p>When counting the sculptures, any arrangements which are simply reflections about the <var>y</var>-axis, are <u>not</u> counted as distinct. For example, the 18 balanced sculptures of order 6 are shown below; note that each pair of mirror images (about the <var>y</var>-axis) is counted as one sculpture:</p>
+<p>Saat menghitung patung, segala macam susunan yang merupakan refleksi terhadap sumbu y tidak dianggap berbeda. Sebagai contoh, terdapat 18 patung seimbang dengan orde 6 yang ditunjukkan pada gambar di bawah; perlu diingat bahwa setiap pasang patung hasil pencermina (terhadap sumbu <var>y</var>) dihitung sebagai satu patung:</p>
 <div align='center'><img src="{{ site.baseurl }}project/images/p275_sculptures2.gif" /></div>
 
-<p>There are 964 balanced sculptures of order 10 and 360505 of order 15.<br />How many balanced sculptures are there of order 18?</p>
+<p>Terdapat 964 patung seimbang dengan orde 10 dan 360505 dengan orde 15.<br />Berapa banyak patung seimbang yang memiliki orde 18?</p>
 
