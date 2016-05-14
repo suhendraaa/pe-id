@@ -2,28 +2,28 @@
 layout: problem
 category: problems
 difficulty: 40
-title: "Quadtree encoding (a simple compression algorithm)"
+title: "Quadtree encoding (Sebuah Algoritma kompresi Sederhana)"
 problemId: 287
 answer: -1
 ---
 
-<p>The quadtree encoding allows us to describe a 2<sup><var>N</var></sup>&times;2<sup><var>N</var></sup>  black and white image as a sequence of bits (0 and 1). Those sequences are to be read from left to right like this:
-<ul><li>the first bit deals with the complete 2<sup><var>N</var></sup>&times;2<sup><var>N</var></sup> region;</li>
-<li>"0" denotes a split:
-<br />the current 2<sup><var>n</var></sup>&times;2<sup><var>n</var></sup> region is divided into 4 sub-regions of dimension 2<sup><var>n</var>-1</sup>&times;2<sup><var>n</var>-1</sup>,<br />
-the next bits contains the description of the top left, top right, bottom left and bottom right sub-regions - in that order;</li>
-<li>"10" indicates that the current region contains only black pixels;</li>
-<li>"11" indicates that the current region contains only white pixels.</li></ul></p>
+<p>Algoritma quadtree encoding memungkinkan kita untuk dapat menuliskan gambar hitam dan putih berukuran 2<sup><var>N</var></sup>&times;2<sup><var>N</var></sup> sebagai barisan bit (0 dan 1). Barisan tersebut dibaca dari kiri ke kanan seperti ini:
+<ul><li>bit pertama melambangkan semua daerah 2<sup><var>N</var></sup>&times;2<sup><var>N</var></sup>;</li>
+<li>"0" melambangkan pemisahan:
+<br />daerah berukuran 2<sup><var>n</var></sup>&times;2<sup><var>n</var></sup> harus dipisah menjadi 4 sub daerah dengan ukuran 2<sup><var>n</var>-1</sup>&times;2<sup><var>n</var>-1</sup>,<br />
+bit selanjutnya melambangkan sub daerah kiri atas, kanan atas, kiri bawah, dan kanan bawah secara berurutan;</li>
+<li>"10" melambangkan bahwa daerah tersebut berisi hanya piksel hitam;</li>
+<li>"11" melambangkan bahwa daerah tersebut berisis hanya piksel putih.</li></ul></p>
 
-<p>Consider the following 4&times;4 image (colored marks denote places where a split can occur):</p>
+<p>Perhatikan gambar berukuran 4&times;4 berikut (tanda berwarna menunjukkan tempat dimana proses pemisahan dapat berlangsung):</p>
 <div align='center'><img src="{{ site.baseurl }}project/images/p287_quadtree.gif" /></div>
-<p>This image can be described by several sequences, for example :<bp />
-"<span style='color:red;'><b>0</b></span><span style='color:blue;'><b>0</b></span>10101010<span style='color:green;'><b>0</b></span>1011111011<span style='color:orange;'><b>0</b></span>10101010", of length 30, or<br />
-"<span style='color:red;'><b>0</b></span>10<span style='color:green;'><b>0</b></span>101111101110", of length 16, which is the minimal sequence for this image.</p>
+<p>Gambar ini dapat dituliskan dengan beberapa barisan, sebagai contoh :<bp />
+"<span style='color:red;'><b>0</b></span><span style='color:blue;'><b>0</b></span>10101010<span style='color:green;'><b>0</b></span>1011111011<span style='color:orange;'><b>0</b></span>10101010", dengan panjang 30, atau<br />
+"<span style='color:red;'><b>0</b></span>10<span style='color:green;'><b>0</b></span>101111101110", dengan panjang 16, yang dimana merupakan panjang barisan terpendek untuk gambar ini.</p>
 
-<p>For a positive integer <var>N</var>, define <var>D<sub>N</sub></var> as the 2<sup><var>N</var></sup>&times;2<sup><var>N</var></sup> image with the following coloring scheme:
-<ul><li>the pixel with coordinates <var>x</var>&thinsp;=&thinsp;0, <var>y</var>&thinsp;=&thinsp;0 corresponds to the bottom left pixel,</li>
-<li>if (<var>x</var>&thinsp;-&thinsp;2<sup><var>N</var>-1</sup>)<sup>2</sup>&thinsp;+&thinsp;(<var>y</var>&thinsp;-&thinsp;2<sup><var>N</var>-1</sup>)<sup>2</sup>&thinsp;&le;&thinsp;2<sup>2<var>N</var>-2</sup> then the pixel is black,</li>
-<li>otherwise the pixel is white.</li></ul></p>
+<p>Untuk bilangan bulat positif <var>N</var>, dinyatakan <var>D<sub>N</sub></var> sebagai gambar berukuran 2<sup><var>N</var></sup>&times;2<sup><var>N</var></sup> dengan aturan pewarnaan:
+<ul><li>piksel dengan koordinat <var>x</var>&thinsp;=&thinsp;0, <var>y</var>&thinsp;=&thinsp;0 melambangkan piksel paling kiri bawah,</li>
+<li>jika (<var>x</var>&thinsp;-&thinsp;2<sup><var>N</var>-1</sup>)<sup>2</sup>&thinsp;+&thinsp;(<var>y</var>&thinsp;-&thinsp;2<sup><var>N</var>-1</sup>)<sup>2</sup>&thinsp;&le;&thinsp;2<sup>2<var>N</var>-2</sup> maka piksel tersebut berwarna hitam,</li>
+<li>jika tidak, piksel tersebut bewarna putih.</li></ul></p>
 
-<p>What is the length of the minimal sequence describing <var>D</var><sub>24</sub>&thinsp;?</p>
+<p>Berapakah panjang barisan terpendek yang dapat menggambarkan gambar <var>D</var><sub>24</sub>&thinsp;?</p>
