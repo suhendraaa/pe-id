@@ -2,26 +2,26 @@
 layout: problem
 category: problems
 difficulty: 50
-title: "Protein folding"
+title: "Melipat Protein"
 problemId: 300
 answer: -1
 ---
 
-<p>In a very simplified form, we can consider proteins as strings consisting of hydrophobic (H) and polar (P) elements, e.g. HHPPHHHPHHPH. <br />
-For this problem, the orientation of a protein is important; e.g. HPP is considered distinct from PPH. Thus, there are 2<sup><var>n</var></sup> distinct proteins consisting of <var>n</var> elements.</p>
+<p>Pada bentuk yang paling sederhana, kita dapat menganggap protein sebagai barisan yang terdiri dari unsur hidrofobik (H) dan polar (P), sebagai contoh HHPPHHHPHHPH. <br />
+Untuk soal ini, arah hadap dari protin adalah penting untuk diperhatikan; sebagai contoh HPP dianggap berbeda dengan PPH. Sehingga, terdapat 2<sup><var>n</var></sup> protein berbeda yang terdiri dari <var>n</var> buah unsur.</p>
 
-<p>When one encounters these strings in nature, they are always folded in such a way that the number of H-H contact points is as large as possible, since this is energetically advantageous.<br />
-As a result, the H-elements tend to accumulate in the inner part, with the P-elements on the outside.<br />
-Natural proteins are folded in three dimensions of course, but we will only consider protein folding in <u>two dimensions</u>.</p>
+<p>Saat protein bertemu dengan protein lainnya di alam, mereka selalu melipat dirinya sedemikian sehingga banyaknya titik temu H-H menjadi sebanyak mungkin, karena akan menguntungkan jika ditinjau dari energinya.<br />
+Sebagai hasilnya, unsur H cenderung berkumpul di bagian dalam, sedangkan unsur P pada bagian luar.<br />
+Tentu saja protein alami berbentuk tiga dimensi, namun kita hanya akan memperhitungkan protein yang dilipat dalam <u>dua dimensi</u>.</p>
 
-<p>The figure below shows two possible ways that our example protein could be folded (H-H contact points are shown with red dots).</p>
+<p>Gambar berikut ini menunjukkan dua kemungkinan cara sebuah protein dapat dilipat (titik temu H-H ditunjukkan dengan titik berwarna merah).</p>
 
 <div align='center'><img src="{{ site.baseurl }}project/images/p300_protein.gif" /></div>
 
-<p>The folding on the left has only six H-H contact points, thus it would never occur naturally.<br />
-On the other hand, the folding on the right has nine H-H contact points, which is optimal for this string.</p>
+<p>Lipatan sebelah kiri hanya memiliki enam buah titik temu H-H, sehingga lipatan ini tidak akan terjadi secara alamiah.<br />
+Di sisi lain, lipatan di sebelah kanan memiliki sembilan titik temu H-H, dimana merupakan jumlah yang optimal untuk protein ini.</p>
 
-<p>Assuming that H and P elements are equally likely to occur in any position along the string, the average number of H-H contact points in an optimal folding of a random protein string of length 8 turns out to be 850&nbsp;/&nbsp;2<sup>8</sup>=3.3203125.</p>
+<p>Jika diasumsikan bahwa unsur H dan P memiliki peluang yang sama untuk muncul di posisi manapun pada barisan, jumlah rata-rata dari titik temu H-H pada pelipatan barisan protein acak yang sudah optimal dengan panjang barisan protein 8, adalah 850&nbsp;/&nbsp;2<sup>8</sup>=3.3203125.</p>
 
-<p>What is the average number of H-H contact points in an optimal folding of a random protein string of length 15?<br />
-Give your answer using as many decimal places as necessary for an exact result.</p>
+<p>Berapakah jumlah rata-rata titik temu H-H pada pelipatan optimal dari barisan protein acak dengan panjang barisan protein 15?<br />
+Berikan jawaban Anda menggunakan sebanyak mungkin angka di belakang koma, untuk memberikan hasil yang seakurat mungkin.</p>
