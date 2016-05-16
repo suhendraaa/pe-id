@@ -2,7 +2,7 @@
 layout: problem
 category: problems
 difficulty: 60
-title: "Selective Amnesia"
+title: "Amnesia Pemilih"
 problemId: 298
 answer: -1
 ---
@@ -27,21 +27,21 @@ table.p298 th { background-color: rgb(200,220,250); }
 table.p298 td { background-color: rgb(255,255,255); }
 </style>
 
-<p>Larry and Robin play a memory game involving of a sequence of random numbers between 1 and 10, inclusive, that are called out one at a time. Each player can remember up to 5 previous numbers. When the called number is in a player's memory, that player is awarded a point. If it's not, the player adds the called number to his memory, removing another number if his memory is full.</p>
+<p>Larry dan Robin memainkan sebuah permainan ingatan yang melibatkan barisan bilangan acak antara 1 dan 10, yang disebutkan satu persatu. Setiap pemain dapat mengingat sampai 5 buah bilangan sebelumnya. Saat bilangan yang disebutkan ada pada ingatan salah satu pemain, pemain tersebut mendapatkan poin. Jika tidak, pemain tersebut menambahkan bilangan yang baru disebutkan tadi ke ingatannya, dan menghapus bilangan lain jika ingatannya sudah penuh.</p>
 
-<p>Both players start with empty memories. Both players always add new missed numbers to their memory but use a different strategy in deciding which number to remove:<br />
-Larry's strategy is to remove the number that hasn't been called in the longest time.<br />
-Robin's strategy is to remove the number that's been in the memory the longest time.</p>
+<p>Kedua pemain memulai permainan dengan ingatan kosong. Kedua pemain selalu menambahkan bilangan baru ke ingatan mereka, namun mereka menggunakan strategi yang berbeda untuk memilih bilangan mana yang harus dihapus:<br />
+Strategi Larry adalah menghapus bilangan yang paling lama tidak disebut.<br />
+Strategi Robin adalah menghapus bilangan yang telah paling lama berada di ingatannya.</p>
 
-<p>Example game:<br />
+<p>Contoh permainan:<br />
 <center><table class="p298">
 <tr>
-  <th>Turn</th>
-  <th>Called<br />number</th>
-  <th style="text-align:right">Larry's<br />memory</th>
-  <th>Larry's<br />score</th>
-  <th style="text-align:right">Robin's<br />memory</th>
-  <th>Robin's<br />score</th>
+  <th>Putaran</th>
+  <th>Bilangan<br />yang disebut</th>
+  <th style="text-align:right">Ingatan<br />Larry</th>
+  <th>Skor<br />Larry</th>
+  <th style="text-align:right">Ingatan<br />Robin</th>
+  <th>Skor<br />Robin</th>
 </tr>
 <tr>
   <td>1</td>
@@ -124,4 +124,4 @@ Robin's strategy is to remove the number that's been in the memory the longest t
   <td>3</td>
 </tr></table></center></p>
 
-<p>Denoting Larry's score by <var>L</var> and Robin's score by <var>R</var>, what is the expected value of |<var>L</var>-<var>R</var>| after 50 turns? Give your answer rounded to eight decimal places using the format x.xxxxxxxx .</p>
+<p>Jika skor Larry dilambangkan dengan <var>L</var> dan skor Robin dilambangkan dengan <var>R</var>, berapakah nilai harapan (expected value) dari |<var>L</var>-<var>R</var>| setelah 50 kali putaran? Berikan jawaban Anda yang dibulatkan hingga delapan angka di belakang koma dengan format x.xxxxxxxx .</p>
