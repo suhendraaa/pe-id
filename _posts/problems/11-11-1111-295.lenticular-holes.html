@@ -2,37 +2,37 @@
 layout: problem
 category: problems
 difficulty: 75
-title: "Lenticular holes"
+title: "Lubang Lentikular"
 problemId: 295
 answer: -1
 ---
 
-<p>We call the convex area enclosed by two circles a <i>lenticular hole</i> if:
+<p>Kita akan menyebut daerah konveks yang dibatasi oleh dua lingkaran sebagai sebuah <i>lubang lentikular</i> jika:
 <ul>
-<li>The centres of both circles are on lattice points.</li>
-<li>The two circles intersect at two distinct lattice points.</li>
-<li>The interior of the convex area enclosed by both circles does not contain any lattice points.
+<li>Pusat kedua lingkaran pada titik-titik dengan koordinat bilangan bulat.</li>
+<li>Dua lingkaran berpotongan pada dua titik dengan koordinat bilangan bulat berbeda.</li>
+<li>Bagian dalam dari daerah konveks yang dibatasi oleh kedua lingkaran tidak terdapat titik koordinat bilangan bulat.
 </li>
 </ul>
 </p>
-<p>Consider the circles:<BR />
+<p>Perhatikan lingkaran:<BR />
 C<sub>0</sub>: <var>x</var><sup>2</sup>+<var>y</var><sup>2</sup>=25<BR />
 C<sub>1</sub>: (<var>x</var>+4)<sup>2</sup>+(<var>y</var>-4)<sup>2</sup>=1<BR />
 C<sub>2</sub>: (<var>x</var>-12)<sup>2</sup>+(<var>y</var>-4)<sup>2</sup>=65
 </p>
 <p>
-The circles C<sub>0</sub>, C<sub>1</sub> and C<sub>2</sub> are drawn in the picture below.</p>
+Lingkaran C<sub>0</sub>, C<sub>1</sub> dan C<sub>2</sub> digambarkan pada gambar berikut.</p>
 <div align='center'><img src="{{ site.baseurl }}project/images/p295_lenticular.gif" /></div>
 <p>
-C<sub>0</sub> and C<sub>1</sub> form a lenticular hole, as well as C<sub>0</sub> and C<sub>2</sub>.</p>
+C<sub>0</sub> dan C<sub>1</sub> membentuk lubang lentikular, hal yang sama juga terjadi pada lingkaran C<sub>0</sub> dan C<sub>2</sub>.</p>
 <p>
-We call an ordered pair of positive real numbers (r<sub>1</sub>, r<sub>2</sub>) a <i>lenticular pair</i> if there exist two circles with radii r<sub>1</sub> and r<sub>2</sub> that form a lenticular hole.
-We can verify that (1, 5) and (5, &radic;65) are the lenticular pairs of the example above.</p>
+Kita akan menyebut pasangan berurutan dari bilangan real positif (r<sub>1</sub>, r<sub>2</sub>) sebagai sebuah <i>pasangan lentikular</i> jika terdapat dua lingkaran dengan panjang jari-jari r<sub>1</sub> dan r<sub>2</sub> yang membentuk lubang lentikular.
+Kita dapat membuktikan bahwa (1, 5) dan (5, &radic;65) adalah pasangan lentikular pada contoh di atas.</p>
 <p>
-Let L(N) be the number of <b>distinct</b> lenticular pairs (r<sub>1</sub>, r<sub>2</sub>) for which 0 &lt; r<sub>1</sub> &le; r<sub>2</sub> &le; N.<br />
-We can verify that L(10) = 30 and L(100) = 3442.</p>
+Misal L(N) adalah banyaknya pasangan lentikular <b>berbeda</b> (r<sub>1</sub>, r<sub>2</sub>) dimana 0 &lt; r<sub>1</sub> &le; r<sub>2</sub> &le; N.<br />
+Kita dapat membuktikan bahwa L(10) = 30 dan L(100) = 3442.</p>
 <p>
-Find L(100 000).
+Carilah L(100 000).
 </p>
 
 
