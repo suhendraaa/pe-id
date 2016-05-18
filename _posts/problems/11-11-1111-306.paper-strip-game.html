@@ -2,28 +2,28 @@
 layout: problem
 category: problems
 difficulty: 55
-title: "Paper-strip Game"
+title: "Permainan Potongan Kertas"
 problemId: 306
 answer: -1
 ---
 
-<p>The following game is a classic example of Combinatorial Game Theory:</p>
+<p>Permainan berikut ini adalah contoh klasik dari Teori Permainan Kombinatorial:</p>
 
-<p>Two players start with a strip of <var>n</var> white squares and they take alternate turns.<br />
-On each turn, a player picks two contiguous white squares and paints them black.<br />
-The first player who cannot make a move loses.</p>
+<p>Dua pemain memulai permainan dengan sepotong kertas yang memiliki <var>n</var> buah persegi putih, dan mereka melakukan permainan secara bergiliran.<br />
+Pada setiap giliran, seorang pemain memilih dua persegi putih yang bersebelahan kemudian mewarnai kedua kotak tersebut menjadi hitam.<br />
+Pemain pertama yang tidak bisa melakukan gerakan lagi dianggap kalah.</p>
 
 <p><ul>
-<li>If <var>n</var> = 1, there are no valid moves, so the first player loses automatically.</li>
-<li>If <var>n</var> = 2, there is only one valid move, after which the second player loses.</li>
-<li>If <var>n</var> = 3, there are two valid moves, but both leave a situation where the second player loses.</li>
-<li>If <var>n</var> = 4, there are three valid moves for the first player; she can win the game by painting the two middle squares.</li>
-<li>If <var>n</var> = 5, there are four valid moves for the first player (shown below in red); but no matter what she does, the second player (blue) wins.</li>
+<li>Jika <var>n</var> = 1, maka tidak ada gerakan yang valid, sehingga pemain pertama langsung kalah.</li>
+<li>Jika <var>n</var> = 2, maka hanya terdapat satu gerakan yang memungkinkan, setelah itu pemain kedua akan kalah.</li>
+<li>Jika <var>n</var> = 3, akan terdapat dua gerakan yang mungkin dilakukan, namun kedua gerakan tersebut akan menyebabkan pemain kedua kalah.</li>
+<li>Jika <var>n</var> = 4, terdapat tiga gerakan yang mungkin dilakukan oleh pemain pertama; ia dapat memenangkan permainan dengan mewarnai dua persegi di tengah.</li>
+<li>Jika <var>n</var> = 5, terdapat empat gerakan yang mungkin dilakukan oleh pemain pertama (ditunjukkan pada gambar berikut denagn warna merah); namun tidak peduli apapun yang ia lakukan, pemain kedua (biru) akan selalu menang.</li>
 </ul>
 <div align='center'><img src="{{ site.baseurl }}project/images/p306_pstrip.gif" /></div>
 </p>
 
-<p>So, for 1 &le; <var>n</var> &le; 5, there are 3 values of <var>n</var> for which the first player can force a win.<br />
-Similarly, for 1 &le; <var>n</var> &le; 50, there are 40 values of <var>n</var> for which the first player can force a win.</p>
+<p>Sehingga, untuk 1 &le; <var>n</var> &le; 5, terdapat 3 buah nilai <var>n</var> yang akan membuat pemain pertama menjadi pemenang.<br />
+Hal yang sama, untuk 1 &le; <var>n</var> &le; 50, terdapat 40 buah nilai <var>n</var> yang akan membuat pemain pertama menjadi pemenang.</p>
 
-<p>For 1 &le; <var>n</var> &le; 1 000 000, how many values of <var>n</var> are there for which the first player can force a win?</p>
+<p>Untuk 1 &le; <var>n</var> &le; 1 000 000, berapa banyak nilai <var>n</var> yang ada, yang akan menyebabkan pemain pertama menang?</p>
