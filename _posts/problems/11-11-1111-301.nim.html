@@ -7,24 +7,24 @@ problemId: 301
 answer: 2178309
 ---
 
-<p><i>Nim</i> is a game played with heaps of stones, where two players take it in turn to remove any number of stones from any heap until no stones remain.</p>
+<p><i>Nim</i> adalah sebuah permainan yang dimainkan menggunakan tumpukan batu, dimana dua pemain mengambil batu sebanyak yang diinginkannya dari tumpukan manapun, sampai tidak ada batu tersisa.</p>
 
-<p>We'll consider the three-heap normal-play version of Nim, which works as follows:<br />
-- At the start of the game there are three heaps of stones.<br />
-- On his turn the player removes any positive number of stones from any single heap.<br />
-- The first player unable to move (because no stones remain) loses.</p>
+<p>Kita akan memainkan permainan Nim versi normal tiga tumpukan, yang memiliki aturan sebagai berikut:<br />
+- Saat permaian dimulai, terdapat tiga tumpukan batu.<br />
+- Pada gilirannya, seorang pemain mengambil berapapun jumlah batu dari salah satu tumpukan.<br />
+- Pemain pertama yang tidak bisa mengambil batu lagi (karena tidak ada batu tersisa) adalah pemain yang kalah.</p>
 
-<p> If (<var>n</var><sub>1</sub>,<var>n</var><sub>2</sub>,<var>n</var><sub>3</sub>) indicates a Nim position consisting of heaps of size <var>n</var><sub>1</sub>, <var>n</var><sub>2</sub> and <var>n</var><sub>3</sub> then there is a simple function <var>X</var>(<var>n</var><sub>1</sub>,<var>n</var><sub>2</sub>,<var>n</var><sub>3</sub>) &mdash; that you may look up or attempt to deduce for yourself &mdash; that returns:
-<ul><li>zero if, with perfect strategy, the player about to move will eventually lose; or</li>
-<li>non-zero if, with perfect strategy, the player about to move will eventually win.</li></ul>
+<p> Jika (<var>n</var><sub>1</sub>,<var>n</var><sub>2</sub>,<var>n</var><sub>3</sub>) melambangkan Nim dengan masing-masing tumpukan memiliki <var>n</var><sub>1</sub>, <var>n</var><sub>2</sub> dan <var>n</var><sub>3</sub> buah batu, maka terdapat fungsi sederhana <var>X</var>(<var>n</var><sub>1</sub>,<var>n</var><sub>2</sub>,<var>n</var><sub>3</sub>) &mdash; yang bisa anda cari atau anda coba simpulkan sendiri &mdash; yang akan menghasilkan:
+<ul><li>nol jika, dengan strategi yang sempurna, pemain yang akan memulai permainan pertama kali akan kalah; atau</li>
+<li>bukan nol jika, dengan strategi yang sempurna, pemain yang akan memulai permainan pertama kali akan menang.</li></ul>
 </p>
 
-<p>For example <var>X</var>(1,2,3) = 0 because, no matter what the current player does, his opponent can respond with a move that leaves two heaps of equal size, at which point every move by the current player can be mirrored by his opponent until no stones remain; so the current player loses. To illustrate:<br />
-- current player moves to (1,2,1)<br />
-- opponent moves to (1,0,1)<br />
-- current player moves to (0,0,1)<br />
-- opponent moves to (0,0,0), and so wins.</p>
+<p>Sebagai contoh <var>X</var>(1,2,3) = 0 karena, tidak peduli apapun yang dilakukan oleh pemain pertama, lawannya selalu akan dapat melakukan gerakan yang akan meninggalkan dua buah tumpukan dengan jumlah batu yang sama, yang dimana setiap gerakan pemain pertama akan selalu dapat diikuti oleh lawannya sampai tidak ada batu tersisa; sehingga pemain pertama akan kalah. Untuk mengambarkan:<br />
+- Pemain pertama melakukan gerakan sehingga tumpukan menjadi (1,2,1)<br />
+- Pemain kedua merubah tumpukan menjadi (1,0,1)<br />
+- Pemain pertama merubah tumpukan menjadi (0,0,1)<br />
+- Pemain kedua merubah tumpukan menjadi (0,0,0), dan kemudian ia menang.</p>
 
-<p>For how many positive integers <var>n</var>&thinsp;&le;&thinsp;2<sup>30</sup> does <var>X</var>(<var>n</var>,2<var>n</var>,3<var>n</var>) = 0 ?
+<p>Untuk berapa banyak bilangan bulat <var>n</var>&thinsp;&le;&thinsp;2<sup>30</sup> yang menyebabkan <var>X</var>(<var>n</var>,2<var>n</var>,3<var>n</var>) = 0 ?
 </p>
 
