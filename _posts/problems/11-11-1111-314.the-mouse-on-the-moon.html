@@ -2,30 +2,30 @@
 layout: problem
 category: problems
 difficulty: 80
-title: "The Mouse on the Moon"
+title: "Tikus di bulan"
 problemId: 314
 answer: -1
 ---
 
 <p>
-The moon has been opened up, and land can be obtained for free, but there is a catch. You have to build a wall around the land that you stake out, and building a wall on the moon is expensive. Every country has been allotted a 500 m by 500 m square area, but they will possess only that area which they wall in. 251001 posts have been placed in a rectangular grid with 1 meter spacing. The wall must be a closed series of straight lines, each line running from post to post.
+Bulan telah dibuka untuk umum, dan kita dapat memiliki tanah di sana dengan gratis, namun ada satu permasalahan. Anda harus membuat tembok di sekeliling tanah yang Anda tempati, dan untuk membangun tembok di bulan memerlukan biaya yang besar. Setiap negara telah diberikan jatah tanah berukuran 500 m x 500 m, namun mereka hanya dapat menggunakan wilayah yang dibatasi oleh dinding. 251001 buah tiang telah diletakkan pada tanah membentuk petak-petak dengan jarak antar tiang 1 meter. Dinding harus dibentuk dari sambungan garis-garis lurus hingga tertutup, dan setiap garis dinding dapat dibentuk dari tiang ke tiang.
 </p>
 <p>
-The bigger countries of course have built a 2000 m wall enclosing the entire 250 000 m<sup>2</sup> area. The <a href='http://en.wikipedia.org/wiki/Grand_Fenwick'>Duchy of Grand Fenwick</a>, has a tighter budget, and has asked you (their Royal Programmer) to compute what shape would get best maximum enclosed-area/wall-length ratio.
+Negara yang besar tentu saja akan membuat dinding sepanjang 2000 m menutup semua wilayah yang menjadi jatahnya dengan luas 250 000 m<sup>2</sup>. <a href='http://en.wikipedia.org/wiki/Grand_Fenwick'>Adipati Grand Fenwick</a>, memiliki dana yang terbatas, dan ia meminta anda (sebagai Programmer Kerajaan) untuk menghitung bentuk dinding seperti apa yang akan menghasilkan perbandingan terbaik antara luas yang ditutupi dinding/panjang dinding.
 </p>
 <p>
-You have done some preliminary calculations on a sheet of paper.
-For a 2000 meter wall enclosing the 250 000 m<sup>2</sup> area the
-enclosed-area/wall-length ratio is 125.<BR />
-Although not allowed , but to get an idea if this is anything better:  if you place a circle inside the square area touching the four sides the area will be equal to &pi;*250<sup>2</sup> m<sup>2</sup> and the perimeter will be &pi;*500 m, so the enclosed-area/wall-length ratio will also be 125.
+Anda telah melakukan sedikit perhitungan pada selembar kertas.
+Untuk dinding dengan panjang 2000 yang menutupi wilayah seluas 250 000 m<sup>2</sup>, perbandingan
+luas yang ditutupi dinding/panjang dinding adalah 125.<BR />
+Walaupun tidak diperbolehkan, namun terdapat ide untuk membuat hasil yang lebih baik: yaitu jika kita membangun dinding berbentuk lingkaran yang menyinggung keempat sisi persegi, luas wilayah yang dibatasi dinding akan menjadi &pi;*250<sup>2</sup> m<sup>2</sup> dan keliilngnya akan menjadi &pi;*500 m, sehingga perbandingan luas yang ditutupi dinding/panjang dinding juga 125.
 </p>
 <p>
-However, if you cut off from the square four triangles with sides 75 m, 75 m and 75&radic;2 m the total area becomes 238750 m<sup>2</sup> and the perimeter becomes 1400+300&radic;2 m. So this gives an enclosed-area/wall-length ratio of 130.87, which is significantly better.
+Tetapi, jika Anda memotong dari pinggiran persegi empat buah segitiga dengan panjang sisi 75 m, 75 m dan 75&radic;2 m luas wilayah yang dibatasi dinding akan menjadi 238750 m<sup>2</sup> dan kelilingnya menjadi 1400+300&radic;2 m. Sehingga bentuk ini akan memberikan perbandingan luas yang ditutupi dinding/panjang dinding sebesar 130.87, dimana hasil ini lebih baik.
 </p>
 <div align='center'><img src="{{ site.baseurl }}project/images/p314_landgrab.gif" /></div>
 <p>
-Find the maximum enclosed-area/wall-length ratio.<BR />
-Give your answer rounded to 8 places behind the decimal point in the form abc.defghijk.
+Carilah nilai perbandingan maksimum dari luas yang ditutupi dinding/panjang dinding.<BR />
+Berikan jawaban Anda dibulatkan hingga 8 angka di belakang koma dengan format abc.defghijk.
 </p>
 
 
