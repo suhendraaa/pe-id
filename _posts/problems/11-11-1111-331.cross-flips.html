@@ -2,27 +2,27 @@
 layout: problem
 category: problems
 difficulty: 100
-title: "Cross flips"
+title: "Membalik Silang"
 problemId: 331
 answer: -1
 ---
 
-<p><var>N</var>&times;<var>N</var> disks are placed on a square game board. Each disk has a black side and white side.</p>
+<p><var>N</var>&times;<var>N</var> buah disk diletakkan pada papan permainan berbentuk persegi. setiap disk memiliki sisi hitam dan sisi putih.</p>
 
-<p>At each turn, you may choose a disk and flip all the disks in the same row and the same column as this disk: thus 2&times;<var>N</var>-1 disks are flipped. The game ends when all disks show their white side. The following example shows a game on a 5&times;5 board.</p>
+<p>Pada setiap langkah, Anda dapat memilih sebuah disk dan membalik semua disk yang terletak pada kolom dan baris yang sama dengan disk ini: sehingga 2&times;<var>N</var>-1 buah disk telah dibalik. Permainan berakhir saat semua disk menunjukkan sisi berwarna putih. Contoh berikut ini menunjukkan proses permainan pada papan berukuran 5&times;5.</p>
 
 <div align='center'><img src="{{ site.baseurl }}project/images/p331_crossflips3.gif" /></div>
 
-<p>It can be proven that 3 is the minimal number of turns to finish this game.</p>
+<p>Dapat dibuktikan bahwa 3 adalah jumlah langkah minimal untuk menyelesaikan permainan ini.</p>
 
-<p>The bottom left disk on the <var>N</var>&times;<var>N</var> board has coordinates (0,0);<br />
-the bottom right disk has coordinates (<var>N</var>-1,0) and the top left disk has coordinates (0,<var>N</var>-1). </p>
+<p>Disk yang terletak di pojok kiri bawah papan berukuran <var>N</var>&times;<var>N</var> memiliki koordinat (0,0);<br />
+disk yang terletak di pojok kanan bawah memiliki koordinat (<var>N</var>-1,0) dan disk di pojok kiri atas memiliki koordinat (0,<var>N</var>-1). </p>
 
-<p>Let C<sub><var>N</var></sub> be the following configuration of a board with <var>N</var>&times;<var>N</var> disks:<br />
-A disk at (<var>x</var>,<var>y</var>) satisfying <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p331_crossflips1.gif" />, shows its black side; otherwise, it shows its white side. C<sub>5</sub> is shown above.</p>
+<p>Misal C<sub><var>N</var></sub> adalah susunan disk pada papan dengan <var>N</var>&times;<var>N</var> buah disk yang memenuhi aturan berikut:<br />
+Sebuah disk pada posisi (<var>x</var>,<var>y</var>) memenuhi <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p331_crossflips1.gif" />, harus menunjukkan sisi hitam; selain itu, disk harus menunjukkan sisi putih. C<sub>5</sub> ditunjukkan pada gambar di atas.</p>
 
-<p>Let T(<var>N</var>) be the minimal number of turns to finish a game starting from configuration C<sub><var>N</var></sub> or 0 if configuration C<sub><var>N</var></sub> is unsolvable.<br />
-We have shown that T(5)=3. You are also given that T(10)=29 and T(1 000)=395253.</p>
+<p>Misal T(<var>N</var>) adalah jumlah minimal langkah yang diperlukan untuk menyelesaikan permaian dimulai dari susunan C<sub><var>N</var></sub> atau 0 jika susunan C<sub><var>N</var></sub> tidak dapat diselesaikan.<br />
+Kita telah melihat bahwa T(5)=3. Anda juga diberikan informasi bahwa T(10)=29 dan T(1 000)=395253.</p>
 
-<p>Find <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p331_crossflips2.gif" />.</p>
+<p>Carilah <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p331_crossflips2.gif" />.</p>
 
