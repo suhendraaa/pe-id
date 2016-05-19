@@ -2,23 +2,23 @@
 layout: problem
 category: problems
 difficulty: 30
-title: "Swapping Counters"
+title: "Menukar Counters"
 problemId: 321
 answer: -1
 ---
 
-<p>A horizontal row comprising of 2<var>n</var> + 1 squares has <var>n</var> red counters placed at one end and <var>n</var> blue counters at the other end, being separated by a single empty square in the centre. For example, when <var>n</var> = 3.</p>
+<p>Sebuah barisan horizontal berisi 2<var>n</var> + 1 buah persegi memiliki <var>n</var> buah potongan merah diletakkan pada ujungnya, dan <var>n</var> buah potongan biru di ujung satunya lagi, dipisahkan oleh satu buah persegi kosong di tengah-tengahnya. Sebagai contoh, saat <var>n</var> = 3.</p>
 
 <p><div align='center'><img src="{{ site.baseurl }}project/images/p321_swapping_counters_1.gif" /></div></p>
 
-<p>A counter can move from one square to the next (slide) or can jump over another counter (hop) as long as the square next to that counter is unoccupied.</p>
+<p>Setiap potongan dapat berpindah dari satu persegi ke persegi di sebelahnya (bergeser) atau dapat melompati potongan lain (melompat) selama persegi di sebelah potongan yang ingin dilompati masih kosong.</p>
 
 <p><div align='center'><img src="{{ site.baseurl }}project/images/p321_swapping_counters_2.gif" /></div></p>
 
-<p>Let M(<var>n</var>) represent the minimum number of moves/actions to completely reverse the positions of the coloured counters; that is, move all the red counters to the right and all the blue counters to the left.</p>
-<p>It can be verified M(3) = 15, which also happens to be a triangle number.</p>
+<p>Misal M(<var>n</var>) menyatakan banyaknya gerakan minimum untuk membalik posisi dari potongan berwarna; yaitu, memindahkan semua potongan merah ke kanan dan semua potongan biru ke kiri.</p>
+<p>Dapat dibuktikan bahwa M(3) = 15, dimana bilangan ini juga merupakan bilangan segitiga.</p>
 
-<p>If we create a sequence based on the values of <var>n</var> for which M(<var>n</var>) is a triangle number then the first five terms would be:
-<br>1, 3, 10, 22, and 63, and their sum would be 99.</p>
+<p>Jika kita membuat barisan bedasarkan nilai <var>n</var> dimana hasil dari M(<var>n</var>) adalah merupakan bilangan segitiga, maka lima suku pertamanya adalah:
+<br>1, 3, 10, 22, dan 63, dan hasil penjumlahan mereka akan menjadi 99.</p>
 
-<p>Find the sum of the first forty terms of this sequence.</p>
+<p>Carilah hasil penjumlahan empat puluh suku pertama dari barisan ini.</p>
