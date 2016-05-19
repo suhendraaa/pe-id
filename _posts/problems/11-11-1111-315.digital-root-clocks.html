@@ -2,66 +2,66 @@
 layout: problem
 category: problems
 difficulty: 20
-title: "Digital root clocks"
+title: "Jam Akar Kuadrat Digital"
 problemId: 315
 answer: -1
 ---
 
 <p><div align='center'><img src="{{ site.baseurl }}project/images/p315_clocks.gif" /></div></p>
 
-<p>Sam and Max are asked to transform two digital clocks into two "digital root" clocks.<br />
-A digital root clock is a digital clock that calculates digital roots step by step.</p>
+<p>Sam dan Max diminta untuk mengubah dua buah jam digital menjadi dua buah jam "akar kuadrat digital".<br />
+Jam akar kuadrat digital adalah sebuah jam yang menghitung akar kuadrat tahap demi tahap.</p>
 
-<p>When a clock is fed a number, it will show it and then it will start the calculation, showing all the intermediate values until it gets to the result.<br />
-For example, if the clock is fed the number 137, it will show: "<b>137</b>" &rarr; "<b>11</b>" &rarr; "<b>2</b>" and then it will go black, waiting for the next number.</p>
+<p>Saat jam tersebut diberikan suatu bilangan, jam tersebut akan menunjukkan bilangan tersebut, dan kemudian akan mulai melakukan perhitungan, kemudian ia akan segera menunjukkan semua hasil perhitungan terus-menerus sampai selesai.<br />
+Sebagai contoh, jika jam diberikan bilangan 137, maka jam tersebut akan menunjukkan: "<b>137</b>" &rarr; "<b>11</b>" &rarr; "<b>2</b>" dan kemudian jam tersebut akan mati, menunggu angka selanjutnya.</p>
 
-<p>Every digital number consists of some light segments: three horizontal (top, middle, bottom) and four vertical (top-left, top-right, bottom-left, bottom-right).<br />
-Number "<b>1</b>" is made of vertical top-right and bottom-right, number "<b>4</b>" is made by middle horizontal and vertical top-left, top-right and bottom-right. Number "<b>8</b>" lights them all.</p>
+<p>Setiap angka digital dapat dibentuk dari beberapa segmen lampu: tiga buah segmen horizontal (atas, tengah, bawah) dan empat buah segmen vertikal (kiri atas, kanan atas, kiri bawah, kanan bawah).<br />
+Angka "<b>1</b>" dapat dibentuk dengan menghidupkan lampu vertikal kanan atas dan kanan bawah, Angka "<b>4</b>" dapat dibentuk dengan menghidupkan lampu horizontal tengah dan vertikal kiri atas, kanan atas, dan kanan bawah. Angka "<b>8</b>" dibentuk dengan menghidupkan semua segmen lampu.</p>
 
-<p>The clocks consume energy only when segments are turned on/off.<br />
-To turn on a "<b>2</b>" will cost 5 transitions, while a "<b>7</b>" will cost only 4 transitions.</p>
+<p>Jam tersebut hanya mengkonsumsi energi jika ada segmen lampu yang diubah kondisinya antara menyala/mati.<br />
+Untuk menyalakan lampu membentuk angka "<b>2</b>" akan memerlukan 5 transisi lampu, dimana angka "<b>7</b>" hanya memerlukan 4 transisi lampu.</p>
 
-<p>Sam and Max built two different clocks.</p>
+<p>Sam dan Max membuat dua jam berbeda.</p>
 
-<p>Sam's clock is fed e.g. number 137: the clock shows "<b>137</b>", then the panel is turned off, then the next number ("<b>11</b>") is turned on, then the panel is turned off again and finally the last number ("<b>2</b>") is turned on and, after some time, off.<br />
-For the example, with number 137, Sam's clock requires:<br />
+<p>Jam buatan Sam saat diberikan sebuah bilangan, sebagai contoh bilangan 137: jam tersebut akan menunjukkan "<b>137</b>", kemudian semua lampu akan dimatikan, kemudian lampu untuk membentuk bilangan selanjutnya ("<b>11</b>") dihidupkan, kemudian semua lampu dimatikan lagi dan akhirnya lampu untuk membentuk bilangan terakhir ("<b>2</b>") dihidupkan dan, setelah beberapa saat, semua lampu dimatikan.<br />
+Sebagai contoh, untuk bilangan 137, jam buatan Sam memerlukan:<br />
 <table><tr>
 <td>"<b>137</b>"</td>
 <td>:</td>
-<td>(2 + 5 + 4) &times; 2 = 22 transitions ("<b>137</b>" on/off).</td>
+<td>(2 + 5 + 4) &times; 2 = 22 transisi ("<b>137</b>" nyala/mati).</td>
 </tr><tr>
 <td>"<b>11</b>"</td>
 <td>:</td>
-<td>(2 + 2) &times; 2 = 8 transitions ("<b>11</b>" on/off).</td>
+<td>(2 + 2) &times; 2 = 8 transisi ("<b>11</b>" nyala/mati).</td>
 </tr><tr>
 <td>"<b>2</b>"</td>
 <td>:</td>
-<td>(5) &times; 2 = 10 transitions ("<b>2</b>" on/off).</td>
+<td>(5) &times; 2 = 10 transisi ("<b>2</b>" nyala/mati).</td>
 </tr></table>
-For a grand total of 40 transitions.</p>
+Dengan jumlah semuanya adalah 40 transisi.</p>
 
-<p>Max's clock works differently. Instead of turning off the whole panel, it is smart enough to turn off only those segments that won't be needed for the next number.<br />
-For number 137, Max's clock requires:<br />
+<p>Jam buatan Max bekerja dengan cara yang berbeda. Bukan dengan mematikan semua lampu, namun dengan cara yang cukup cerdas, yaitu dengan cara hanya mematikan lampu yang tidak diperlukan untuk bilangan selanjutnya.<br />
+Untuk bilangan 137, jam buatan Max memerlukan:<br />
 <table><tr>
 <td>"<b>137</b>"<br /><br /></td>
 <td>:<br /><br /></td>
-<td>2 + 5 + 4 = 11 transitions ("<b>137</b>" on)<br />
-7 transitions (to turn off the segments that are not needed for number "<b>11</b>").</td>
+<td>2 + 5 + 4 = 11 transisi ("<b>137</b>" hidup)<br />
+7 transisi (untuk mematikan segmen lampu yang tidak diperlukan pada bilangan "<b>11</b>").</td>
 </tr><tr>
 <td>"<b>11</b>"<br /><br /><br /></td>
 <td>:<br /><br /><br /></td>
-<td>0 transitions (number "<b>11</b>" is already turned on correctly)<br />
-3 transitions (to turn off the first "<b>1</b>" and the bottom part of the second "<b>1</b>"; <br />
-the top part is common with number "<b>2</b>").</td>
+<td>0 transisi (bilangan "<b>11</b>" sudah menyala secara benar)<br />
+3 transisi (untuk mematikan angka "<b>1</b>" yang pertama dan bagian bawah dari angka "<b>1</b>" yang kedua; <br />
+karena lampu atasnya diperlukan untuk angka "<b>2</b>").</td>
 </tr><tr>
 <td>"<b>2</b>"<br /><br /></td>
 <td>:<br /><br /></td>
-<td>4 transitions (to turn on the remaining segments in order to get a "<b>2</b>")<br />
-5 transitions (to turn off number "<b>2</b>").</td>
+<td>4 transisi (untuk menghidupkan segmen lampu yang diperlukan untuk membentuk angka "<b>2</b>")<br />
+5 transisi (untuk mematikan angka "<b>2</b>").</td>
 </tr></table>
-For a grand total of 30 transitions.</p>
+Denagn jumlah semuanya adalah 30 transisi.</p>
 
-<p>Of course, Max's clock consumes less power than Sam's one.<br />
-The two clocks are fed all the prime numbers between A = 10<sup>7</sup> and B = 2&times;10<sup>7</sup>. <br />
-Find the difference between the total number of transitions needed by Sam's clock and that needed by Max's one.</p>
+<p>Tentu saja, jam buatan Max mengkonsumsi energi yang lebih sedikit dibandingkan dengan buatan Sam.<br />
+Kedua jam diberikan bilangan-bilangan prima antara A = 10<sup>7</sup> dan B = 2&times;10<sup>7</sup>. <br />
+Carilah perbedaan jumlah transisi yang diperlukan oleh jam buatan Sam dengan jumlah transisi yang diperlukan oleh jam buatan Max.</p>
 
