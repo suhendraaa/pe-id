@@ -2,35 +2,35 @@
 layout: problem
 category: problems
 difficulty: 95
-title: "Lowest-cost Search"
+title: "Mencari Biaya Termurah"
 problemId: 328
 answer: -1
 ---
 
-<p>We are trying to find a hidden number selected from the set of integers {1, 2, ..., <var>n</var>} by asking questions. 
-Each number (question) we ask, has a <u>cost equal to the number asked</u> and we get one of three possible answers:<br />
+<p>Kita akan mencoba untuk menebak bilangan tersembunyi yang dipilih dari himpunan bilangan bulat {1, 2, ..., <var>n</var>} dengan menanyakan pertanyaan. 
+Setiap bilangan (pertanyaan) yang kita coba tebak, memiliki <u>harga yang sama dengan nilai bilangan tersebut</u> dan kita akan mendapatkan salah satu dari tiga kemungkinan jawaban :<br />
 <ul>
-<li> "Your guess is lower than the hidden number", or</li>
-<li> "Yes, that's it!", or</li>
-<li> "Your guess is higher than the hidden number".</li>
+<li> "Tebakan Anda lebih rendah dari bilangan yang tersembunyi", atau</li>
+<li> "Ya, itu dia!", atau</li>
+<li> "Tebakan Anda lebih tinggi dari bilangan yang tersembunyi".</li>
 </ul></p>
 
-<p>Given the value of <var>n</var>, an <i>optimal strategy</i> minimizes the total cost (i.e. the sum of all the questions asked) <u>for the worst possible case</u>. E.g.</p>
+<p>Diberikan nilai <var>n</var>, sebuah <i>strategi optimal</i> akan meminimalisir total biaya yang diperlukan (yaitu jumlah semua bilangan yang ditanyakan) <u>bahkan untuk kejadian paling buruk sekalipun</u>.</p>
 
-<p>If <var>n</var>=3, the best we can do is obviously to ask the number "<b>2</b>". The answer will immediately lead us to find the hidden number (at a total cost = 2).</p>
+<p>Jika <var>n</var>=3, cara terbaik yang dapat dilakukan adalah dengan menanyakan bilangan "<b>2</b>". Jawaban dari pertanyaan tersebut akan segera mengantarkan kita untuk menemukan bilangan tersembunyi (dengan total biaya = 2).</p>
 
-<p>If <var>n</var>=8, we might decide to use a "binary search" type of strategy: Our first question would be "<b>4</b>" and if the hidden number is higher than 4 we will need one or two additional questions.<br />
-Let our second question be "<b>6</b>". If the hidden number is still higher than 6, we will need a third question in order to discriminate between 7 and 8.<br />
-Thus, our third question will be "<b>7</b>" and the total cost for this worst-case scenario will be 4+6+7=<span style='color:red;'><b>17</b></span>.</p>
+<p>Jika <var>n</var>=8, kita dapat memilih untuk menggunakan strategi "binary search": Pertanyaan pertama kita adalah bilangan "<b>4</b>" dan jika bilangan tersembunyi yang ada lebih besar dari 4 kita akan memerlukan dua pertanyaan tambahan.<br />
+Misalkan pertanyaan kedua kita adalah "<b>6</b>". Jika bilangan tersembunyi tersebut masih lebih besar dari 6, maka kita perlu pertanyaan ketiga untuk menentukan jawaban antara 7 dan 8.<br />
+Kemudian, pertanyaan ketiga kita adalah bilangan "<b>7</b>" dan total biaya untuk kasus terburuk seperti ini akan menjadi 4+6+7=<span style='color:red;'><b>17</b></span>.</p>
 
-<p>We can improve considerably the worst-case cost for <var>n</var>=8, by asking "<b>5</b>" as our first question.<br />
-If we are told that the hidden number is higher than 5, our second question will be "<b>7</b>", then we'll know for certain what the hidden number is (for a total cost of 5+7=<span style='color:blue;'><b>12</b></span>).<br />
-If we are told that the hidden number is lower than 5, our second question will be "<b>3</b>" and if the hidden number is lower than 3 our third question will be "<b>1</b>", giving a total cost of 5+3+1=<span style='color:blue;'><b>9</b></span>.<br />
-Since <span style='color:blue;'><b>12</b></span>><span style='color:blue;'><b>9</b></span>, the worst-case cost for this strategy is <span style='color:red;'><b>12</b></span>. That's better than what we achieved previously with the "binary search" strategy; it is also better than or equal to any other strategy.<br />
-So, in fact, we have just described an optimal strategy for <var>n</var>=8.</p>
+<p>Kita dapat memperbaiki biaya yang diperlukan pada kasus terburuk untuk <var>n</var>=8, dengan menanyakan bilangan "<b>5</b>" sebagai pertanyaan pertama kita.<br />
+Jika kita diberitahu bahwa bilangan tersembunyi yang ada adalah lebih besar dari 5, pertanyaan kedua kita akan menjadi "<b>7</b>", kemudian kita akan mengetahui berapakah bilangan tersembunyi yang ada (dengan total biaya sebesar 5+7=<span style='color:blue;'><b>12</b></span>).<br />
+Jika kita diberitahu bahwa bilangan tersembunyi yang ada kurang dari 5, maka pertanyaan kedua kita akan menjadi "<b>3</b>" dan jika bilangan tersembunyi yang ada kurang dari 3, pertanyaan ketiga kita akan menjadi "<b>1</b>", dan didapatkan total biaya sebesar 5+3+1=<span style='color:blue;'><b>9</b></span>.<br />
+Sejak <span style='color:blue;'><b>12</b></span>><span style='color:blue;'><b>9</b></span>, biaya yang diperlukan untuk kasus terburuk mengguanakan strategi ini adalah <span style='color:red;'><b>12</b></span>. Hasil ini lebih baik dibandingkan dengan metode sebelumnya, yaitu dengan strategi "binary search"; strategi ini juga lebih baik atau sama dengan strategi lain yang ada.<br />
+Sehingga, pada kenyataannya, kita baru saja mendeskripsikan strategi optimal untuk <var>n</var>=8.</p>
 
-<p>Let C(<var>n</var>) be the worst-case cost achieved by an optimal strategy for <var>n</var>, as described above.<br />
-Thus C(1) = 0, C(2) = 1, C(3) = 2 and C(8) = 12.<br />
-Similarly, C(100) = 400 and <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p328_sum1.gif" />C(<var>n</var>) = 17575.</p>
+<p>Misal C(<var>n</var>) adalah biaya pada kasus terburuk yang diperoleh dengan strategi paling optimal untuk <var>n</var>, seperti yang dijelaskan di atas.<br />
+Sehingga C(1) = 0, C(2) = 1, C(3) = 2 dan C(8) = 12.<br />
+Dengan cara yang sama, C(100) = 400 dan <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p328_sum1.gif" />C(<var>n</var>) = 17575.</p>
 
-<p>Find <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p328_sum2.gif" />C(<var>n</var>).</p>
+<p>Carilah <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p328_sum2.gif" />C(<var>n</var>).</p>
