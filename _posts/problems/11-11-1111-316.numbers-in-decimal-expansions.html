@@ -2,23 +2,23 @@
 layout: problem
 category: problems
 difficulty: 55
-title: "Numbers in decimal expansions"
+title: "Bilangan dalam Penjabaran Desimal"
 problemId: 316
 answer: -1
 ---
 
-<p>Let <var>p</var> = <var>p<sub><font size="-2">1</font></sub> p<sub><font size="-2">2</font></sub> p<sub><font size="-2">3</font></sub></var> ... be an infinite sequence of random digits, selected from {0,1,2,3,4,5,6,7,8,9} with equal probability.<br />
-It can be seen that <var>p</var> corresponds to the real number 0.<var>p<sub><font size="-2">1</font></sub> p<sub><font size="-2">2</font></sub> p<sub><font size="-2">3</font></sub></var> .... <br />
-It can also be seen that choosing a random real number from the interval [0,1) is equivalent to choosing an infinite sequence of random digits selected from {0,1,2,3,4,5,6,7,8,9} with equal probability.</p>
+<p>Misal <var>p</var> = <var>p<sub><font size="-2">1</font></sub> p<sub><font size="-2">2</font></sub> p<sub><font size="-2">3</font></sub></var> ... adalah sebuah barisan tak hingga dari digit-digit acak, yang dipilih dari {0,1,2,3,4,5,6,7,8,9} dengan peluang yang sama.<br />
+Dapat terlihat bahwa <var>p</var> mewakili sebuah bilangan real 0.<var>p<sub><font size="-2">1</font></sub> p<sub><font size="-2">2</font></sub> p<sub><font size="-2">3</font></sub></var> .... <br />
+Dapat juga terlihat bahwa apabila kita memilih sebuah bilangan real secara acak pada interval [0,1) sama dengan memilih barisan tak hingga dengan digit-digit acak yang dipilih dari {0,1,2,3,4,5,6,7,8,9} dengan peluang yang sama.</p>
 
-<p>For any positive integer <var>n</var> with <var>d</var> decimal digits, let <var>k</var> be the smallest index such that <br /> <var>p<sub><small>k</small>, </sub></var><var>p<sub><small>k+1</small></sub></var>, ...<var>p<sub><small>k+d-1</small></sub></var> are the decimal digits of <var>n</var>, in the same order.<br />
-Also, let <var>g</var>(<var>n</var>) be the expected value of <var>k</var>; it can be proven that <var>g</var>(<var>n</var>) is always finite and, interestingly, always an integer number.</p>
+<p>Untuk setiap bilangan bulat positif <var>n</var> dengan <var>d</var> buah digit desimal, <var>k</var> adalah indeks terkecil sehingga <br /> <var>p<sub><small>k</small>, </sub></var><var>p<sub><small>k+1</small></sub></var>, ...<var>p<sub><small>k+d-1</small></sub></var> adalah digit-digit desimal dari <var>n</var>, dengan urutan yang sama.<br />
+Juga, kita misalkan <var>g</var>(<var>n</var>) adalah nilai harapan (expected value) dari <var>k</var>; dapat dibuktikan bahwa <var>g</var>(<var>n</var>) selalu tertentu atau terhingga dan, menariknya, selalu merupakan bilangan bulat.</p>
 
-<p>For example, if <var>n</var> = 535, then<br />
-for <var>p</var> = 31415926<b>535</b>897...., we get <var>k</var> = 9<br />
-for <var>p</var> = 35528714365004956000049084876408468<b>535</b>4..., we get <var>k</var> = 36<br />
-etc and we find that <var>g</var>(535) = 1008.</p>
+<p>Sebagai contoh, jika <var>n</var> = 535, maka<br />
+untuk <var>p</var> = 31415926<b>535</b>897...., kita dapatkan <var>k</var> = 9<br />
+untuk <var>p</var> = 35528714365004956000049084876408468<b>535</b>4..., kita dapatkan <var>k</var> = 36<br />
+dan sebagainya, dan kita dapat menemukan bahwa <var>g</var>(535) = 1008.</p>
 
-<p>Given that <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p316_decexp1.gif" />, find <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p316_decexp2.gif" /></p>
+<p>Diberikan <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p316_decexp1.gif" />, carilah <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p316_decexp2.gif" /></p>
 
-<u><i>Note</i></u>: <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p316_decexp3.gif" /> represents the floor function.
+<u><i>Catatan</i></u>: <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p316_decexp3.gif" /> adalah fungsi pembulatan ke bawah.
