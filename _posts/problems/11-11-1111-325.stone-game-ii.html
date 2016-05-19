@@ -2,35 +2,35 @@
 layout: problem
 category: problems
 difficulty: 80
-title: "Stone Game II"
+title: "Permainan Batu II"
 problemId: 325
 answer: -1
 ---
 
 <p>
-A game is played with two piles of stones and two players. At her turn, a player removes a number of stones from the larger pile. The number of stones she removes must be a positive multiple of the number of stones in the smaller pile.
+Sebuah permaian dimainkan dengan dua tumpuk batu dan dua orang pemain. Saat gilirannya, seorang pemain mengambil sejumlah batu dari tumpukan yang lebih besar. Banyaknya batu yang diambil harus merupakan bilangan positif dan sama dengan kelipatan jumlah batu di tumpukan yang lebih kecil.
 </p>
 
 <p>
-E.g., let the ordered pair(6,14) describe a configuration with 6 stones in the smaller pile and 14 stones in the larger pile, then the first player can remove 6 or 12 stones from the larger pile.
+Sebagai contoh, misalkan pasangan bilangan(6,14) menyatakan susunan dengan 6 batu pada tumpukan yang lebih kecil dan 14 batu pada tumpukan yang lebih besar, maka pemain yang sedang mendapat gilirannya dapat mengambil 6 atau 12 buah batu dari tumpukan yang besar.
 </p>
 
 <p>
-The player taking all the stones from a pile wins the game.
+Pemain yang mengambil semua batu dari tumpukan memenangkan permainan.
 </p>
 
 <p>
-A <i>winning configuration</i> is one where the first player can force a win. For example, (1,5), (2,6) and (3,12) are winning configurations because the first player can immediately remove all stones in the second pile.
+Sebuah <i>susunan kemenangan</i> adalah susunan dimana pemain pertama pasti akan menang. Sebagai contoh, (1,5), (2,6) dan (3,12) adalah susunan kemenangan, karena pemain pertama dapat langsung mengambil semua batu pada tumpukan kedua.
 </p>
 
 <p>
-A <i>losing configuration</i> is one where the second player can force a win, no matter what the first player does. For example, (2,3) and (3,4) are losing configurations: any legal move leaves a winning configuration for the second player.
+Sebuah <i>susunan kekalahan</i> adalah susunan dimana pemain kedua pasti akan menang, tidak peduli apapun yang dilakukan oleh pemain pertama. Sebagai contoh, (2,3) dan (3,4) adalah susunan kekalahan: setiap gerakan yang sah dari pemain pertama pasti akan meninggalkan susunan kemenangan untuk pemain kedua.
 </p>
 
 <p>
-Define S(<var>N</var>) as the sum of (<var>x</var><sub><var>i</var></sub>+<var>y</var><sub><var>i</var></sub>) for all losing configurations (<var>x</var><sub><var>i</var></sub>,<var>y</var><sub><var>i</var></sub>), 0 &lt; <var>x</var><sub><var>i</var></sub> &lt; <var>y</var><sub><var>i</var></sub> &le; <var>N</var>. We can verify that S(10) = 211 and S(10<sup>4</sup>) = 230312207313.
+Dinyatakan S(<var>N</var>) sebagai hasil penjumlahan dari (<var>x</var><sub><var>i</var></sub>+<var>y</var><sub><var>i</var></sub>) untuk semua susunan kekalahan (<var>x</var><sub><var>i</var></sub>,<var>y</var><sub><var>i</var></sub>), 0 &lt; <var>x</var><sub><var>i</var></sub> &lt; <var>y</var><sub><var>i</var></sub> &le; <var>N</var>. Dapat dibuktikan bahwa S(10) = 211 dan S(10<sup>4</sup>) = 230312207313.
 </p>
 
 <p>
-Find S(10<sup>16</sup>) mod 7<sup>10</sup>.
+Carilah S(10<sup>16</sup>) mod 7<sup>10</sup>.
 </p>
