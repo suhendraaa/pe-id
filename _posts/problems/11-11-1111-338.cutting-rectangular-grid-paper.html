@@ -2,27 +2,27 @@
 layout: problem
 category: problems
 difficulty: 95
-title: "Cutting Rectangular Grid Paper"
+title: "Memotong Kertas Kotak-Kotak Berbentuk Persegi Panjang"
 problemId: 338
 answer: -1
 ---
 
-<p>A rectangular sheet of grid paper with integer dimensions <var>w</var> &times; <var>h</var> is given. Its grid spacing is 1.<br />
-When we cut the sheet along the grid lines into two pieces and rearrange those pieces without overlap, we can make new rectangles with different dimensions.</p>
-<p>For example, from a sheet with dimensions 9 &times; 4 , we can make rectangles with dimensions 18 &times; 2, 12 &times; 3 and 6 &times; 6 by cutting and rearranging as below:</p>
+<p>Sebuah kertas kotak-kotak berbentuk persegi panjang dengan ukuran berupa bilangan bulat <var>w</var> &times; <var>h</var> diberikan. Ukuran kotak-kotaknya adalah 1.<br />
+Saat kita memotong kertas tersebut menjadi dua bagian mengikuti garis pada kotak-kotak, dan kemudian menysun potongan kertas tersebut tanpa tertumpuk satu sama lain, kita dapat membuat persegi panjang baru dengan ukuran yang berbeda.</p>
+<p>Sebagai contoh, dari kertas berukuran 9 &times; 4 , kita dapat membuat persegi panjang dengan ukuran 18 &times; 2, 12 &times; 3 dan 6 &times; 6 dengan memotong dan menyusun kertas dengan cara berikut:</p>
 
 <div align='center'>
 <img src="{{ site.baseurl }}project/images/p338_gridpaper.gif" /><br />
 </div>
 
-<p>Similarly, from a sheet with dimensions 9 &times; 8 , we can make rectangles with dimensions 18 &times; 4 and 12 &times; 6 .</p>
+<p>Dengan cara yang sama, dari kertas berukuran 9 &times; 8 , kita dapat membuat persegi panjang dengan ukuran 18 &times; 4 dan 12 &times; 6 .</p>
 
-<p>For a pair <var>w</var> and <var>h</var>, let F(<var>w</var>,<var>h</var>) be the number of distinct rectangles that can be made from a sheet with dimensions <var>w</var> &times; <var>h</var> .<br />
-For example, F(2,1) = 0, F(2,2) = 1, F(9,4) = 3 and F(9,8) = 2. <br />
-Note that rectangles congruent to the initial one are not counted in F(<var>w</var>,<var>h</var>).<br />
-Note also that rectangles with dimensions <var>w</var> &times; <var>h</var> and dimensions <var>h</var> &times; <var>w</var> are not considered distinct.</p>
+<p>Untuk sepasang <var>w</var> dan <var>h</var>, kita misalkan F(<var>w</var>,<var>h</var>) adalah banyaknya persegi panjang berbeda yang dapat dibuat dari sebuah kertas dengan ukuran <var>w</var> &times; <var>h</var> .<br />
+Sebagai contoh, F(2,1) = 0, F(2,2) = 1, F(9,4) = 3 and F(9,8) = 2. <br />
+Perlu diingat bahwa persegi panjang yang kongruen dengan ukuran awal kertas tidak ikut dihitung pada F(<var>w</var>,<var>h</var>).<br />
+Perlu diingat juga bahwa persegi panjang dengan ukuran <var>w</var> &times; <var>h</var> dan <var>h</var> &times; <var>w</var> tidak dianggap berbeda.</p>
 
-<p>For an integer <var>N</var>, let G(<var>N</var>) be the sum of F(<var>w</var>,<var>h</var>) for all pairs <var>w</var> and <var>h</var> which satisfy 0 &lt; <var>h</var> &le; <var>w</var> &le; <var>N</var>.<br />
-We can verify that G(10) = 55, G(10<sup>3</sup>) = 971745 and G(10<sup>5</sup>) = 9992617687.</p>
+<p>Untuk sebuah bilangan bulat <var>N</var>, misal G(<var>N</var>) adalah hasil penjumlahan dari semua F(<var>w</var>,<var>h</var>) untuk semua pasangan <var>w</var> dan <var>h</var> yang memenuhi 0 &lt; <var>h</var> &le; <var>w</var> &le; <var>N</var>.<br />
+Kita dapat membuktikan bahwa G(10) = 55, G(10<sup>3</sup>) = 971745 dan G(10<sup>5</sup>) = 9992617687.</p>
 
-<p>Find G(10<sup>12</sup>). Give your answer modulo 10<sup>8</sup>.</p>
+<p>Carilah G(10<sup>12</sup>). Berikan jawaban Anda yang telah di modulo 10<sup>8</sup>.</p>
