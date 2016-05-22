@@ -2,32 +2,32 @@
 layout: problem
 category: problems
 difficulty: 100
-title: "Silver dollar game"
+title: "Permainan Dolar Perak"
 problemId: 344
 answer: -1
 ---
 
-<p>One variant of N.G. de Bruijn's <b>silver dollar</b> game can be described as follows:</p>
+<p>Salah satu variasi dari permainan <b>dolar perak</b> N.G. de Bruijn memiliki penjelasan sebagai berikut:</p>
 
-<p>On a strip of squares a number of coins are placed, at most one coin per square. Only one coin, called the <b>silver dollar</b>, has any value. Two players take turns making moves. At each turn a player must make either a <i>regular</i> or a <i>special</i> move.</p>
+<p>Pada potongan kertas memiliki banyak persegi, beberapa buah koin diletakkan, satu buah koin untuk setiap persegi. Namun hanya ada satu koin, yang disebut sebagai <b>dolar perak</b>, yang mempunyai nilai tertentu. Dua pemain memainkan permainan secara bergiliran. Pada setiap giliran seorang pemain diwajibkan untuk melakukan gerakan <i>reguler</i> atau sebuah gerakan <i>spesial</i>.</p>
 
-<p>A <i>regular</i> move consists of selecting one coin and moving it one or more squares to the left. The coin cannot move out of the strip or jump on or over another coin.</p>
+<p>Sebuah gerakan <i>reguler</i> dilakukan dengan memilih satu buah koin, dan memindahkannya ke satu atau lebih persegi di sebelah kiri. Koin tidak dapat keluar dari kertas atau melompati koin lainnya.</p>
 
-<p>Alternatively, the player can choose to make the <i>special</i> move of pocketing the leftmost coin rather than making a regular move. If no regular moves are possible, the player is forced to pocket the leftmost coin.</p>
+<p>Alternatif lain, seorang pemain dapat memilih untuk melakukan gerakan <i>spesial</i>, yaitu mengambil koin yang ada di paling kiri. Jika tidak ada gerakan reguler lagi yang bisa dilakukan, pemain harus mengambil koin yang ada di paling kiri.</p>
 
-<p>The winner is the player who pockets the silver dollar.</p>
+<p>Pemenangnya adalah pemain yang mengambil dolar perak.</p>
 
 
 <div align='center'>
 <img src="{{ site.baseurl }}project/images/p344_silverdollar.gif" /><br />
 </div>
 
-<p>A <i>winning configuration</i> is an arrangement of coins on the strip where the first player can force a win no matter what the second player does.</p>
+<p>Sebuah <i>susunan kemenangan</i> adalah susunan dari koin-koin pada kertas dimana pemain pertama pasti akan menang, tidak peduli apapun yang dilakukan oleh pemain kedua.</p>
 
-<p>Let W(<var>n</var>,<var>c</var>) be the number of winning configurations for a strip of <var>n</var> squares, <var>c</var> worthless coins and one silver dollar.</p>
+<p>Misal W(<var>n</var>,<var>c</var>) adalah banyaknya susunan kemenangan untuk sepotong kertas dengan <var>n</var> buah persegi, <var>c</var> buah koin yang tidak berarti dan sebuah dolar perak.</p>
 
-<p>You are given that W(10,2) = 324 and W(100,10) = 1514704946113500.</p>
+<p>Anda diberikan informasi bahwa W(10,2) = 324 dan W(100,10) = 1514704946113500.</p>
 
-<p>Find W(1 000 000, 100) modulo the semiprime 1000 036 000 099 (= 1 000 003 &middot; 1 000 033).
+<p>Carilah W(1 000 000, 100) modulo bilangan semiprima 1000 036 000 099 (= 1 000 003 &middot; 1 000 033).
 </p>
 
