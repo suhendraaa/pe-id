@@ -2,41 +2,41 @@
 layout: problem
 category: problems
 difficulty: 50
-title: "Risky moon"
+title: "Bulan Beresiko"
 problemId: 353
 answer: -1
 ---
 
 <p>
-A moon could be described by the sphere C(<var>r</var>) with centre (0,0,0) and radius <var>r</var>. 
+Sebuah bulan dapat digambarkan dengan bola C(<var>r</var>) yang berpusat di (0,0,0) dan memiliki panjang jari-jari <var>r</var>. 
 </p>
 
 <p>
-There are stations on the moon at the points on the surface of C(<var>r</var>) with integer coordinates. The station at (0,0,<var>r</var>) is called North Pole station, the station at (0,0,-<var>r</var>) is called South Pole station.
+Terdapat stasiun di bulan pada suatu titik di permukaan C(<var>r</var>) yang memiliki koordinat berupa bilangan bulat. Stasiun pada (0,0,<var>r</var>) disebut sebagai stasiun Kutub Utara, stasiun pada (0,0,-<var>r</var>) disebut stasiun Kutub Selatan.
 </p>
 
 <p>
-All stations are connected with each other via the shortest road on the great arc through the stations. A journey between two stations is risky. If <var>d</var> is the length of the road between two stations, (<var>d</var>/(&pi; <var>r</var>))<sup>2</sup> is a measure for the risk of the journey (let us call it the risk of the road). If the journey includes more than two stations, the risk of the journey is the sum of risks of the used roads.
+Semua stasiun dihubungkan satu sama lain melalui jalan terpendek pada permukaan bulan melalui stasiun-stasiun lain. Sebuah perjalanan antara dua stasiun adalah beresiko. Jika <var>d</var> adalah panjang jalan antara dua stasiun, (<var>d</var>/(&pi; <var>r</var>))<sup>2</sup> adalah tingkat resiko dari perjalanan (mari kita sebut ini sebagai resiko perjalanan). Jika perjalanan melibatkan lebih dari dua stasiun, resiko perjalanan didapat dari hasil penjumlahan resiko pada jalan-jalan yang digunakan.
 </p>
 
 <p>
-A direct journey from  the North Pole station to the South Pole station has the length &pi;<var>r</var> and risk 1. The journey from the North Pole station to the South Pole station via (0,<var>r</var>,0) has the same length, but a smaller risk: (&frac12;&pi;<var>r</var>/(&pi;<var>r</var>))<sup>2</sup>+(&frac12;&pi;<var>r</var>/(&pi;<var>r</var>))<sup>2</sup>=0.5.
+Perjalanan langsung dari stasiun Kutub Utara ke stasiun Kutub Selatan memiliki jarak &pi;<var>r</var> dan resiko 1. Perjalanan dari stasiun Kutub Utara ke stasiun Kutub Selatan melalui (0,<var>r</var>,0) memiliki panjang yang sama, namun resiko yang elbih kecil: (&frac12;&pi;<var>r</var>/(&pi;<var>r</var>))<sup>2</sup>+(&frac12;&pi;<var>r</var>/(&pi;<var>r</var>))<sup>2</sup>=0.5.
 </p>
 
 <p>
-The minimal risk of a journey from the North Pole station to the South Pole station on C(<var>r</var>) is M(<var>r</var>).
+Resiko terkecil perjalanan dari stasiun Kutub Utara ke stasiun Kutub Selatan pada C(<var>r</var>) adalah M(<var>r</var>).
 </p>
 
 <p>
-You are given that M(7)=0.1784943998  rounded to 10 digits behind the decimal point. 
+Anda diberikan informasi bahwa M(7)=0.1784943998 dibulatkan hingga 10 angka di belakang koma. 
 </p>
 
 <p>
-Find &sum;M(2<sup>n</sup>-1) for 1&le;n&le;15.
+Carilah &sum;M(2<sup>n</sup>-1) untuk 1&le;n&le;15.
 </p>
 
 <p>
-Give your answer rounded to 10 digits behind the decimal point in the form a.bcdefghijk.
+Berikan jawaban Anda dibulatkan hingga 10 angka di belakang koma dengan format a.bcdefghijk.
 </p>
 
 
