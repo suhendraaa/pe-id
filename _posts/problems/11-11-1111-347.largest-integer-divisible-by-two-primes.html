@@ -2,27 +2,26 @@
 layout: problem
 category: problems
 difficulty: 15
-title: "Largest integer divisible by two primes"
+title: "Bilangan Bulat Terbesar Yang Habis Dibagi Dua Bilangan Prima"
 problemId: 347
 answer: -1
 ---
 
 <P>
-The largest integer &le; 100 that is only divisible by both the primes 2 and 3 is 96, as 96=32*3=2<sup>5</sup>*3.
-For two <i>distinct</i> primes p and q let M(p,q,N) be the largest positive integer &le;N only divisible
-by both p and q and M(p,q,N)=0 if such a positive integer does not exist.
+Bilangan bulat terbesar &le; 100 yang habis dibagi hanya oleh bilangan prima 2 dan 3 adalah 96, karena 96=32*3=2<sup>5</sup>*3.
+Untuk dua bilangan prima <i>berbeda</i> p dan q, kita misalkan M(p,q,N) adalah bilangan bulat positif terbesar &le;N yang hanya habis dibagi oleh bilangan prima p dan q, dan M(p,q,N)=0 jika tidak ada bilangan bulat positif yang memenuhi sifat di atas.
 </P>
 <P>
-E.g. M(2,3,100)=96.<BR/> 
-M(3,5,100)=75 and not 90 because 90 is divisible by 2 ,3 and 5.<BR/>
-Also M(2,73,100)=0 because there does not exist a positive integer &le; 100 that is divisible by both 2 and 73.
+Sebagai contoh M(2,3,100)=96.<BR/> 
+M(3,5,100)=75 dan bukan 90, karena 90 habis dibagi oleh 2 ,3 dan 5.<BR/>
+Juga M(2,73,100)=0 karena tidak terdapat bilangan bulat positif &le; 100 yang habis dibagi oleh 2 dan 73.
 </P>
 <P>
-Let S(N) be the sum of all distinct M(p,q,N).
+Misal S(N) adalah hasil penjumlahan semua hasil M(p,q,N) berbeda.
 S(100)=2262.
 </P>
 <P>
-Find S(10 000 000).
+Carilah S(10 000 000).
 </P>
 
 
