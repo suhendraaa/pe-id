@@ -2,59 +2,59 @@
 layout: problem
 category: problems
 difficulty: 55
-title: "Blood tests"
+title: "Tes Darah"
 problemId: 352
 answer: -1
 ---
 
 <p>
-Each one of the 25 sheep in a flock must be tested for a rare virus, known to affect 2% of the sheep population.
-An accurate and extremely sensitive PCR test exists for blood samples, producing a clear positive / negative result, but it is very time-consuming and expensive.
+Setiap satu dari 25 domba pada suatu kawanan harus di uji dari suatu virus langka, yang diketahui menginfeksi 2% dari populasi domba.
+Sebuah metode test PCR yang akurat dan sangat sensitif dapat dilakukan kepada sampel darah, yang dapat mengeluarkan hasil tes positif / negatif dengan jelas, namun proses ini sangat memakan waktu dan mahal.
 </p>
 
 <p>
-Because of the high cost, the vet-in-charge suggests that instead of performing 25 separate tests, the following procedure can be used instead:<br/><br/>
-The sheep are split into 5 groups of 5 sheep in each group. 
-For each group, the 5 samples are mixed together and a single test is performed. Then,
+Karena harga yang tinggi, sang dokter hewan yang sedang bertugas menyarankan dibanding melakukan 25 tes terpisah, kita dapat menggunakan prosedur berikut:<br/><br/>
+Domba-domba dibagi menjadi 5 kelompok berisi 5 domba di setiap kelompok. 
+Untuk setiap kelompok, 5 sampel darah dicampur bersama, kemudian sebuah tes dilakukan. Kemudian,
 <ul>
-<li>If the result is negative, all the sheep in that group are deemed to be virus-free.</li>
-<li>If the result is positive, 5 additional tests will be performed (a separate test for each animal) to determine the affected individual(s).</li>
+<li>Jika hasil tes adalah negatif, maka semua domba di kelompok tersebut dipastikan bebas virus.</li>
+<li>Jika hasil tes adalah positif, 5 tes tambahan akan dilakukan (tes terpisah untuk setiap ekor domba) untuk menentukan domba mana yang terkena virus.</li>
 </ul>
 </p>
 
 <p>
-Since the probability of infection for any specific animal is only 0.02, the first test (on the pooled samples) for each group will be:
+Semenjak peluang seekor hewan terkena virus sangat spesifik, yaitu hanya 0.02, tes pertama (pada sampel darah yang dikumpulkan) pada setiap kelompoknya akan menjadi:
 <ul>
-<li>Negative (and no more tests needed) with probability 0.98<sup>5</sup> = 0.9039207968.</li>
-<li>Positive (5 additional tests needed) with probability 1 - 0.9039207968 = 0.0960792032.</li>
+<li>Negatif (dan tidak ada lagi tes yang perlu dilakukan) dengan peluang 0.98<sup>5</sup> = 0.9039207968.</li>
+<li>Positif (5 tes tambahan perlu dilakukan) dengan peluang 1 - 0.9039207968 = 0.0960792032.</li>
 </ul>
 </p>
 
 <p>
-Thus, the expected number of tests for each group is 1 + 0.0960792032 &times; 5 = 1.480396016.<br/>
-Consequently, all 5 groups can be screened using an average of only 1.480396016 &times; 5 = <b>7.40198008</b> tests, which represents a huge saving of more than 70% !
+Sehingga, nilai perkiraan (expected number) dari hasil tes untuk setiap kelompok adalah 1 + 0.0960792032 &times; 5 = 1.480396016.<br/>
+Dampaknya, kelima kelompok dapat diperiksa menggunakan rata-rata hanya 1.480396016 &times; 5 = <b>7.40198008</b> kali tes, dimana hasil tersebut menggambarkan penghematan besar, yaitu lebih dari 70% !
 </p>
 
 <p>
-Although the scheme we have just described seems to be very efficient, it can still be improved considerably (always assuming that the test is sufficiently sensitive and that there are no adverse effects caused by mixing different samples). E.g.:
+Walaupun metode yang baru saja dijelaskan terlihat sangat efisien, metode tersebut masih bisa sangat disempurnakan (selalu asumsikan bahwa hasil test cukup sensitif, dan tidak ada efek merugikan yang dihasilkan oleh pencampuran sampel darah). Sebagai contoh:
 <ul>
-<li>We may start by running a test on a mixture of all the 25 samples. It can be verified that in about 60.35% of the cases this test will be negative, thus no more tests will be needed. Further testing will only be required for the remaining 39.65% of the cases.</li>
-<li>If we know that at least one animal in a group of 5 is infected and the first 4 individual tests come out negative, there is no need to run a test on the fifth animal (we know that it must be infected).</li>
-<li>We can try a different number of groups / different number of animals in each group, adjusting those numbers at each level so that the total expected number of tests will be minimised.</li>
+<li>Kita dapat memulai dengan mencampurkan ke-25 sampel darah dan melakukan tes pada campuran tersebut. Dapat dibuktikan bahwa terdapat sekitar 60.35% kemungkinan tes ini akan mengeluarkan hasil negatif, sehingga tidak perlu lagi ada tes dibutuhkan. Tes selanjutnya hanya diperlukan oleh 39.65% kemungkinan lainnya.</li>
+<li>Jika kita mengetahui informasi setidaknya satu ekor hewan dalam setiap kelompok berisi 5 ekor hewan terinfeksi, dan hasil tes 4 ekor hewan pertama mengeluarkan hasil negatif, kita tidak lagi perlu melakukan tes untuk hewan ke lima (kita tahu bahwa hewan tersebut pasti terinfeksi).</li>
+<li>Kita dapat mencoba mengelompokkan domba dengan banyak kelompok yang berbeda / banyak hewan yang berbeda di setiap kelompoknya, menyesuaikan angka-angka tersebut pada setiap level tes sehingga jumlah nilai perkiraan percobaan (expected number) dari tes akan berkurang.</li>
 </ul>
 <P>
-To simplify the very wide range of possibilities, there is one restriction we place when devising the most cost-efficient testing scheme: whenever we start with a mixed sample, all the sheep contributing to that sample must be fully screened (i.e. a verdict of infected / virus-free must be reached for all of them) before we start examining any other animals.
+Untuk menyederhanakan berbagai macam kemungkinan yang ada, terdapat satu syarat yang harus kita ikuti saat menentukan skema tes yang paling efisien: Saat kita memulai dengan sampel darah campuran, semua domba yang darahnya ikut masuk dalam sampel tersebut harus sepenuhnya diperiksa (sehingga kesimpulan terinfeksi / bebas virus harus dimiliki oleh semua domba) sebelum kita meneliti hewan lainnya.
 </P>
-For the current example, it turns out that the most cost-efficient testing scheme (we'll call it the <i>optimal strategy</i>) requires an average of just <b>4.155452</b> tests!
+Untuk contoh ini, terlihat bahwa skema tes yang biayanya paling efisien (kita akan menyebut ini sebagai <i>strategi optimal</i>) membutuhkan rata-rata hanya <b>4.155452</b> kali tes!
 </p>
 
 <p>
-Using the optimal strategy, let T(<var>s</var>,<var>p</var>) represent the average number of tests needed to screen a flock of <var>s</var> sheep for a virus having probability <var>p</var> to be present in any individual.<br/>
-Thus, rounded to six decimal places, T(25, 0.02) = 4.155452 and T(25, 0.10) = 12.702124.
+Menggunakan strategi optimal, misal T(<var>s</var>,<var>p</var>) menyatakan rata-rata jumlah tes yang diperlukan untuk mengetahui kondisi kawanan berisi <var>s</var> ekor domba, dengan kemungkinan terkena virus <var>p</var> untuk setiap ekor domba.<br/>
+Sehingga, jika dibulatkan hingga enam angka di belakang koma, T(25, 0.02) = 4.155452 dan T(25, 0.10) = 12.702124.
 </p>
 
 <p>
-Find &Sigma;T(10000, p) for p=0.01, 0.02, 0.03, ... 0.50.<br/>
-Give your answer rounded to six decimal places.
+Carilah &Sigma;T(10000, p) untuk p=0.01, 0.02, 0.03, ... 0.50.<br/>
+Berikan jawaban Anda yang dibulatkan hingga enam angka di belakang koma.
 </p>
 
