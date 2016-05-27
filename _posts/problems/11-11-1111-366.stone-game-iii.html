@@ -2,34 +2,34 @@
 layout: problem
 category: problems
 difficulty: 40
-title: "Stone Game III"
+title: "Permainan Batu III"
 problemId: 366
 answer: -1
 ---
 
 <P>
-Two players, Anton and Bernhard, are playing the following game.<BR />
-There is one pile of n stones.<BR />
-The first player may remove any positive number of stones, but not the whole pile.<BR />
-Thereafter, each player may remove at most twice the number of stones his opponent took on the previous move.<BR />
-The player who removes the last stone wins.
+Dua orang pemain, Anton dan Bernhard, sedang memainkan permainan berikut.<BR />
+Terdapat satu tumpukan berisi n buah batu.<BR />
+Pemain pertama diperbolehkan untuk mengambil batu sebanyak bilangan positif apapun, namun tidak diperbolehkan mengambil semua batu.<BR />
+Kemudian, setiap pemain diperbolehkan untuk mengambil batu paling banyak dua kali lipat dari jumlah batu yang diambil oleh pemain lain pada giliran sebelumnya.<BR />
+Pemain yang mengambil batu terakhir menang.
 </P>
 <P>
-E.g. n=5<BR />
-If the first player takes anything more than one stone the next player will be able to take all remaining stones.<BR />
-If the first player takes one stone, leaving four, his opponent will take also one stone, leaving three stones.<BR />
-The first player cannot take all three because he may take at most 2x1=2 stones. So let's say he takes also one stone, leaving 2. The second player can take the two remaining stones and wins.<BR />
-So 5 is a losing position for the first player.<BR />
-For some winning positions there is more than one possible move for the first player.<BR />
-E.g. when n=17 the first player can remove one or four stones.
+Sebagai contoh, saat n=5<BR />
+Jika pemain pertama mengambil lebih dari satu batu, maka pemain kedua akan dapat mengambil semua batu pada giliran selanjutnya.<BR />
+Jika pemain pertama mengambil satu batu pada giliran pertama, akan tersisa empat batu, lawannya juga kemudian akan mengambil satu batu, Menyisakan tiga batu.<BR />
+Pemain pertama tidak dapat mengambil ketiga batu yang tersisa, karena ia hanya bisa mengambil paling banyak 2x1=2 batu. Sehingga mari kita asumsikan ia juga mengambil satu buah batu, sehingga tersisa 2. Maka pemain kedua dapat mengambil semua batu yang masih tersisa dan menjadi pemenang.<BR />
+Sehingga n=5 adalah jumlah batu yang menghasilkan kekalahan untuk pemain pertama.<BR />
+Untuk beberapa jumlah batu yang menghasilkan kemenangan terdapat lebih dari satu gerakan yang mungkin dilakukan oleh pemain pertama.<BR />
+Sebagai contoh, saat n=17 pemain pertama dapat mengambil satu atau empat batu.
 </P>
 <P>
-Let M(n) be the maximum number of stones the first player can take from a winning position <i>at his first turn</i> and M(n)=0 for any other position.
+Misal M(n) adalah banyaknya batu yang dapat diambil oleh pemain pertama pada jumlah batu yang menghasilkan kemenangan <i>pada giliran pertama</i> dan M(n)=0 untuk banyak batu lainnya.
 </P>
 <P>
-&sum;M(n) for n&le;100 is 728.
+&sum;M(n) untuk n&le;100 is 728.
 </P>
 <P>
-Find  &sum;M(n) for n&le;10<sup>18</sup>.
-Give your answer modulo 10<sup>8</sup>.
+Carilah &sum;M(n) untuk n&le;10<sup>18</sup>.
+Berikan jawaban Anda yang telah di modulo 10<sup>8</sup>.
 </P>
