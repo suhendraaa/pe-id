@@ -2,29 +2,29 @@
 layout: problem
 category: problems
 difficulty: 40
-title: "Maximum Integer Partition Product"
+title: "Hasil Kali Partisi Bilangan Bulat Maksimum"
 problemId: 374
 answer: -1
 ---
 
-<P>An integer partition of a number <var>n</var> is a way of writing <var>n</var> as a sum of positive integers.</P>
+<P>Partisi bilangan bulat dari suatu bilangan <var>n</var> adalah sebuah cara untuk menuliskan <var>n</var> sebagai hasil penjumlahan dari bilangan bulat positif.</P>
 
-<P>Partitions that differ only in the order of their summands are considered the same.
-A partition of <var>n</var> into <b>distinct parts</b> is a partition of <var>n</var> in which every part occurs at most once.</P>
+<P>Partisi yang hanya memiliki perbedaan urutan dari bilangan-bilangan penyusunnya dianggap sama.
+Sebuah partisi dari <var>n</var> yang <b>partisi berbeda</b> adalah sebuah partisi dari <var>n</var> dimana setiap penyusunnya hanya muncul paling banyak sekali.</P>
 
-<P>The partitions of 5 into distinct parts are:
-<BR/>5, 4+1 and 3+2.</P>
+<P>Partisi dari 5 ke dalam partisi berbeda adalah:
+<BR/>5, 4+1 dan 3+2.</P>
 
-<P>Let f(<var>n</var>) be the maximum product of the parts of any such partition of <var>n</var> into distinct parts and let m(<var>n</var>) be the number of elements of any such partition of <var>n</var> with that product.</P>
+<P>Misal f(<var>n</var>) adalah hasil perkalian terbesar dari penyusun-penyusun partisi berbeda dari <var>n</var>, dan misalkan m(<var>n</var>) adalah banyaknya penyusun dari partisi <var>n</var> yang memiliki hasil perkalian tersebut.</P>
 
-<P>So f(5)=6 and m(5)=2.</P>
+<P>Sehingga f(5)=6 dan m(5)=2.</P>
 
-<P>For <var>n</var>=10 the partition with the largest product is 10=2+3+5, which gives f(10)=30 and m(10)=3.
-<BR/>And their product, f(10)&middot;m(10) = 30&middot;3 = 90</P>
+<P>Untuk <var>n</var>=10 hasil partisi yang memiliki hasil perkalian terbesar adalah 10=2+3+5, yang akan memberikan hasil f(10)=30 dan m(10)=3.
+<BR/>Dan hasil kali keduanya, f(10)&middot;m(10) = 30&middot;3 = 90</P>
 
-<P>It can be verified that
-<BR/>&sum;f(<var>n</var>)&middot;m(<var>n</var>) for 1 &le; <var>n</var> &le; 100 = 1683550844462.</P>
+<P>Dapat dibuktikan bahwa
+<BR/>&sum;f(<var>n</var>)&middot;m(<var>n</var>) untuk 1 &le; <var>n</var> &le; 100 = 1683550844462.</P>
 
-<P>Find &sum;f(<var>n</var>)&middot;m(<var>n</var>) for 1 &le; <var>n</var> &le; 10<sup>14</sup>.
-<BR/>Give your answer modulo 982451653, the 50 millionth prime.</P>
+<P>Carilah &sum;f(<var>n</var>)&middot;m(<var>n</var>) untuk 1 &le; <var>n</var> &le; 10<sup>14</sup>.
+<BR/>Berikan jawaban Anda yang telah di modulo 982451653, bilangan prima yang ke-50 juta.</P>
 
