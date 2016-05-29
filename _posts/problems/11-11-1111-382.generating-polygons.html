@@ -2,42 +2,42 @@
 layout: problem
 category: problems
 difficulty: 60
-title: "Generating polygons"
+title: "Membentuk Poligon"
 problemId: 382
 answer: -1
 ---
 
 <p>
-A <b>polygon</b> is a flat shape consisting of straight line segments that are joined to form a closed chain or circuit. A polygon consists of at least three sides and does not self-intersect.
+<b>Poligon</b> adalah sebuah bidang tipis yang terdiri dari segmen garis lurus yang dihubungkan untuk membentuk rantai atau jalur tertutup. Sebuah poligon terdiri dari setidaknya tiga buah sisi dan semua sisinya tidak saling memotong satu sama lain.
 </p>
 
 <p>
-A set S of positive numbers is said to <i>generate a polygon</i> P if:<ul>
-<li> no two sides of P are the same length,
-<li> the length of every side of P is in S, and
-<li> S contains no other value.
+Sebuah himpunan S yang berisi bilangan positif dapat disebut dapat <i>membentuk sebuah poligon</i> P jika:<ul>
+<li> tidak terdapat dua sisi dari P yang memiliki panjang yang sama,
+<li> panjang dari setiap sisi P adalah merupakan anggota S, dan
+<li> S tidak memiliki anggota lain yang bukan merupakan panjang sisi pada P.
 </ul>
 </p>
 
 <p>
-For example:<br />
-The set {3, 4, 5} generates a polygon with sides 3, 4, and 5 (a triangle).<br />
-The set {6, 9, 11, 24} generates a polygon with sides 6, 9, 11, and 24 (a quadrilateral).<br />
-The sets {1, 2, 3} and {2, 3, 4, 9} do not generate any polygon at all.<br />
+Sebagai contoh:<br />
+Himpunan {3, 4, 5} membentuk sebuah poligon dengan panjang sisi 3, 4, dan 5 (sebuah segitiga).<br />
+Himpunan {6, 9, 11, 24} membentuk sebuah poligon dengan panjang sisi 6, 9, 11, dan 24 (sebuah bangun bersisi empat).<br />
+Himpunan {1, 2, 3} dan {2, 3, 4, 9} tidak dapat membentuk poligon sama sekali.<br />
 </p>
 
 <p>
-Consider the sequence s, defined as follows:<ul>
+Perhatikan barisan bilangan s, yang dinyatakan sebagai berikut:<ul>
 <li>s<sub>1</sub> = 1, s<sub>2</sub> = 2, s<sub>3</sub> = 3
 <li>s<sub><var>n</var></sub> = s<sub><var>n</var>-1</sub> + s<sub><var>n</var>-3</sub> for <var>n</var> &gt; 3.
 </ul></p>
 
 <p>
-Let U<sub><var>n</var></sub> be the set {s<sub>1</sub>, s<sub>2</sub>, ..., s<sub><var>n</var></sub>}. For example, U<sub>10</sub> = {1, 2, 3, 4, 6, 9, 13, 19, 28, 41}.<br />
-Let f(<var>n</var>) be the number of subsets of U<sub><var>n</var></sub> which generate at least one polygon.<br />
-For example, f(5) = 7, f(10) = 501 and f(25) = 18635853.
+Misal U<sub><var>n</var></sub> adalah himpunan {s<sub>1</sub>, s<sub>2</sub>, ..., s<sub><var>n</var></sub>}. Sebagai contoh, U<sub>10</sub> = {1, 2, 3, 4, 6, 9, 13, 19, 28, 41}.<br />
+Misal f(<var>n</var>) adalah banyaknya himpunan bagian dari U<sub><var>n</var></sub> yang akan membentuk setidaknya satu buah poligon.<br />
+Sebagai contoh, f(5) = 7, f(10) = 501 dan f(25) = 18635853.
 </p>
 
 <p>
-Find the last 9 digits of f(10<sup>18</sup>).
+Carilah 9 digit terakhir dari f(10<sup>18</sup>).
 </p>
