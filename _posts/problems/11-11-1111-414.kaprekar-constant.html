@@ -2,45 +2,45 @@
 layout: problem
 category: problems
 difficulty: 60
-title: "Kaprekar constant"
+title: "Konstanta Kaprekar"
 problemId: 414
 answer: -1
 ---
 
 <P>
-6174 is a remarkable number; if we sort its digits in increasing order and subtract that number from the number you get when you sort the digits in decreasing order, we get 7641-1467=6174.<BR />
-Even more remarkable is that if we start from any 4 digit number and repeat this process of sorting and subtracting, we'll eventually end up with 6174 or immediately with 0 if all digits are equal.<BR /> 
-This also works with numbers that have less than 4 digits if we pad the number with leading zeroes until we have 4 digits.<BR />
-E.g. let's start with the number 0837:<BR />
+6174 adalah sebuah bilangan yang luar biasa; jika kita menyusun digit-digitnya dengan urutan menaik dan menggunakan bilangan tersebut untuk mengurangkan bilangan yang telah diurutkan secara menurun, kita dapatkan 7641-1467=6174.<BR />
+Lebih luar biasanya lagi adalah, jika kita melakukan hal yang sama dengan bilangan 4 digit apapun, dan mengulang proses mengurutkan dan mengurangkan ini, suatu saat hasil perhitungan kita akan berakhir di 6174 atau langsung menjadi 0 jika semua digit adalah sama.<BR /> 
+Ini juga berlaku dengan bilangan yang memiliki kurang dari 4 digit, jika kita mengisi bilangan tersebut dengan angka nol di depannya sampai kita memiliki bilangan 4 digit.<BR />
+Sebagai contoh, mari kita mulai dengan bilangan 0837:<BR />
 8730-0378=8352<BR />
 8532-2358=6174
 </P>
 <P>
-6174 is called the <b>Kaprekar constant</b>. The process of sorting and subtracting and repeating this until either 0 or the Kaprekar constant is reached is called the <b>Kaprekar routine</b>.
+6174 disebut sebagai <b>konstanta Kaprekar</b>. Proses untuk mengurutkan dan mengurangkan dan mengulang-ulang proses ini sampai didapat hasil antara 0 atau konstanta Kaprekar disebut sebagai <b>kebiasaan Kaprekar</b>.
 </P>
 <P>
-We can consider the Kaprekar routine for other bases and number of digits.<BR /> 
-Unfortunately, it is not guaranteed a Kaprekar constant exists in all cases; either the routine can end up in a cycle for some input numbers or the constant the routine arrives at can be different for different input numbers.<BR >
-However, it can be shown that for 5 digits and a base b = 6t+3&ne;9, a Kaprekar constant exists.<BR />
-E.g. base 15: (10,4,14,9,5)<sub>15</sub><BR />
-base 21: (14,6,20,13,7)<sub>21</sub>
+Kita dapat mengamati kebiasaan Kaprekar untuk bilangan dengan basis dan banyak digit lain.<BR /> 
+Sayangnya, tidak dapat dijamin bahwa konstanta Kaprekar akan selalu ada dalam setiap kasus; proses ini dapat berakhir pada sebuah siklus untuk beberapa bilangan, atau dapat berakhir dengan bilangan konstan pada beberapa bilangan lainnya.<BR >
+Tetapi, dapat ditunjukkan bahwa untuk bilangan 5 digit yang dituliskan dalam basis b = 6t+3&ne;9, terdapat sebuah konstanta Kaprekar.<BR />
+Sebagai contoh, basis 15: (10,4,14,9,5)<sub>15</sub><BR />
+Basis 21: (14,6,20,13,7)<sub>21</sub>
 </P>
 <P>
-Define <var>C<sub>b</sub></var> to be the Kaprekar constant in base <var>b</var> for 5 digits.
-Define the function <var>sb(i)</var> to be
+Dinyatakan <var>C<sub>b</sub></var> sebagai konstanta Kaprekar pada basis <var>b</var> untuk bilangan 5 digit.
+Dinyatakan fungsi <var>sb(i)</var> sebagai
 <ul> 
-<li> 0 if i = <var>C<sub>b</sub></var> or if <var>i</var> written in base <var>b</var> consists of 5 identical digits
-<li> the number of iterations it takes the Kaprekar routine in base <var>b</var> to arrive at <var>C<sub>b</sub></var>, otherwise
+<li> 0 jika i = <var>C<sub>b</sub></var> atau jika <var>i</var> tertulis dalam basis <var>b</var> yang dibentuk dari 5 digit yang sama
+<li> Selain itu, <var>sb(i)</var> dinyatakan sebagai banyaknya iterasi yang diperlukan untuk melakukan kebiasaan Kaprekar pada bilangan basis <var>b</var> untuk sampai pada <var>C<sub>b</sub></var>
 </ul>
-Note that we can define <var>sb(i)</var> for all integers <var>i</var> &lt; <var>b</var><sup>5</sup>. If <var>i</var> written in base <var>b</var> takes less than 5 digits, the number is padded with leading zero digits until we have 5 digits before applying the Kaprekar routine.
+Perlu diingat bahwa kita dapat menyatakan <var>sb(i)</var> untuk semua bilangan bulat <var>i</var> &lt; <var>b</var><sup>5</sup>. Jika <var>i</var> tertulis dalam basis <var>b</var>, maka akan diperlukan kurang dari 5 digit, bilangan akan diisi oleh angka nol pada bagian depannya sampai kita dapatkan bilangan 5 digit sebelum kita menerapkan kebiasaan Kaprekar.
 </P>
 <P>
-Define <var>S(b)</var> as the sum of <var>sb(i)</var> for 0 &lt; <var>i</var> &lt; <var>b</var><sup>5</sup>.<BR >
-E.g. S(15) = 5274369<BR /> 
+Dinyatakan <var>S(b)</var> sebagai hasil penjumlahan dari <var>sb(i)</var> untuk 0 &lt; <var>i</var> &lt; <var>b</var><sup>5</sup>.<BR >
+Sehingga S(15) = 5274369<BR /> 
 S(111) = 400668930299
 </P>
 <P>
-Find the sum of S(6k+3) for 2 &le; k &le; 300.<BR />
-Give the last 18 digits as your answer.
+Carilah hasil penjumlahan dari S(6k+3) untuk 2 &le; k &le; 300.<BR />
+Berikan 18 digit terakhir sebagai jawaban Anda.
 </P>
 
