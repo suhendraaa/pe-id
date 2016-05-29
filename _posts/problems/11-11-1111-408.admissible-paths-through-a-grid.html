@@ -2,18 +2,18 @@
 layout: problem
 category: problems
 difficulty: 45
-title: "Admissible paths through a grid"
+title: "Jalur Yang Bisa Diterima Melalui Sebuah Kisi"
 problemId: 408
 answer: -1
 ---
 
-<p>Let's call a lattice point (<var>x</var>, <var>y</var>) <i>inadmissible</i> if <var>x</var>, <var>y</var> and <var>x</var>&nbsp;+&nbsp;<var>y</var> are all positive perfect squares.<br />
-For example, (9, 16) is inadmissible, while (0, 4), (3, 1) and (9, 4) are not.</p>
+<p>Mari kita sebut titik koordinat bilangan bulat (<var>x</var>, <var>y</var>) sebagai <i>tidak bisa diterima</i> jika <var>x</var>, <var>y</var> dan <var>x</var>&nbsp;+&nbsp;<var>y</var> semuanya adalah bilangan bulat kuadrat.<br />
+Sebagai contoh, (9, 16) adalah tidak bisa diterima, dimana (0, 4), (3, 1) dan (9, 4) adalah bukan.</p>
 
-<p>Consider a path from point (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) to point (<var>x</var><sub>2</sub>, <var>y</var><sub>2</sub>) using only unit steps north or east.<br />
-Let's call such a path <i>admissible</i> if none of its intermediate points are inadmissible.</p>
+<p>Perhatikan jalur yang dibentuk dari titik (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) ke titik (<var>x</var><sub>2</sub>, <var>y</var><sub>2</sub>) hanya menggunakan satu langkah ke utara atau timur.<br />
+Mari kita sebut jalur seperti ini sebagai jalur yang <i>dapat diterima</i> jika tidak terdapat titik di ataranya yang tidak bisa diterima.</p>
 
-<p>Let P(<var>n</var>) be the number of admissible paths from (0, 0) to (<var>n</var>, <var>n</var>).<br />
-It can be verified that P(5) = 252, P(16) = 596994440 and P(1000) mod 1&nbsp;000&nbsp;000&nbsp;007 = 341920854.</p>
+<p>Misal P(<var>n</var>) adalah banyaknya jalur yang dapat diterima dari (0, 0) ke (<var>n</var>, <var>n</var>).<br />
+Dapat dibuktikan bahwa P(5) = 252, P(16) = 596994440 dan P(1000) mod 1&nbsp;000&nbsp;000&nbsp;007 = 341920854.</p>
 
-<p>Find P(10&nbsp;000&nbsp;000) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
+<p>Carilah P(10&nbsp;000&nbsp;000) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
