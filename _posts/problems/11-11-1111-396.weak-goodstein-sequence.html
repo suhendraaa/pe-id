@@ -2,37 +2,37 @@
 layout: problem
 category: problems
 difficulty: 40
-title: "Weak Goodstein sequence"
+title: "Barisan Goodstein Lemah"
 problemId: 396
 answer: -1
 ---
 
 <p>
-For any positive integer n, the <b>nth weak Goodstein sequence</b> {g<sub>1</sub>, g<sub>2</sub>, g<sub>3</sub>, ...} is defined as:
+Untuk setiap bilangan bulat positif n, <b>barisan Goodstein lemah ke-<var>n</var></b> {g<sub>1</sub>, g<sub>2</sub>, g<sub>3</sub>, ...} dinyatakan dengan:
 <ul>
 <li> g<sub>1</sub> = <var>n</var>
-<li> for <var>k</var> &gt; 1, g<sub><var>k</var></sub> is obtained by writing g<sub><var>k</var>-1</sub> in base <var>k</var>, interpreting it as a base <var>k</var> + 1 number, and subtracting 1.
+<li> untuk <var>k</var> &gt; 1, g<sub><var>k</var></sub> didapatkan dengan cara menuliskan g<sub><var>k</var>-1</sub> dalam basis <var>k</var>, kemudian mengubahnya menjadi bilangan basis <var>k</var> + 1, dan menguranginya dengan 1.
 </ul>
-The sequence terminates when g<sub><var>k</var></sub> becomes 0.
+Barisan ini akan berhenti saat g<sub><var>k</var></sub> menjadi 0.
 </p>
 <p>
-For example, the 6th weak Goodstein sequence is {6, 11, 17, 25, ...}:
+Sebagai contoh, barisan Goodstein lemah ke-6 adalah {6, 11, 17, 25, ...}:
 <ul>
 <li> g<sub>1</sub> = 6.
-<li> g<sub>2</sub> = 11 since 6 = 110<sub>2</sub>, 110<sub>3</sub> = 12, and 12 - 1 = 11.
-<li> g<sub>3</sub> = 17 since 11 = 102<sub>3</sub>, 102<sub>4</sub> = 18, and 18 - 1 = 17.
-<li> g<sub>4</sub> = 25 since 17 = 101<sub>4</sub>, 101<sub>5</sub> = 26, and 26 - 1 = 25.
+<li> g<sub>2</sub> = 11 karena 6 = 110<sub>2</sub>, 110<sub>3</sub> = 12, dan 12 - 1 = 11.
+<li> g<sub>3</sub> = 17 karena 11 = 102<sub>3</sub>, 102<sub>4</sub> = 18, dan 18 - 1 = 17.
+<li> g<sub>4</sub> = 25 karena 17 = 101<sub>4</sub>, 101<sub>5</sub> = 26, dan 26 - 1 = 25.
 </ul>
-and so on.
+dan seterusnya.
 </p>
 <p>
-It can be shown that every weak Goodstein sequence terminates.
+Dapat ditunjukkan bahwa semua barisan Goodstein lemah pasti akan berhenti.
 </p>
 <p>
-Let G(<var>n</var>) be the number of nonzero elements in the <var>n</var>th weak Goodstein sequence.<br />
-It can be verified that G(2) = 3, G(4) = 21 and G(6) = 381.<br />
-It can also be verified that &Sigma;G(<var>n</var>) = 2517 for 1 &le; <var>n</var> &lt; 8.
+Misal G(<var>n</var>) adalah banyaknya elemen tidak nol pada barisan Goodstein lemah ke-<var>n</var>.<br />
+Dapat dibuktikan bahwa G(2) = 3, G(4) = 21 dan G(6) = 381.<br />
+Dapat juga dibuktikan bahwa &Sigma;G(<var>n</var>) = 2517 untuk 1 &le; <var>n</var> &lt; 8.
 </p>
 <p>
-Find the last 9 digits of &Sigma;G(<var>n</var>) for 1 &le; <var>n</var> &lt; 16.
+Carilah 9 digit terakhir dari &Sigma;G(<var>n</var>) untuk 1 &le; <var>n</var> &lt; 16.
 </p>
