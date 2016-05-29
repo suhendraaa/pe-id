@@ -2,23 +2,23 @@
 layout: problem
 category: problems
 difficulty: 55
-title: "Lattice points enclosed by parabola and line"
+title: "Titik Koordinat Yang Dibatasi Oleh Parabola Dan Garis"
 problemId: 403
 answer: -1
 ---
 
 <p>
-For integers <var>a</var> and <var>b</var>, we define <var>D</var>(<var>a</var>, <var>b</var>) as the domain enclosed by the parabola <var>y</var> = <var>x</var><sup>2</sup> and the line <var>y</var> = <var>a</var>&middot;<var>x</var> + <var>b</var>:<br />
+Untuk bilangan bulat <var>a</var> dan <var>b</var>, kita nyatakan <var>D</var>(<var>a</var>, <var>b</var>) sebagai domain yang dibatasi oleh parabola <var>y</var> = <var>x</var><sup>2</sup> dan garis <var>y</var> = <var>a</var>&middot;<var>x</var> + <var>b</var>:<br />
 <var>D</var>(<var>a</var>, <var>b</var>) = { (<var>x</var>, <var>y</var>) | <var>x</var><sup>2</sup> &le; <var>y</var> &le; <var>a</var>&middot;<var>x</var> + <var>b</var> }.
 </p>
 <p>
-L(<var>a</var>, <var>b</var>) is defined as the number of lattice points contained in <var>D</var>(<var>a</var>, <var>b</var>).<br />
-For example, L(1, 2) = 8 and L(2, -1) = 1.
+L(<var>a</var>, <var>b</var>) dinyatakan sebagai banyaknya koordinat bilangan bulat yang terdapat di <var>D</var>(<var>a</var>, <var>b</var>).<br />
+Sebagi contoh, L(1, 2) = 8 dan L(2, -1) = 1.
 </p>
 <p>
-We also define S(<var>N</var>) as the sum of L(<var>a</var>, <var>b</var>) for all the pairs (<var>a</var>, <var>b</var>) such that the area of <var>D</var>(<var>a</var>, <var>b</var>) is a rational number and |<var>a</var>|,|<var>b</var>| &le; <var>N</var>.<br />
-We can verify that S(5) = 344 and S(100) = 26709528.
+Kita juga nyatakan S(<var>N</var>) sebagai hasil penjumlahan dari L(<var>a</var>, <var>b</var>) untuk semua pasangan (<var>a</var>, <var>b</var>) sehingga luas wilayah dari <var>D</var>(<var>a</var>, <var>b</var>) adalah merupakan bilangan rasional dan |<var>a</var>|,|<var>b</var>| &le; <var>N</var>.<br />
+Dapat dibuktikan bahwa S(5) = 344 dan S(100) = 26709528.
 </p>
 <p>
-Find S(10<sup>12</sup>). Give your answer mod 10<sup>8</sup>.
+Carilah S(10<sup>12</sup>). Berikan jawaban Anda yang telah di mod 10<sup>8</sup>.
 </p>
