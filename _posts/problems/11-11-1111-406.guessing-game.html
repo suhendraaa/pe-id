@@ -2,36 +2,36 @@
 layout: problem
 category: problems
 difficulty: 50
-title: "Guessing Game"
+title: "Permainan Menebak"
 problemId: 406
 answer: -1
 ---
 
-<p>We are trying to find a hidden number selected from the set of integers {1, 2, ..., <var>n</var>} by asking questions. 
-Each number (question) we ask, we get one of three possible answers:<br />
+<p>Kita akan mencoba untuk mencari bilangan tersembunyi yang dipilih dari himpunan bilangan bulat {1, 2, ..., <var>n</var>} dengan memberikan pertanyaan. 
+Setiap bilangan (pertanyaan) yang kita tanyakan, akan memiliki satu dari tiga kemungkinan jawaban:<br />
 <ul>
-<li> "Your guess is lower than the hidden number" (and you incur a cost of <var>a</var>), or</li>
-<li> "Your guess is higher than the hidden number" (and you incur a cost of <var>b</var>), or</li>
-<li> "Yes, that's it!" (and the game ends).</li>
+<li> "Tebakan Anda lebih rendah dari bilangan tersembunyi" (dan Anda harus mengeluarkan biaya sebesar <var>a</var>), atau</li>
+<li> "Tebakan Anda lebih tinggi dari bilangan tersembunyi" (dan Anda harus mengeluarkan biaya sebesar <var>b</var>), atau</li>
+<li> "Ya, itu jawabannya!" (dan permainan berakhir).</li>
 </ul></p>
 
-<p>Given the value of <var>n</var>, <var>a</var>, and <var>b</var>, an <i>optimal strategy</i> minimizes the total cost <u>for the worst possible case</u>.</p>
+<p>Diberikan nilai dari <var>n</var>, <var>a</var>, dan <var>b</var>, sebagai sebuah <i>strategi optimal</i> sehingga dapat meminimalisir total biaya <u>untuk kasus terburuk</u>.</p>
 
-<p>For example, if <var>n</var> = 5, <var>a</var> = 2, and <var>b</var> = 3, then we may begin by asking "<b>2</b>" as our first question.</p>
+<p>Sebagai contoh, jika <var>n</var> = 5, <var>a</var> = 2, dan <var>b</var> = 3, maka kita dapat memulai dengan menanyakan "<b>2</b>" sebagai pertanyaan pertama kita.</p>
 
-<p>If we are told that 2 is higher than the hidden number (for a cost of <var>b</var>=3), then we are sure that "<b>1</b>" is the hidden number (for a total cost of <span style='color:blue;'><b>3</b></span>).<br />
-If we are told that 2 is lower than the hidden number (for a cost of <var>a</var>=2), then our next question will be "<b>4</b>".<br />
-If we are told that 4 is higher than the hidden number (for a cost of <var>b</var>=3), then we are sure that "<b>3</b>" is the hidden number (for a total cost of 2+3=<span style='color:blue;'><b>5</b></span>).<br />
-If we are told that 4 is lower than the hidden number (for a cost of <var>a</var>=2), then we are sure that "<b>5</b>" is the hidden number (for a total cost of 2+2=<span style='color:blue;'><b>4</b></span>).<br />
-Thus, the worst-case cost achieved by this strategy is <span style='color:red;'><b>5</b></span>. It can also be shown that this is the lowest worst-case cost that can be achieved. 
-So, in fact, we have just described an optimal strategy for the given values of <var>n</var>, <var>a</var>, and <var>b</var>.</p>
+<p>Jika kita diberi tahu bahwa 2 lebih tinggi dari bilangan tersembunyi (dengan biaya sebesar <var>b</var>=3), maka dapat dipastikan oleh kita bahwa "<b>1</b>" adalah bilangan tersembunyi (untuk total biaya sebesar <span style='color:blue;'><b>3</b></span>).<br />
+Jika kita diberi tahu bahwa 2 lebih rendah dari bilangan tersembunyi (dengan biaya sebesar <var>a</var>=2), maka pertanyaan kita selanjutnya akan menjadi "<b>4</b>".<br />
+Jika kita diberi tahu bahwa 4 lebih tinggi dari bilangan tersembunyi (dengan biaya sebesar <var>b</var>=3), maka dapat dipastikan oleh kita bahwa "<b>3</b>" adalah bilangan tersembunyi (untuk total biaya sebesar 2+3=<span style='color:blue;'><b>5</b></span>).<br />
+Jika kita diberi tahu bahwa 4 lebih rendah dari bilangan tersembunyi (dengan biaya sebesar <var>a</var>=2), maka dapat dipastikan oleh kita bahwa "<b>5</b>" adalah bilangan tersembunyi (untuk total biaya sebesar 2+2=<span style='color:blue;'><b>4</b></span>).<br />
+Sehingga, pada kasus terburuk, biayayang dikeluarkan oleh strategi ini adalah <span style='color:red;'><b>5</b></span>. Dan dapat dibuktikan bahwa ini merupakan kasus terburuk dengan biaya terkecil yang bisa didapatkan. 
+Bahkan, pada kenyataannya, kita baru saja menjelaskan sebuah strategi optimal untuk nilai <var>n</var>, <var>a</var>, dan <var>b</var>.</p>
 
-<p>Let C(<var>n</var>, <var>a</var>, <var>b</var>) be the worst-case cost achieved by an optimal strategy for the given values of <var>n</var>, <var>a</var>, and <var>b</var>.</p>
+<p>Misal C(<var>n</var>, <var>a</var>, <var>b</var>) adalah biaya yang didapatkan pada kasus terburuk, oleh sebuah strategi optimal jika diberikan nilai <var>n</var>, <var>a</var>, and <var>b</var>.</p>
 
-<p>Here are a few examples:<br />
+<p>Berikut ini adalah beberapa contohnya:<br />
 C(5, 2, 3) = 5<br />
 C(500, &radic;2, &radic;3) = 13.22073197...<br />
 C(20000, 5, 7) = 82<br />
 C(2000000, &radic;5, &radic;7) = 49.63755955...</p>
 
-<p>Let F<sub><var>k</var></sub> be the Fibonacci numbers: F<sub><var>k</var></sub> = F<sub><var>k</var>-1</sub> + F<sub><var>k</var>-2</sub> with base cases F<sub>1</sub> = F<sub>2</sub> = 1.<br />Find &sum;<sub>1&le;<var>k</var>&le;30</sub>&nbsp;C(10<sup>12</sup>, &radic;<var>k</var>, &radic;F<sub><var>k</var></sub>), and give your answer rounded to 8 decimal places behind the decimal point.</p>
+<p>Misal F<sub><var>k</var></sub> adalah bilangan Fibonacci: F<sub><var>k</var></sub> = F<sub><var>k</var>-1</sub> + F<sub><var>k</var>-2</sub> dengan F<sub>1</sub> = F<sub>2</sub> = 1.<br />Carilah &sum;<sub>1&le;<var>k</var>&le;30</sub>&nbsp;C(10<sup>12</sup>, &radic;<var>k</var>, &radic;F<sub><var>k</var></sub>), dan berikan jawaban Anda dibulatkan hingga 8 angka di belakang koma.</p>
