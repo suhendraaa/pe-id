@@ -2,15 +2,15 @@
 layout: problem
 category: problems
 difficulty: 40
-title: "A rectangular tiling"
+title: "Ubin Persegi Panjang"
 problemId: 405
 answer: -1
 ---
 
 <p>
-We wish to tile a rectangle whose length is twice its width.<br />
-Let <var>T</var>(0) be the tiling consisting of a single rectangle.<br />
-For <var>n</var> > 0, let <var>T</var>(<var>n</var>) be obtained from <var>T</var>(<var>n</var>-1) by replacing all tiles in the following manner:
+Kita akan memasang ubin pada sebuah daerah berbentuk persegi panjang yang panjangnya dua kali lipat lebarnya.<br />
+Misal <var>T</var>(0) adalah sebuah persegi panjang.<br />
+Untuk <var>n</var> > 0, misal <var>T</var>(<var>n</var>) didaptkan dari <var>T</var>(<var>n</var>-1) dengan menggantikan semua persegi panjang dengan aturan berikut:
 </p>
 
 <div align='center'>
@@ -18,7 +18,7 @@ For <var>n</var> > 0, let <var>T</var>(<var>n</var>) be obtained from <var>T</va
 </div>
 
 <p>
-The following animation demonstrates the tilings <var>T</var>(<var>n</var>) for <var>n</var> from 0 to 5:
+Animasi berikut ini mendemonstrasikan proses pemasangan ubin persegi panjang <var>T</var>(<var>n</var>) untuk <var>n</var> dari 0 sampai 5:
 </p>
 
 <div align='center'>
@@ -26,10 +26,10 @@ The following animation demonstrates the tilings <var>T</var>(<var>n</var>) for 
 </div>
 
 <p>
-Let <var>f</var>(<var>n</var>) be the number of points where four tiles meet in <var>T</var>(<var>n</var>).<br />
-For example, <var>f</var>(1) = 0, <var>f</var>(4) = 82 and <var>f</var>(10<sup>9</sup>) mod 17<sup>7</sup> = 126897180.
+Misal <var>f</var>(<var>n</var>) adalah banyaknya titik dimana empat buah ubin bertemu pada <var>T</var>(<var>n</var>).<br />
+Sebagai contoh, <var>f</var>(1) = 0, <var>f</var>(4) = 82 dan <var>f</var>(10<sup>9</sup>) mod 17<sup>7</sup> = 126897180.
 </p>
 
 <p>
-Find <var>f</var>(10<sup><var>k</var></sup>) for <var>k</var> = 10<sup>18</sup>, give your answer modulo 17<sup>7</sup>.
+Carilah <var>f</var>(10<sup><var>k</var></sup>) untuk <var>k</var> = 10<sup>18</sup>, berikan jawaban Anda yang telah di modulo 17<sup>7</sup>.
 </p>
