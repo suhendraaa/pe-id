@@ -2,26 +2,26 @@
 layout: problem
 category: problems
 difficulty: 45
-title: "Consecutive die throws"
+title: "Pelemparan Dadu Berurutan"
 problemId: 423
 answer: -1
 ---
 
-<p>Let <var>n</var> be a positive integer.<br />
-A 6-sided die is thrown <var>n</var> times. Let <var>c</var> be the number of pairs of consecutive throws that give the same value.</p>
+<p>Misal <var>n</var> adalah bilangan bulat positif.<br />
+Sebuah dadu bersisi 6 dilempar sebanyak <var>n</var> kali. Misal <var>c</var> adalah banyaknya pasangan dua lemparan berurutan yang mengeluarkan angka dadu yang sama.</p>
 
-<p>For example, if <var>n</var> = 7 and the values of the die throws are (1,1,5,6,6,6,3), then the following pairs of consecutive throws give the same value:<br />
+<p>Sebagai contoh, jika <var>n</var> = 7 dan hasil lemparan dadunya adalah (1,1,5,6,6,6,3), maka pasangan-pasangan berikut ini memiliki angka dadu yang sama:<br />
 (<u>1,1</u>,5,6,6,6,3)<br />
 (1,1,5,<u>6,6</u>,6,3)<br />
 (1,1,5,6,<u>6,6</u>,3)<br />
-Therefore, <var>c</var> = 3 for (1,1,5,6,6,6,3).</p>
+Sehingga, <var>c</var> = 3 untuk (1,1,5,6,6,6,3).</p>
 
-<p>Define C(<var>n</var>) as the number of outcomes of throwing a 6-sided die <var>n</var> times such that <var>c</var> does not exceed &pi;(<var>n</var>).<sup>1</sup><br />
-For example, C(3) = 216, C(4) = 1290, C(11) = 361912500 and C(24) = 4727547363281250000.</p>
+<p>Dinyatakan C(<var>n</var>) sebagai banyaknya hasil yang mungkin saat melempar dadu bersisi 6 sebanyak <var>n</var> kali, sehingga <var>c</var> tidak melebihi &pi;(<var>n</var>).<sup>1</sup><br />
+Sebagai contoh, C(3) = 216, C(4) = 1290, C(11) = 361912500 dan C(24) = 4727547363281250000.</p>
 
-<p>Define S(<var>L</var>) as &sum; C(<var>n</var>) for 1 &le; <var>n</var> &le; <var>L</var>.<br />
-For example, S(50) mod 1&nbsp;000&nbsp;000&nbsp;007 = 832833871.</p>
+<p>Dinyatakan S(<var>L</var>) sebagai &sum; C(<var>n</var>) untuk 1 &le; <var>n</var> &le; <var>L</var>.<br />
+Sebagai contoh, S(50) mod 1&nbsp;000&nbsp;000&nbsp;007 = 832833871.</p>
 
-<p>Find S(50&nbsp;000&nbsp;000) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
+<p>Carilah S(50&nbsp;000&nbsp;000) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
 
-<p><sup>1</sup> &pi; denotes the <b>prime-counting function</b>, i.e. &pi;(<var>n</var>) is the number of primes &le; <var>n</var>.</p>
+<p><sup>1</sup> &pi; melambangkan <b>fungsi menghitung banyaknya prima</b>, sehingga &pi;(<var>n</var>) adalah banyaknya bilangan prima &le; <var>n</var>.</p>
