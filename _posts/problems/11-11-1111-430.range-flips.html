@@ -2,23 +2,23 @@
 layout: problem
 category: problems
 difficulty: 35
-title: "Range flips"
+title: "Membalik Jangkauan"
 problemId: 430
 answer: -1
 ---
 
-<p><var>N</var> disks are placed in a row, indexed 1 to <var>N</var> from left to right.<br>
-Each disk has a black side and white side. Initially all disks show their white side.</p>
+<p><var>N</var> buah disk diletakkan pada suatu baris, dan diberi nomor dari 1 hingga <var>N</var> dari kiri ke kanan.<br>
+Setiap disk memiliki sisi bewarna hitam dan sisi bewarna putih. Mula-mulanya, semua disk menunjukkan sisi mereka yang bewarna putih.</p>
 
-<p>At each turn, two, not necessarily distinct, integers <var>A</var> and <var>B</var> between 1 and <var>N</var> (inclusive) are chosen uniformly at random.<br>
-All disks with an index from <var>A</var> to <var>B</var> (inclusive) are flipped.</p>
+<p>Pada setiap giliran, two buah bilangan bulat <var>A</var> dan <var>B</var> yang tidak harus berbeda antara 1 dan <var>N</var> (1 dan <var>N</var> juga termasuk) dipilih secara acak.<br>
+Semua disk dengan nomor dari <var>A</var> sampai <var>B</var> (A dan B juga termasuk) dibalik.</p>
 
-<p>The following example shows the case <var>N</var> = 8. At the first turn <var>A</var> = 5 and <var>B</var> = 2, and at the second turn <var>A</var> = 4 and <var>B</var> = 6.</p>
+<p>Contoh berikut ini menunjukkan kasus <var>N</var> = 8. Pada giliran pertama <var>A</var> = 5 dan <var>B</var> = 2, dan pada giliran ke dua <var>A</var> = dan and <var>B</var> = 6.</p>
 
 <p align=center><img src="{{ site.baseurl }}project/images/p430_flips.gif" /></p>
 
-<p>Let E(<var>N</var>, <var>M</var>) be the expected number of disks that show their white side after <var>M</var> turns.<br>
-We can verify that E(3, 1) = 10/9, E(3, 2) = 5/3, E(10, 4) &asymp; 5.157 and E(100, 10) &asymp; 51.893.</p>
+<p>Misal E(<var>N</var>, <var>M</var>) adalah nilai harapan (expected number) dari disk yang akan menunjukkan sisi bewarna putih setelah <var>M</var> kali giliran.<br>
+Dapat dibuktikan bahwa E(3, 1) = 10/9, E(3, 2) = 5/3, E(10, 4) &asymp; 5.157 dan E(100, 10) &asymp; 51.893.</p>
 
-<p>Find E(10<sup>10</sup>, 4000).<br>
-Give your answer rounded to 2 decimal places behind the decimal point.</p>
+<p>Carilah E(10<sup>10</sup>, 4000).<br>
+Berikan jawaban Anda yang telah dibulatkan hingga 2 angka di belakang koma.</p>
