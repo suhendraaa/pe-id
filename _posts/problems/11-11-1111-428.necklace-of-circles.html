@@ -2,35 +2,35 @@
 layout: problem
 category: problems
 difficulty: 85
-title: "Necklace of circles"
+title: "Kalung Lingkaran-Lingkaran"
 problemId: 428
 answer: -1
 ---
 
-<p>Let <var>a</var>, <var>b</var> and <var>c</var> be positive numbers.<br/>
-Let W, X, Y, Z be four collinear points where |WX| = <var>a</var>, |XY| = <var>b</var>, |YZ| = <var>c</var> and |WZ| = <var>a</var> + <var>b</var> + <var>c</var>.<br/>
-Let C<sub>in</sub> be the circle having the diameter XY.<br/>
-Let C<sub>out</sub> be the circle having the diameter WZ.<br/>
+<p>Misal <var>a</var>, <var>b</var> dan <var>c</var> adalah bilangan positif.<br/>
+Misal W, X, Y, Z adalah empat buah titik kolinear dimana |WX| = <var>a</var>, |XY| = <var>b</var>, |YZ| = <var>c</var> dan |WZ| = <var>a</var> + <var>b</var> + <var>c</var>.<br/>
+Misal C<sub>in</sub> adalah lingkaran yang memiliki panjang diameter XY.<br/>
+Misal C<sub>out</sub> adalah lingkaran yang memiliki panjang diameter WZ.<br/>
 </p>
 
 <p>
-The triplet (<var>a</var>, <var>b</var>, <var>c</var>) is called a <em>necklace triplet</em> if you can place <var>k</var> &ge; 3 distinct circles C<sub>1</sub>, C<sub>2</sub>, ..., C<sub><var>k</var></sub> such that:
+Kumpulan bilangan (<var>a</var>, <var>b</var>, <var>c</var>) akan disebut sebagai sebuah <em>tripel kalung</em> jika Anda dapat meletakkan <var>k</var> &ge; 3 lingkaran berbeda C<sub>1</sub>, C<sub>2</sub>, ..., C<sub><var>k</var></sub> sehingga:
 <ul>
-<li>C<sub><var>i</var></sub> has no common interior points with any C<sub><var>j</var></sub> for 1 &le; <var>i</var>, <var>j</var> &le; <var>k</var> and <var>i</var> &ne; <var>j</var>,
-<li>C<sub><var>i</var></sub> is tangent to both C<sub>in</sub> and C<sub>out</sub> for 1 &le; <var>i</var> &le; <var>k</var>,
-<li>C<sub><var>i</var></sub> is tangent to C<sub><var>i</var>+1</sub> for 1 &le; <var>i</var> < <var>k</var>, and
-<li>C<sub><var>k</var></sub> is tangent to C<sub>1</sub>.
+<li>C<sub><var>i</var></sub> tidak memiliki titik dalam lingkaran yang sama dengan lingkaran C<sub><var>j</var></sub> untuk 1 &le; <var>i</var>, <var>j</var> &le; <var>k</var> dan <var>i</var> &ne; <var>j</var>,
+<li>C<sub><var>i</var></sub> menyinggung lingkaran C<sub>in</sub> dan C<sub>out</sub> untuk 1 &le; <var>i</var> &le; <var>k</var>,
+<li>C<sub><var>i</var></sub> menyinggung lingkaran C<sub><var>i</var>+1</sub> untuk 1 &le; <var>i</var> < <var>k</var>, dan
+<li>C<sub><var>k</var></sub> menyinggung lingkaran C<sub>1</sub>.
 </ul></p>
 
 <p>
-For example, (5, 5, 5) and (4, 3, 21) are necklace triplets, while it can be shown that (2, 2, 5) is not.
+Sebagai contoh, (5, 5, 5) dan (4, 3, 21) adalah tripel kalung, sementara dapat ditunjukkan bahwa (2, 2, 5) adalah bukan tripel kalung.
 </p>
 <p align=center><img src={{ site.baseurl }}project/images/p428_necklace.png></p>
 
 <p>
-Let T(<var>n</var>) be the number of necklace triplets (<var>a</var>, <var>b</var>, <var>c</var>) such that <var>a</var>, <var>b</var> and <var>c</var> are positive integers, and <var>b</var> &le; <var>n</var>.
-For example, T(1)&nbsp;=&nbsp;9, T(20)&nbsp;=&nbsp;732 and T(3000)&nbsp;=&nbsp;438106.
+Misal T(<var>n</var>) adalah banyaknya tripel kalung (<var>a</var>, <var>b</var>, <var>c</var>) sehingga <var>a</var>, <var>b</var> dan <var>c</var> adalah bilangan bulat positif, dan <var>b</var> &le; <var>n</var>.
+Sebagai contoh, T(1)&nbsp;=&nbsp;9, T(20)&nbsp;=&nbsp;732 dan T(3000)&nbsp;=&nbsp;438106.
 </p>
 <p>
-Find T(1&nbsp;000&nbsp;000&nbsp;000).
+Carilah T(1&nbsp;000&nbsp;000&nbsp;000).
 </p>
