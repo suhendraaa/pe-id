@@ -2,26 +2,26 @@
 layout: problem
 category: problems
 difficulty: 95
-title: "Integer part of polynomial equation's solutions"
+title: "Bagian Bilangan Bulat Dari Solusi Persamaan Polinomial"
 problemId: 438
 answer: -1
 ---
 
 <P>
-For an <var>n</var>-tuple of integers <var>t</var> = (<var>a</var><sub>1</sub>, ..., <var>a</var><sub><var>n</var></sub>), let (<var>x</var><sub>1</sub>, ..., <var>x</var><sub><var>n</var></sub>) be the solutions of the polynomial equation <var>x</var><sup><var>n</var></sup> + <var>a</var><sub>1</sub><var>x</var><sup><var>n</var>-1</sup> + <var>a</var><sub>2</sub><var>x</var><sup><var>n</var>-2</sup> + ... + <var>a</var><sub><var>n</var>-1</sub><var>x</var> + <var>a</var><sub><var>n</var></sub> = 0.
+Untuk <var>n</var>-buah bilangan bulat <var>t</var> = (<var>a</var><sub>1</sub>, ..., <var>a</var><sub><var>n</var></sub>), misal (<var>x</var><sub>1</sub>, ..., <var>x</var><sub><var>n</var></sub>) adalah solusi dari persamaan polinomial <var>x</var><sup><var>n</var></sup> + <var>a</var><sub>1</sub><var>x</var><sup><var>n</var>-1</sup> + <var>a</var><sub>2</sub><var>x</var><sup><var>n</var>-2</sup> + ... + <var>a</var><sub><var>n</var>-1</sub><var>x</var> + <var>a</var><sub><var>n</var></sub> = 0.
 </P>
 <P>
-Consider the following two conditions:
+Terdapat dua buah kondisi:
 <ul>
-<li><var>x</var><sub>1</sub>, ..., <var>x</var><sub><var>n</var></sub> are all real.
-<li>If <var>x</var><sub>1</sub>, ..., <var>x</var><sub><var>n</var></sub> are sorted, &lfloor;<var>x</var><sub><var>i</var></sub>&rfloor; = <var>i</var> for 1 &le; <var>i</var> &le; <var>n</var>. (&lfloor;&middot;&rfloor;: floor function.)
+<li><var>x</var><sub>1</sub>, ..., <var>x</var><sub><var>n</var></sub> semuanya adalah bilangan real.
+<li>Jika <var>x</var><sub>1</sub>, ..., <var>x</var><sub><var>n</var></sub> adalah berurutan, &lfloor;<var>x</var><sub><var>i</var></sub>&rfloor; = <var>i</var> untuk 1 &le; <var>i</var> &le; <var>n</var>. (&lfloor;&middot;&rfloor;: fungsi pembulatan ke bawah.)
 </ul>
 </P>
 <P>
-In the case of <var>n</var> = 4, there are 12 <var>n</var>-tuples of integers which satisfy both conditions.<BR />
-We define S(<var>t</var>) as the sum of the absolute values of the integers in <var>t</var>.<BR />
-For <var>n</var> = 4 we can verify that &sum;S(<var>t</var>) = 2087 for all <var>n</var>-tuples <var>t</var> which satisfy both conditions.
+Pada kasus <var>n</var> = 4, terdapat 12 buah kumpulan <var>n</var>-buah bilangan bulat yang memenuhi kedua kondisi tersebut.<BR />
+Kita nyatakan S(<var>t</var>) sebagai hasil penjumlahan dari nilai mutlak bilangan bulat pada <var>t</var>.<BR />
+Untuk <var>n</var> = 4 dapat dibuktikan bahwa &sum;S(<var>t</var>) = 2087 untuk semua <var>n</var>-buah bilangan <var>t</var> yang memenuhi kedua kondisi tersebut.
 </P>
 <P>
-Find &sum;S(<var>t</var>) for <var>n</var> = 7.
+Carilah &sum;S(<var>t</var>) untuk <var>n</var> = 7.
 </P>
