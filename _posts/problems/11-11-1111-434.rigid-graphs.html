@@ -2,27 +2,27 @@
 layout: problem
 category: problems
 difficulty: 75
-title: "Rigid graphs"
+title: "Grafik Kaku"
 problemId: 434
 answer: -1
 ---
 
-<p>Recall that a graph is a collection of vertices and edges connecting the vertices, and that two vertices connected by an edge are called adjacent.<br/>
-Graphs can be embedded in Euclidean space by associating each vertex with a point in the Euclidean space.<br/>
-A <strong>flexible</strong> graph is an embedding of a graph where it is possible to move one or more vertices continuously so that the distance between at least two nonadjacent vertices is altered while the distances between each pair of adjacent vertices is kept constant.<br/>
-A <strong>rigid</strong> graph is an embedding of a graph which is not flexible.<br/>
-Informally, a graph is rigid if by replacing the vertices with fully rotating hinges and the edges with rods that are unbending and inelastic, no parts of the graph can be moved independently from the rest of the graph.
+<p>Grafik adalah kumpulan dari beberapa titik dan garis penghubung, dan dua buah titik yang dihubungkan oleh sebuah garis disebut bersebelahan.<br/>
+Grafik dapat digambarkan pada ruang Euclidean dengan menghubungkan setiap titik pada grafik dengan titik pada ruang euclidean.<br/>
+Sebuah grafik <strong>fleksibel</strong> adalah proses penggambaran sebuah grafik, dimana memungkinkan untuk menggeser satu atau lebih titik secara terus menerus, sehingga jarak antara dua titik yang tidak bersebelahan dapat berubah, sementara jarak antara dua titik yang bersebelahan dijaga tetap konstan.<br/>
+Sebuah grafik <strong>kaku</strong> adalah proses penggambaran sebuah grafik yang tidak fleksibel.<br/>
+Atau secara tidak formal, sebuah grafik disebut kaku jika titik-titik pada grafik diganti dengan sebuah engsel yang dapat berputar, dan garis-garis pada grafik diganti dengan tiang yang tidak dapat bengkok dan tidak elastis, tidak ada bagian pada grafik yang dapat bergerak sendiri tanpa mengubah bagian lain dari grafik.
 </p>
-<p>The <strong>grid graphs</strong> embedded in the Euclidean plane are not rigid, as the following animation demonstrates:<br/>
+<p><strong>Grafik kotak-kotak</strong> yang digambar pada ruang Euclidean adalah tidak kaku, seperti yang dicontohkan oleh animasi berikut:<br/>
 <img src="{{ site.baseurl }}project/images/p434_rigid.gif" /></p>
-<p>However, one can make them rigid by adding diagonal edges to the cells. For example, for the 2x3 grid graph, there are 19 ways to make the graph rigid:<br/>
+<p>Tetapi, salah satu cara untuk dapat menjadikan grafik tersebut kaku adalah dengan menambahkan garis diagonal pada setiap kotak. Sebagai contoh, untuk grafik kotak-kotak berukuran 2x3, terdapat 19 cara untuk menjadikan grafik kaku:<br/>
 <img src="{{ site.baseurl }}project/images/p434_rigid23.png" /></p>
-<p>Note that for the purposes of this problem, we do not consider changing the orientation of a diagonal edge or adding both diagonal edges to a cell as a different way of making a grid graph rigid.
+<p>Perlu di ingat tujuan dari permasalahan ini, kita tidak menganggap perubahan arah dari garis diagonal atau menambahkan dua buah diagonal pada satu kotak sebagai cara yang berbeda untuk membuat grafik menjadi kaku.
 </p>
-<p>Let <var>R</var>(<var>m</var>,<var>n</var>) be the number of ways to make the <var>m</var> &times; <var>n</var> grid graph rigid. <br/>
-E.g. <var>R</var>(2,3) = 19 and <var>R</var>(5,5) = 23679901
+<p>Misal <var>R</var>(<var>m</var>,<var>n</var>) adalah banyaknya cara untuk membuat grafik kotak-kotak berukuran <var>m</var> &times; <var>n</var> menjadi kaku. <br/>
+Sebagai contoh, <var>R</var>(2,3) = 19 dan <var>R</var>(5,5) = 23679901
 </p>
-<p>Define <var>S</var>(<var>N</var>) as &sum;<var>R</var>(<var>i</var>,<var>j</var>) for 1 &le; <var>i</var>, <var>j</var> &le; <var>N</var>.<br/>
-E.g. <var>S</var>(5) = 25021721.<br/>
-Find <var>S</var>(100), give your answer modulo 1000000033
+<p>Dinyatakan <var>S</var>(<var>N</var>) sebagai &sum;<var>R</var>(<var>i</var>,<var>j</var>) untuk 1 &le; <var>i</var>, <var>j</var> &le; <var>N</var>.<br/>
+Sehingga <var>S</var>(5) = 25021721.<br/>
+Carilah <var>S</var>(100), berikan jawaban Anda yang telah di modulo 1000000033
 </p>
