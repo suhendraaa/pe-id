@@ -2,26 +2,26 @@
 layout: problem
 category: problems
 difficulty: 55
-title: "The Roundtable Lottery"
+title: "Lotere Meja Bundar"
 problemId: 444
 answer: -1
 ---
 
-<p>A group of <var>p</var> people decide to sit down at a round table and play a lottery-ticket trading game. Each person starts off with a randomly-assigned, unscratched lottery ticket. Each ticket, when scratched, reveals a whole-pound prize ranging anywhere from &pound;1 to &pound;<var>p</var>, with no two tickets alike. The goal of the game is for each person to maximize his ticket winnings upon leaving the game.</p>
+<p>Sebuah kelompok berisi <var>p</var> orang memutuskan untuk duduk pada sebuah meja bundar dan memainkan sebuah permainan pertukaran tiket lotere. Setiap orang memulai dengan tiket lotere yang masih mulus yang diberikan secara acak. Setiap tiket, saat digosok, akan menunjukkan hadiah uang antara &pound;1 sampai &pound;<var>p</var>, dan tidak terdapat dua tiket yang memiliki hadiah yang sama. Tujuan dari permainan ini untuk setiap orang adalah untuk mendapatkan tiket dengan hadiah terbesar begitu permainan berakhir.</p>
 
-<p>An arbitrary person is chosen to be the first player. Going around the table, each player has only one of two options:</p>
+<p>Satu orang ditunjuk secara acak untuk menjadi pemain pertama. Dengan memutari sekeliling meja, setiap orang hanya dapat memilih satu dari dua pilihan:</p>
 
-<p>1. The player can scratch his ticket and reveal its worth to everyone at the table.<br/>
-2. The player can trade his unscratched ticket for a previous player's scratched ticket, and then leave the game with that ticket. The previous player then scratches his newly-acquired ticket and reveals its worth to everyone at the table.</p>
+<p>1. Pemain dapat menggosok tiketnya dan memberitahukan besar hadiah yang didapatkan kepada semua orang di meja.<br/>
+2. Pemain dapat menukarkan tiketnya yang masih mulus dengan tiket pemain sebelumnya yang telah digosok, dan kemudian pergi dengan membawa tiket tersebut. Pemain sebelumnya yang mendapatkan tiket baru kemudian menggosok tiketnya dan memberitahukan besar hadiah yang didapatkan kepada semua orang yang ada di meja.</p>
 
-<p>The game ends once all tickets have been scratched. All players still remaining at the table must leave with their currently-held tickets.</p>
+<p>Permainan berakhir saat semua tiket telah digosok. Semua pemain yang masih ada di meja harus pergi dengan membawa tiket yang ada di tangannya.</p>
 
-<p>Assume that each player uses the optimal strategy for maximizing the expected value of his ticket winnings. </p>
+<p>Asumsikan setiap pemain menggunakan strategi optimal untuk mendapatkan nilai harapan (expected value) terbesar dari hadiah yang didapatkan oleh tiketnya. </p>
 
-<p>Let E(<var>p</var>) represent the expected number of players left at the table when the game ends in a game consisting of <var>p</var> players (e.g. E(111)&nbsp;=&nbsp;5.2912 when rounded to 5 significant digits).</p>
+<p>Misal E(<var>p</var>) menyatakan dugaan banyaknya (expected number) pemain yang meninggalkan meja saat permainan berakhir, pada permainan yang dimainkan oleh <var>p</var> orang (Sebagai contoh E(111)&nbsp;=&nbsp;5.2912 saat dibulatkan hingga 5 angka).</p>
 
-<p>Let S<sub>1</sub>(<var>N</var>) = <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p444_sum.png" /> E(<var>p</var>)<br/>
-Let S<sub><var>k</var></sub>(<var>N</var>) = <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p444_sum.png" /> S<sub><var>k</var>-1</sub>(<var>p</var>) for <var>k</var> &gt; 1</p>
+<p>Misal S<sub>1</sub>(<var>N</var>) = <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p444_sum.png" /> E(<var>p</var>)<br/>
+Misal S<sub><var>k</var></sub>(<var>N</var>) = <img style="vertical-align:middle" src="{{ site.baseurl }}project/images/p444_sum.png" /> S<sub><var>k</var>-1</sub>(<var>p</var>) untuk <var>k</var> &gt; 1</p>
 
-<p>Find S<sub>20</sub>(10<sup>14</sup>) and write the answer in scientific notation rounded to 10 significant digits. Use a lowercase e to separate mantissa and exponent (e.g. S<sub>3</sub>(100) = 5.983679014e5).</p>
+<p>Carilah S<sub>20</sub>(10<sup>14</sup>) dan tuliskan jawaban Anda sesuai dengan aturan notasi ilmiah, dibulatkan hingga 10 angka. Gunakan huruf kecil untuk memisahkan mantissa dan eksponen (Sebagai contoh S<sub>3</sub>(100) = 5.983679014e5).</p>
 
