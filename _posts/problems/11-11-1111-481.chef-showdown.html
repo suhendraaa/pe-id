@@ -2,19 +2,19 @@
 layout: problem
 category: problems
 difficulty: 65
-title: "Chef Showdown"
+title: "Pertunjukan Koki"
 problemId: 481
 answer: -1
 ---
 
-<p>A group of chefs (numbered #1, #2, etc) participate in a turn-based strategic cooking competition. On each chef's turn, he/she cooks up a dish to the best of his/her ability and gives it to a separate panel of judges for taste-testing. Let S(<var>k</var>) represent chef #<var>k</var>'s skill level (which is publicly known). More specifically, S(<var>k</var>) is the probability that chef #<var>k</var>'s dish will be assessed favorably by the judges (on any/all turns). If the dish receives a favorable rating, then the chef must choose one other chef to be eliminated from the competition. The last chef remaining in the competition is the winner.</p>
+<p>Sebuah grup berisi kumpulan koki (diberi nomor #1, #2, dan seterusnya) berpartisipasi pada kompetisi memasak berbasis giliran. Pada setiap giliran, seorang koki harus memasak sebuah hidangan sebaik mungkin yang ia bisa dan memberikannya kepada beberapa orang juri untuk dicicipi rasanya. Misal S(<var>k</var>) menyatakan level kemampuan memasak koki #<var>k</var> (yang diketahui oleh publik). Lebih spesifik lagi, S(<var>k</var>) adalah peluang masakan buatan koki #<var>k</var> akan mendapatkan nilai yang baik dari para juri (pada satu/semua giliran). Jika terdapat sebuah masakan yang mendapatkan nilai terbaik, maka koki yang memasak makanan tersebut harus memilih koki lain yang akan dieliminasi dari kompetisi memasak ini. Koki terakhir yang masih bertahan pada kompetisi ini adalah pemenangnya.</p>
 
-<p>The game always begins with chef #1, with the turn order iterating sequentially over the rest of the chefs still in play. Then the cycle repeats from the lowest-numbered chef. All chefs aim to optimize their chances of winning within the rules as stated, assuming that the other chefs behave in the same manner. In the event that a chef has more than one equally-optimal elimination choice, assume that the chosen chef is always the one with the next-closest turn.</p>
+<p>Kompetisi selalu dimulai oleh koki #1, kemudian dilanjutkan oleh koki selanjutnya yang masih berada dalam kompetisi secara berurutan. Kemudian jika sudah mencapai koki nomor terakhir, maka kompetisi diulang kembali dari koki yang memiliki nomor paling rendah. Semua koki diasumsikan akan berusaha untuk memperbesar kemungkinan mereka untuk menang sesuai dengan aturan yang berlaku. Pada setiap giliran, jika seorang koki memiliki lebih dari satu pilihan eliminasi yang optimal, kita akan asumsikan bahwa jika terjadi hal seperti ini, maka koki yang akan dipilih untuk dieliminasi adalah selalu koki yang terdekat dari giliran selanjutnya.</p>
 
-<p>Define W<sub>n</sub>(<var>k</var>) as the probability that chef #<var>k</var> wins in a competition with <var>n</var> chefs. If we have S(1) = 0.25, S(2) = 0.5, and S(3) = 1, then W<sub>3</sub>(1) = 0.29375.</p>
+<p>Dinyatakan W<sub>n</sub>(<var>k</var>) sebagai peluang bahwa koki #<var>k</var> akan memenangkan kompetisi yang diikuti oleh <var>n</var> orang koki. Jika diketahui S(1) = 0.25, S(2) = 0.5, dan S(3) = 1, maka W<sub>3</sub>(1) = 0.29375.</p>
 
-<p>Going forward, we assign S(<var>k</var>) = F<sub>k</sub>/F<sub>n+1</sub> over all 1 ≤ <var>k</var> ≤ <var>n</var>, where F<sub>k</sub> is a Fibonacci number: F<sub>k</sub> = F<sub>k-1</sub> + F<sub>k-2</sub> with base cases F<sub>1</sub> = F<sub>2</sub> = 1. Then, for example, when considering a competition with <var>n</var> = 7 chefs, we have W<sub>7</sub>(1) = 0.08965042, W<sub>7</sub>(2) = 0.20775702, W<sub>7</sub>(3) = 0.15291406, W<sub>7</sub>(4) = 0.14554098, W<sub>7</sub>(5) = 0.15905291, W<sub>7</sub>(6) = 0.10261412, and W<sub>7</sub>(7) = 0.14247050, rounded to 8 decimal places each.</p>
+<p>Lebih lanjut lagi, kita akan memasangkan nilai S(<var>k</var>) = F<sub>k</sub>/F<sub>n+1</sub> terhadap semua 1 ≤ <var>k</var> ≤ <var>n</var>, dimana F<sub>k</sub> adalah merupakan bilangan Fibonacci: F<sub>k</sub> = F<sub>k-1</sub> + F<sub>k-2</sub> dengan nilai dasar F<sub>1</sub> = F<sub>2</sub> = 1. Kemudian, sebagai contoh, saat kita mengamati sebuah kompetisi dengan <var>n</var> = 7 orang koki, kita memiliki W<sub>7</sub>(1) = 0.08965042, W<sub>7</sub>(2) = 0.20775702, W<sub>7</sub>(3) = 0.15291406, W<sub>7</sub>(4) = 0.14554098, W<sub>7</sub>(5) = 0.15905291, W<sub>7</sub>(6) = 0.10261412, dan W<sub>7</sub>(7) = 0.14247050, yang masing-masing dibulatkan hingga 8 angka di belakang koma.</p>
 
-<p>Let E(<var>n</var>) represent the expected number of dishes cooked in a competition with <var>n</var> chefs. For instance, E(7) = 42.28176050.</p>
+<p>Misal E(<var>n</var>) menyatakan perkiraan banyaknya (expected number) hidangan yang dimasak pada kompetisi berisi <var>n</var> orang koki. Sebagai contoh, E(7) = 42.28176050.</p>
 
-<p>Find E(14) rounded to 8 decimal places.</p>
+<p>Carilah E(14) dibulatkan hingga 8 angka di belakang koma.</p>
