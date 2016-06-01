@@ -2,30 +2,30 @@
 layout: problem
 category: problems
 difficulty: 100
-title: "Mixtures"
+title: "Campuran"
 problemId: 478
 answer: -1
 ---
 
-<p>Let us consider <b>mixtures</b> of three substances: <b>A</b>, <b>B</b> and <b>C</b>. A mixture can be described by a ratio of the amounts of <b>A</b>, <b>B</b>, and <b>C</b> in it, i.e., (<var>a</var>&nbsp;:&nbsp;<var>b</var>&nbsp;:&nbsp;<var>c</var>). For example, a mixture described by the ratio (2&nbsp;:&nbsp;3&nbsp;:&nbsp;5) contains 20% <b>A</b>, 30% <b>B</b> and 50% <b>C</b>.</p>
+<p>Terdapat sebuah <b>campuran</b> dari tiga buah zat: <b>A</b>, <b>B</b> dan <b>C</b>. Sebuah campuran dapat dideskripsikan dengan rasio dari banyaknya zat <b>A</b>, <b>B</b>, dan <b>C</b> yang ada padanya dalam bentuk penulisan (<var>a</var>&nbsp;:&nbsp;<var>b</var>&nbsp;:&nbsp;<var>c</var>). Sebagai contoh, sebuah campuran dideskripsikan dengan rasio (2&nbsp;:&nbsp;3&nbsp;:&nbsp;5) mengandung 20% <b>A</b>, 30% <b>B</b> dan 50% <b>C</b>.</p>
 
-<p>For the purposes of this problem, we cannot separate the individual components from a mixture. However, we can combine different amounts of different mixtures to form mixtures with new ratios.</p>
+<p>Untuk permasalahan pada soal ini, kita tidak dapat memisahkan masing-masing zat dari campuran. Tetapi, kita dapat mencampurkan dua campuran yang memiliki rasio kandungan zat berbeda untuk membentuk campuran dengan rasio baru.</p>
 
-<p>For example, say we have three mixtures with ratios (3&nbsp;:&nbsp;0&nbsp;:&nbsp;2), (3&nbsp;:&nbsp;6&nbsp;:&nbsp;11) and (3&nbsp;:&nbsp;3&nbsp;:&nbsp;4). By mixing 10 units of the first, 20 units of the second and 30 units of the third, we get a new mixture with ratio (6&nbsp;:&nbsp;5&nbsp;:&nbsp;9), since:<br/>
+<p>Sebagi contoh, misalkan kita mempunyai tiga buah campuran dengan rasio masing-masing (3&nbsp;:&nbsp;0&nbsp;:&nbsp;2), (3&nbsp;:&nbsp;6&nbsp;:&nbsp;11) dan (3&nbsp;:&nbsp;3&nbsp;:&nbsp;4). Dengan mencampurkan 10 unit campuran pertama, 20 unit campuran kedua dan 30 unit campuran ketiga, kita bisa mendapatkan campuran baru dengan rasio (6&nbsp;:&nbsp;5&nbsp;:&nbsp;9), karena:<br/>
 (10&middot;<sup>3</sup>/<sub>5</sub>&nbsp;+&nbsp;20&middot;<sup>3</sup>/<sub>20</sub>&nbsp;+&nbsp;30&middot;<sup>3</sup>/<sub>10</sub>&nbsp;:&nbsp;10&middot;<sup>0</sup>/<sub>5</sub>&nbsp;+&nbsp;20&middot;<sup>6</sup>/<sub>20</sub>&nbsp;+&nbsp;30&middot;<sup>3</sup>/<sub>10</sub>&nbsp;:&nbsp;10&middot;<sup>2</sup>/<sub>5</sub>&nbsp;+&nbsp;20&middot;<sup>11</sup>/<sub>20</sub>&nbsp;+&nbsp;30&middot;<sup>4</sup>/<sub>10</sub>)
 = (18&nbsp;:&nbsp;15&nbsp;:&nbsp;27) = (6&nbsp;:&nbsp;5&nbsp;:&nbsp;9)</p>
 
-<p>However, with the same three mixtures, it is impossible to form the ratio (3&nbsp;:&nbsp;2&nbsp;:&nbsp;1), since the amount of <b>B</b> is always less than the amount of <b>C</b>.</p>
+<p>Tetapi, dengan tiga campuran yang sama seperti di atas, adalah mustahil untuk membentuk campuran baru dengan rasio (3&nbsp;:&nbsp;2&nbsp;:&nbsp;1), karena banyaknya zat <b>B</b> pasti selalu lebih kecil dari zat <b>C</b>.</p>
 
-<p>Let <var>n</var> be a positive integer. Suppose that for every triple of integers (<var>a</var>, <var>b</var>, <var>c</var>) with 0 &le; <var>a</var>, <var>b</var>, <var>c</var> &le; <var>n</var> and gcd(<var>a</var>, <var>b</var>, <var>c</var>) = 1, we have a mixture with ratio (<var>a</var>&nbsp;:&nbsp;<var>b</var>&nbsp;:&nbsp;<var>c</var>). Let M(<var>n</var>) be the set of all such mixtures.</p>
+<p>Misal <var>n</var> adalah sebuah bilangan bulat positif. Seharusnya untuk setiap tripel bilangan bulat (<var>a</var>, <var>b</var>, <var>c</var>) dengan 0 &le; <var>a</var>, <var>b</var>, <var>c</var> &le; <var>n</var> dan fpb(<var>a</var>, <var>b</var>, <var>c</var>) = 1, kita akan mempunyai campuran dengan rasio (<var>a</var>&nbsp;:&nbsp;<var>b</var>&nbsp;:&nbsp;<var>c</var>). Misal M(<var>n</var>) adalah himpunan dari semua campuran yang memiliki sifat di atas.</p>
 
-<p>For example, M(2) contains the 19 mixtures with the following ratios:<br/>
+<p>Sebagai contoh, M(2) memiliki 19 macam campuran dengan rasio-rasio sebagai berikut:<br/>
 {(0&nbsp;:&nbsp;0&nbsp;:&nbsp;1), (0&nbsp;:&nbsp;1&nbsp;:&nbsp;0), (0&nbsp;:&nbsp;1&nbsp;:&nbsp;1), (0&nbsp;:&nbsp;1&nbsp;:&nbsp;2), (0&nbsp;:&nbsp;2&nbsp;:&nbsp;1), <br/>
 (1&nbsp;:&nbsp;0&nbsp;:&nbsp;0), (1&nbsp;:&nbsp;0&nbsp;:&nbsp;1), (1&nbsp;:&nbsp;0&nbsp;:&nbsp;2), (1&nbsp;:&nbsp;1&nbsp;:&nbsp;0), (1&nbsp;:&nbsp;1&nbsp;:&nbsp;1), <br/>
 (1&nbsp;:&nbsp;1&nbsp;:&nbsp;2), (1&nbsp;:&nbsp;2&nbsp;:&nbsp;0), (1&nbsp;:&nbsp;2&nbsp;:&nbsp;1), (1&nbsp;:&nbsp;2&nbsp;:&nbsp;2), (2&nbsp;:&nbsp;0&nbsp;:&nbsp;1), <br/>
 (2&nbsp;:&nbsp;1&nbsp;:&nbsp;0), (2&nbsp;:&nbsp;1&nbsp;:&nbsp;1), (2&nbsp;:&nbsp;1&nbsp;:&nbsp;2), (2&nbsp;:&nbsp;2&nbsp;:&nbsp;1)}.</p>
 
-<p>Let E(<var>n</var>) be the number of subsets of M(<var>n</var>) which can produce the mixture with ratio (1 : 1 : 1), i.e., the mixture with equal parts <b>A</b>, <b>B</b> and <b>C</b>. <br/>
-We can verify that E(1) = 103, E(2) = 520447, E(10)&nbsp;mod&nbsp;11<sup>8</sup> = 82608406 and E(500)&nbsp;mod&nbsp;11<sup>8</sup> = 13801403.<br/>
-Find E(10&nbsp;000&nbsp;000)&nbsp;mod&nbsp;11<sup>8</sup>.</p>
+<p>Misal E(<var>n</var>) adalah banyaknya himpunan bagian dari M(<var>n</var>) yang dapat menghasilkan campuran dengan rasio (1 : 1 : 1), atau dengan kata lain, campuran yang memiliki jumlah yang sama antara zat <b>A</b>, <b>B</b> dan <b>C</b>. <br/>
+Dapat dibuktikan bahwa E(1) = 103, E(2) = 520447, E(10)&nbsp;mod&nbsp;11<sup>8</sup> = 82608406 dan E(500)&nbsp;mod&nbsp;11<sup>8</sup> = 13801403.<br/>
+Carilah E(10&nbsp;000&nbsp;000)&nbsp;mod&nbsp;11<sup>8</sup>.</p>
 
