@@ -2,26 +2,26 @@
 layout: problem
 category: problems
 difficulty: 85
-title: "Polar polygons"
+title: "Poligon Polar"
 problemId: 465
 answer: -1
 ---
 
-<p>The <i>kernel</i> of a polygon is defined by the set of points from which the entire polygon's boundary is visible. We define a <i>polar polygon</i> as a polygon for which the origin is <u>strictly</u> contained inside its kernel.</p>
+<p><i>Kernel</i> dari sebuah poligon dinyatakan sebagai himpunan wilayah yang dapat terlihat dari semua titik pada keliling poligon. Kita nyatakan <i>poligon polar</i> sebagai sebuah poligon dimana titik origin O(0,0) <u>harus</u> berada di dalam kernelnya.</p>
 
-<p>For this problem, a polygon can have collinear consecutive vertices. However, a polygon still cannot have self-intersection and cannot have zero area.</p>
+<p>Untuk permasalahan ini, sebuah poligon dapat memiliki beberapa titik yang berada di dalam satu garis lurus. Tetapi, sebuah poligon tetap tidak diperbolehkan untuk memiliki sisi yang saling berpotongan, dan tidak bisa memiliki luas wilayah sebesar nol.</p>
 
-<p>For example, only the first of the following is a polar polygon (the kernels of the second, third, and fourth do not strictly contain the origin, and the fifth does not have a kernel at all):
+<p>Sebagai contoh, hanya gambar pertama yang merupakan poligon polar (kernel pada gambar kedua, ketiga, dan keempat tidak memuat titik origin di dalamhya, dan pada gambar kelima tidak terdapat kernel sama sekali):
 <p align=center><img src={{ site.baseurl }}project/images/p465_polygons.png></p></p>
 
 
-<p>Notice that the first polygon has three consecutive collinear vertices.</p>
+<p>Perhatikan bahwa poligon pertama mempunyai tiga buah titik yang berada pada satu garis lurus.</p>
 
-<p>Let P(<var>n</var>) be the number of polar polygons such that the vertices (<var>x</var>, <var>y</var>) have integer coordinates whose absolute values are not greater than <var>n</var>.</p>
+<p>Misal P(<var>n</var>) adalah banyaknya poligon polar sehingga titik (<var>x</var>, <var>y</var>) merupakan koordinat bilangan bulat yang nilai mutlaknya tidak lebih dari <var>n</var>.</p>
 
-<p>Note that polygons should be counted as different if they have different set of edges, even if they enclose the same area. For example, the polygon with vertices [(0,0),(0,3),(1,1),(3,0)] is distinct from the polygon with vertices [(0,0),(0,3),(1,1),(3,0),(1,0)].</p>
+<p>Perlu diingat bahwa poligon harus dianggap berbeda jika mereka memiliki himpunan titik-titik yang berbeda, walaupun mereka memiliki bentuk dan luas yang sama. Sebagai contoh, poligon dengan titik-titik sudut [(0,0),(0,3),(1,1),(3,0)] adalah berbeda dengan poligon dengan titik-titik sudut [(0,0),(0,3),(1,1),(3,0),(1,0)].</p>
 
-<p>For example, P(1) = 131, P(2) = 1648531, P(3) = 1099461296175 and P(343) mod 1&nbsp;000&nbsp;000&nbsp;007 = 937293740.</p>
+<p>Sebagai contoh, P(1) = 131, P(2) = 1648531, P(3) = 1099461296175 dan P(343) mod 1&nbsp;000&nbsp;000&nbsp;007 = 937293740.</p>
 
-<p>Find P(7<sup>13</sup>) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
+<p>Carilah P(7<sup>13</sup>) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
 
