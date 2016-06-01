@@ -2,16 +2,16 @@
 layout: problem
 category: problems
 difficulty: 90
-title: "Jumping frog"
+title: "Katak Melompat"
 problemId: 490
 answer: -1
 ---
 
-<p>There are <var>n</var> stones in a pond, numbered 1 to <var>n</var>. Consecutive stones are spaced one unit apart.</p>
+<p>Terdapat <var>n</var> buah batu pada suatu kolam, yang diberi nomor dari 1 sampai <var>n</var>. Batu dengan nomor berurutan diletakkan terpisah sejauh satu satuan panjang.</p>
 
-<p>A frog sits on stone 1. He wishes to visit each stone exactly once, stopping on stone <var>n</var>. However, he can only jump from one stone to another if they are at most 3 units apart. In other words, from stone <var>i</var>, he can reach a stone <var>j</var> if 1 &le; <var>j</var> &le; <var>n</var> and <var>j</var> is in the set {<var>i</var>-3, <var>i</var>-2, <var>i</var>-1, <var>i</var>+1, <var>i</var>+2, <var>i</var>+3}.</p>
+<p>Seekor katak duduk pada batu 1. Ia berharap dapat mengunjungi setiap batu persis satu kali, dan berhenti di batu <var>n</var>. Tetapi, ia hanya bisa melompat dari satu batu ke yang lain jika kedua batu tersebut terpisah maksimal sejauh 3 satuan panjang. Dengan kata lain, dari batu <var>i</var>, ia dapat mencapai batu <var>j</var> jika 1 &le; <var>j</var> &le; <var>n</var> dan <var>j</var> berada di dalam himpunan {<var>i</var>-3, <var>i</var>-2, <var>i</var>-1, <var>i</var>+1, <var>i</var>+2, <var>i</var>+3}.</p>
 
-<p>Let f(<var>n</var>) be the number of ways he can do this. For example, f(6) = 14, as shown below:<br/>
+<p>Misal f(<var>n</var>) adalah banyaknya cara ia dapat melakukan hal di atas. Sebagai contoh, f(6) = 14, seperti ditunjukkan pada contoh berikut:<br/>
 1 &rarr; 2 &rarr; 3 &rarr; 4 &rarr; 5 &rarr; 6 <br/>
 1 &rarr; 2 &rarr; 3 &rarr; 5 &rarr; 4 &rarr; 6 <br/>
 1 &rarr; 2 &rarr; 4 &rarr; 3 &rarr; 5 &rarr; 6 <br/>
@@ -27,14 +27,14 @@ answer: -1
 1 &rarr; 4 &rarr; 3 &rarr; 2 &rarr; 5 &rarr; 6 <br/>
 1 &rarr; 4 &rarr; 5 &rarr; 2 &rarr; 3 &rarr; 6</p>
 
-<p>Other examples are f(10) = 254 and f(40) = 1439682432976.</p>
+<p>Contoh lainnya adalah f(10) = 254 dan f(40) = 1439682432976.</p>
 
-<p>Let S(<var>L</var>) = &sum; f(<var>n</var>)<sup>3</sup> for 1 &le; <var>n</var> &le; <var>L</var>.<br/>
-Examples:<br/>
+<p>Misal S(<var>L</var>) = &sum; f(<var>n</var>)<sup>3</sup> untuk 1 &le; <var>n</var> &le; <var>L</var>.<br/>
+Contoh:<br/>
 S(10) = 18230635<br/>
 S(20) = 104207881192114219<br/>
 S(1 000) mod 10<sup>9</sup> = 225031475<br/>
 S(1 000 000) mod 10<sup>9</sup> = 363486179</p>
 
-<p>Find S(10<sup>14</sup>) mod 10<sup>9</sup>.</p>
+<p>Carilah S(10<sup>14</sup>) mod 10<sup>9</sup>.</p>
 
