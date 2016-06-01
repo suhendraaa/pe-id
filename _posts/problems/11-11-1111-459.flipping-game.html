@@ -2,33 +2,32 @@
 layout: problem
 category: problems
 difficulty: 100
-title: "Flipping game"
+title: "Permainan Membalik"
 problemId: 459
 answer: -1
 ---
 
-<p>The flipping game is a two player game played on a N by N square board.<br/>
-Each square contains a disk with one side white and one side black.<br/>
-The game starts with all disks showing their white side.</p>
+<p>Permainan membalik adalah permainan yang dimainkan oleh dua orang pada papan berisi kotak-kotak berukuran N x N.<br/>
+Pada setiap kotak terdapat sebuah disk yang memiliki satu sisi putih dan satu sisi hitam.<br/>
+Permainan dimulai dengan semua disk menunjukkan sisi bewarna putihnya.</p>
 
-<p>A turn consists of flipping all disks in a rectangle with the following properties:
+<p>Sebuah putaran yang dilakukan dengan membalikkan semua disk dalam sebuah persegi panjang besar dengan aturan sebagai berikut:
 <p><ul>
-<li>the upper right corner of the rectangle contains a white disk</li>
-<li>the rectangle width is a perfect square (1, 4, 9, 16, ...)</li>
-<li>the rectangle height is a <dfn title="The triangular numbers are defined as &frac12;&nbsp;n(n + 1) for positive integer n.">triangular number</dfn> (1, 3, 6, 10, ...)</li>
+<li>pojok kanan atas dari persegi panjang haruslah berisi disk putih</li>
+<li>Lebar dari persegi panjang haruslah merupakan bilangan kuadrat sempurna (1, 4, 9, 16, ...)</li>
+<li>Panjang dari persegi panjang haruslah merupakan sebuah <dfn title="Bilangan segitiga dinyatakan sebagai &frac12;&nbsp;n(n + 1) untuk bilangan bulat positif n.">bilangan segitiga</dfn> (1, 3, 6, 10, ...)</li>
 </ul></p>
 
 <p align=center><img src={{ site.baseurl }}project/images/p459-flipping-game-0.png></p>
 
-<p>Players alternate turns. A player wins by turning the grid all black.</p>
+<p>Kedua pemain melakukan hal ini secara bergantian. Pemain dikatakan menang apabila ia dapat membalik semua disk menjadi hitam.</p>
 
-<p>Let W(N) be the number of <dfn title="The first move of a strategy that ensures a win no matter what the opponent plays.">winning moves</dfn> for the first player on a N by N board with all disks white, assuming perfect play.<br/>
-W(1) = 1, W(2) = 0, W(5) = 8 and W(10<sup>2</sup>) = 31395.</p>
+<p>Misal W(N) adalah banyaknya <dfn title="Gerakan pertama yang akan memastikan kemenangan, tidak peduli apapun yang dilakukan oleh pemain lawan.">gerakan kemenangan</dfn> untuk pemain pertama pada papan berisi kotak-kotak berukuran N x N yang semua disknya bewarna putih, dengan diasumsikan permainan berlangsung secara sempurna.<br/>
+W(1) = 1, W(2) = 0, W(5) = 8 dan W(10<sup>2</sup>) = 31395.</p>
 
-<p>For N=5, the first player's eight winning first moves are:</p>
+<p>Untuk N=5, delapan buah gerakan kemenangan yang dapat dilakukan oleh pemain pertama pada giliran pertamanya adalah:</p>
 
 <p align=center><img src={{ site.baseurl }}project/images/p459-flipping-game-1.png></p>
 <p align=center><img src={{ site.baseurl }}project/images/p459-flipping-game-2.png></p>
 
-<p>Find W(10<sup>6</sup>).</p>
-
+<p>Carilah W(10<sup>6</sup>).</p>
