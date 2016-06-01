@@ -2,15 +2,15 @@
 layout: problem
 category: problems
 difficulty: 45
-title: "The Last Question"
+title: "Pertanyaan Terakhir"
 problemId: 480
 answer: -1
 ---
 
-<p>Consider all the words which can be formed by selecting letters, in any order, from the phrase:</p>
+<p>Perhatikan semua susunan kata yang dapat dibentuk dengan memilih huruf-huruf, dengan urutan apapun, dari frasa:</p>
 <p><div style='text-align:center;'><b>thereisasyetinsufficientdataforameaningfulanswer</b></div></p>
-<p>Suppose those with 15 letters or less are listed in <b>alphabetical order</b> and numbered sequentially starting at 1.<br/>
-The list would include:</p>
+<p>Jika dibuat susunan kata kurang dari atau sama dengan 15 huruf, yang sesuai dengan <b>urutan abjad</b>, dan susunan-susunan tersebut diberi nomor secara berurutan dimulai dari angka 1.<br/>
+Maka daftarnya akan menjadi:</p>
 <ul style="list-style-type:none"><li>1 : a</li>
 <li>2 : aa</li>
 <li>3 : aaa</li>
@@ -38,14 +38,14 @@ The list would include:</p>
 <li>115246685191495244: eulera</li>
 <li>...</li>
 <li>525069350231428029: ywuuttttssssrrr</li></ul>
-<p>Define <var>P</var>(<var>w</var>) as the position of the word <var>w</var>.<br/>
-Define <var>W</var>(<var>p</var>) as the word in position <var>p</var>.<br/>
-We can see that <var>P</var>(<var>w</var>) and <var>W</var>(<var>p</var>) are inverses: <var>P</var>(<var>W</var>(<var>p</var>)) = <var>p</var> and <var>W</var>(<var>P</var>(<var>w</var>)) = <var>w</var>.</p>
-<p>Examples:</p>
+<p>Dinyatakan <var>P</var>(<var>w</var>) sebagai posisi dari kata <var>w</var>.<br/>
+Dinyatakan <var>W</var>(<var>p</var>) sebagai kata yang berada di posisi <var>p</var>.<br/>
+Dapat kita lihat bahwa <var>P</var>(<var>w</var>) dan <var>W</var>(<var>p</var>) adalah merupakan fungsi saling invers: <var>P</var>(<var>W</var>(<var>p</var>)) = <var>p</var> dan <var>W</var>(<var>P</var>(<var>w</var>)) = <var>w</var>.</p>
+<p>Contoh:</p>
 <ul style="list-style-type:none"><li><var>W</var>(10) = aaaaaacdee</li>
 <li><var>P</var>(aaaaaacdee) = 10</li>
 <li><var>W</var>(115246685191495243) = euler</li>
 <li><var>P</var>(euler) = 115246685191495243</li></ul>
-<p>Find <var>W</var>(<var>P</var>(legionary) + <var>P</var>(calorimeters) - <var>P</var>(annihilate) + <var>P</var>(orchestrated) - <var>P</var>(fluttering)).<br/>
-Give your answer using lowercase characters (no punctuation or space).</p>
+<p>Carilah <var>W</var>(<var>P</var>(legionary) + <var>P</var>(calorimeters) - <var>P</var>(annihilate) + <var>P</var>(orchestrated) - <var>P</var>(fluttering)).<br/>
+Berikan jawaban Anda menggunakan huruf kecil (tanpa tanda baca ataupun tanda spasi).</p>
 
