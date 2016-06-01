@@ -2,27 +2,27 @@
 layout: problem
 category: problems
 difficulty: 50
-title: "Superinteger"
+title: "Bilangan Bulat Super"
 problemId: 467
 answer: -1
 ---
 
-<p>An integer <var>s</var> is called a <em>superinteger</em> of another integer <var>n</var> if the digits of <var>n</var> form a <dfn title="A subsequence is a sequence that can be derived from another sequence by deleting some elements without changing the order of the remaining elements.">subsequence</dfn> of the digits of <var>s</var>.<br />
-For example, 2718281828 is a superinteger of 18828, while 314159 is not a superinteger of 151.
+<p>Sebuah bilangan bulat <var>s</var> akan disebut sebagai sebuah <em>bilangan bulat super</em> dari bilangan bulat <var>n</var> , jika digit-digit dari <var>n</var> membentuk sebuah <dfn title="Sebuah sub-barisan adalah sebuah barisan yang dapat diturunkan dari barisan lain dengan menghapus beberapa elemen tanpa mengganti urutan dari elemen-elemen yang masih tersisa.">sub-barisan</dfn> dari digit-digit <var>s</var>.<br />
+Sebagai contoh, 2718281828 adalah bilangan bulat super dari 18828, sementara 314159 bukan merupakan bilangan bulat super dari 151.
 </p>
 
-<p>Let <var>p</var>(<var>n</var>) be the <var>n</var>th prime number, and let <var>c</var>(<var>n</var>) be the <var>n</var>th composite number. For example, <var>p</var>(1) = 2, <var>p</var>(10) = 29, <var>c</var>(1) = 4 and <var>c</var>(10) = 18.<br />
+<p>Misal <var>p</var>(<var>n</var>) adalah bilangan prima ke-<var>n</var>, dan misal <var>c</var>(<var>n</var>) adalah bilangan komposit ke-<var>n</var>. Sebagai contoh, <var>p</var>(1) = 2, <var>p</var>(10) = 29, <var>c</var>(1) = 4 dan <var>c</var>(10) = 18.<br />
 {<var>p</var>(<var>i</var>) : i &ge; 1} = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...}<br />
 {<var>c</var>(<var>i</var>) : i &ge; 1} = {4, 6, 8, 9, 10, 12, 14, 15, 16, 18, ...}</p>
 
-<p>Let P<sup>D</sup> the sequence of the <strong>digital roots</strong> of {<var>p</var>(<var>i</var>)} (C<sup>D</sup> is defined similarly for {<var>c</var>(<var>i</var>)}):<br />
+<p>Misal P<sup>D</sup> adalah barisan dari <strong>hasil penjumlahan digit-digit</strong> dari {<var>p</var>(<var>i</var>)} (C<sup>D</sup> dinyatakan dengan cara yang sama untuk {<var>c</var>(<var>i</var>)}):<br />
 P<sup>D</sup> = {2, 3, 5, 7, 2, 4, 8, 1, 5, 2, ...}<br />
 C<sup>D</sup> = {4, 6, 8, 9, 1, 3, 5, 6, 7, 9, ...}</p>
 
-<p>Let P<sub><var>n</var></sub> be the integer formed by concatenating the first <var>n</var> elements of P<sup>D</sup> (C<sub><var>n</var></sub> is defined similarly for C<sup>D</sup>).<br />
+<p>Misal P<sub><var>n</var></sub> adalah bilangan bulat yang dibentuk dengan menggabungkan <var>n</var> buah elemen pertama dari P<sup>D</sup> (C<sub><var>n</var></sub> dinyatakan dengan cara yang sama untuk C<sup>D</sup>).<br />
 P<sub>10</sub> = 2357248152<br />
 C<sub>10</sub> = 4689135679</p>
 
-<p>Let <var>f</var>(<var>n</var>) be the smallest positive integer that is a common superinteger of P<sub><var>n</var></sub> and C<sub><var>n</var></sub>. <br />For example, <var>f</var>(10) = 2357246891352679, and <var>f</var>(100) mod 1&nbsp;000&nbsp;000&nbsp;007 = 771661825.</p>
+<p>Misal <var>f</var>(<var>n</var>) adalah bilangan bulat positif terkecil yang memiliki bilangan bulat super yang sama antara P<sub><var>n</var></sub> dan C<sub><var>n</var></sub>. <br />Sebagai contoh, <var>f</var>(10) = 2357246891352679, dan <var>f</var>(100) mod 1&nbsp;000&nbsp;000&nbsp;007 = 771661825.</p>
 
-<p>Find <var>f</var>(10&nbsp;000) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
+<p>Carilah <var>f</var>(10&nbsp;000) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
