@@ -2,34 +2,34 @@
 layout: problem
 category: problems
 difficulty: 55
-title: "An ant on the move"
+title: "Seekor Semut Yang Sedang Dalam Perjalanan"
 problemId: 460
 answer: -1
 ---
 
 <p>
-On the Euclidean plane, an ant travels from point A(0, 1) to point B(<var>d</var>, 1) for an integer <var>d</var>.
+Pada bidang Euclidean, seekor semut bergerak dari titik A(0, 1) ke titik B(<var>d</var>, 1) untuk bilangan bulat <var>d</var>.
 </p>
 <p>
-In each step, the ant at point (<var>x</var><sub>0</sub>, <var>y</var><sub>0</sub>) chooses one of the lattice points (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) which satisfy <var>x</var><sub>1</sub> &ge; 0 and <var>y</var><sub>1</sub> &ge; 1 and goes straight to (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) at a constant velocity <var>v</var>. The value of <var>v</var> depends on <var>y</var><sub>0</sub> and <var>y</var><sub>1</sub> as follows:
+Pada setiap langkahnya, semut pada titik (<var>x</var><sub>0</sub>, <var>y</var><sub>0</sub>) memilih salah satu koordinat bilangan bulat (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) yang memenuhi <var>x</var><sub>1</sub> &ge; 0 dan <var>y</var><sub>1</sub> &ge; 1 dan bergerak lurus ke (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) dengan kecepatan konstan <var>v</var>. Nilai dari <var>v</var> bergantung pada <var>y</var><sub>0</sub> dan <var>y</var><sub>1</sub> dengan aturan sebagai berikut:
 <ul>
-<li> If <var>y</var><sub>0</sub> = <var>y</var><sub>1</sub>, the value of <var>v</var> equals <var>y</var><sub>0</sub>.</li>
-<li> If <var>y</var><sub>0</sub> &ne; <var>y</var><sub>1</sub>, the value of <var>v</var> equals (<var>y</var><sub>1</sub> - <var>y</var><sub>0</sub>) / (ln(<var>y</var><sub>1</sub>) - ln(<var>y</var><sub>0</sub>)).</li>
+<li> Jika <var>y</var><sub>0</sub> = <var>y</var><sub>1</sub>, nilai dari <var>v</var> sama dengan <var>y</var><sub>0</sub>.</li>
+<li> Jika <var>y</var><sub>0</sub> &ne; <var>y</var><sub>1</sub>, nilai dari <var>v</var> sama dengan (<var>y</var><sub>1</sub> - <var>y</var><sub>0</sub>) / (ln(<var>y</var><sub>1</sub>) - ln(<var>y</var><sub>0</sub>)).</li>
 </ul>
 </p>
 <p>
-The left image is one of the possible paths for <var>d</var> = 4. First the ant goes from A(0, 1) to P<sub>1</sub>(1, 3) at velocity (3 - 1) / (ln(3) - ln(1)) &asymp; 1.8205. Then the required time is sqrt(5) / 1.8205 &asymp; 1.2283.<br>
-From P<sub>1</sub>(1, 3) to P<sub>2</sub>(3, 3) the ant travels at velocity 3 so the required time is 2 / 3 &asymp; 0.6667. From P<sub>2</sub>(3, 3) to B(4, 1) the ant travels at velocity (1 - 3) / (ln(1) - ln(3)) &asymp; 1.8205 so the required time is sqrt(5) / 1.8205 &asymp; 1.2283.<br>
-Thus the total required time is 1.2283 + 0.6667 + 1.2283 = 3.1233.
+Gambar di kiri adalah salah satu kemungkinan jalur untuk <var>d</var> = 4. Pertama-tama sang semut bergerak dari A(0, 1) ke P<sub>1</sub>(1, 3) dengan kecepatan (3 - 1) / (ln(3) - ln(1)) &asymp; 1.8205. Maka waktu yang diperlukan adalah sqrt(5) / 1.8205 &asymp; 1.2283.<br>
+Dari P<sub>1</sub>(1, 3) ke P<sub>2</sub>(3, 3) semut bergerak dengan kecepatan 3, sehingga waktu yang diperlukan adalah 2 / 3 &asymp; 0.6667. Dari P<sub>2</sub>(3, 3) ke B(4, 1) semut bergerak dengan kecepatan (1 - 3) / (ln(1) - ln(3)) &asymp; 1.8205 sehingga waktu yang diperlukan adalah sqrt(5) / 1.8205 &asymp; 1.2283.<br>
+Sehingga total waktu yang diperlukan adalah 1.2283 + 0.6667 + 1.2283 = 3.1233.
 </p>
 <p>
-The right image is another path. The total required time is calculated as 0.98026 + 1 + 0.98026 = 2.96052. It can be shown that this is the quickest path for <var>d</var> = 4.
+Gambar di kanan adalah kemungkinan jalur lain. Total waktu yang diperlukan untuk jalur ini adalah 0.98026 + 1 + 0.98026 = 2.96052. Sehingga dapat terlihat bahwa jalur ini merupakan jalur tercepat untuk <var>d</var> = 4.
 </p>
 <p align=center><img src={{ site.baseurl }}project/images/p460_ant.jpg></p>
 <p>
-Let F(<var>d</var>) be the total required time if the ant chooses the quickest path. For example, F(4) &asymp; 2.960516287.<br>
-We can verify that F(10) &asymp; 4.668187834 and F(100) &asymp; 9.217221972.
+Misal F(<var>d</var>) adalah total waktu yang diperlukan jika semut memilih jalur tercepat. Sebagai contoh, F(4) &asymp; 2.960516287.<br>
+Dapat dibuktikan bahwa F(10) &asymp; 4.668187834 dan F(100) &asymp; 9.217221972.
 </p>
 <p>
-Find F(10000). Give your answer rounded to nine decimal places.
+Carilah F(10000). Berikan jawaban Anda yang dibulatkan hingga sembilan angka di belakang koma.
 </p>
