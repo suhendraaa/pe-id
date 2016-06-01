@@ -2,31 +2,31 @@
 layout: problem
 category: problems
 difficulty: 60
-title: "Comfortable Distance II"
+title: "Jarak Nyaman II"
 problemId: 472
 answer: -1
 ---
 
-<p>There are <var>N</var> seats in a row. <var>N</var> people come one after another to fill the seats according to the following rules:
+<p>Terdapat <var>N</var> buah bangku pada suatu baris. <var>N</var> orang datang satu per satu untuk menempati bangku dengan aturan berikut:
 <ol>
-<li>No person sits beside another.</li>
-<li>The first person chooses any seat.</li>
-<li>Each subsequent person chooses the seat furthest from anyone else already seated, as long as it does not violate rule 1. If there is more than one choice satisfying this condition, then the person chooses the leftmost choice.</li>
+<li>Tidak ada orang yang duduk bersebelahan.</li>
+<li>Orang pertama dapat duduk di bangku manapun.</li>
+<li>Orang berikutnya memilih bangku yang memiliki jarak paling jauh dari orang lain yang telah duduk, sepanjang tidak melanggar aturan ke 1. Jika terdapat lebih dari satu bangku yang memenuhi sifat ini, maka orang tersebut akan memilih bangku yang paling kiri dari pilihan bangku-bangku yang memenuhi sifat ini.</li>
 </ol>
 </p>
 
-<p>Note that due to rule 1, some seats will surely be left unoccupied, and the maximum number of people that can be seated is less than <var>N</var> (for <var>N</var> > 1).</p>
+<p>Perlu diingat bahwa karena adanya aturan ke 1, beberapa bangku dipastikan akan kosong, dan banyak maksimum orang yang akan duduk adalah kurang dari <var>N</var> (untuk <var>N</var> > 1).</p>
 
-<p>Here are the possible seating arrangements for <var>N</var> = 15:
+<p>Ini adalah contoh penempatan yang mungkin untuk <var>N</var> = 15:
 <p align=center><img src={{ site.baseurl }}project/images/p472_n15.png></p>
 </p>
 
-<p>We see that if the first person chooses correctly, the 15 seats can seat up to 7 people.<br/>
-We can also see that the first person has 9 choices to maximize the number of people that may be seated.</p>
+<p>Dapat kita lihat bahwa apabila orang pertama memilih bangku yang benar, maka 15 bangku tersebut dapat memuat hingga 7 orang.<br/>
+Kita juga dapat melihat bahwa orang pertama memiliki 9 pilihan agar terdapat sebanyak mungkin jumlah orang yang dapat duduk.</p>
 
-<p>Let f(N) be the number of choices the first person has to maximize the number of occupants for <var>N</var> seats in a row. Thus, f(1)&nbsp;=&nbsp;1, f(15)&nbsp;=&nbsp;9, f(20)&nbsp;=&nbsp;6, and f(500)&nbsp;=&nbsp;16.</p>
+<p>Misal f(N) adalah banyaknya pilihan bangku yang dapat dipilih oleh orang pertama agar terdapat sebanyak mungkin jumlah orang yang dapat duduk pada barisan bangku berisi <var>N</var>-buah kursi. Sehingga, f(1)&nbsp;=&nbsp;1, f(15)&nbsp;=&nbsp;9, f(20)&nbsp;=&nbsp;6, dan f(500)&nbsp;=&nbsp;16.</p>
 
-<p>Also, &sum;f(N) = 83 for 1&nbsp;&le;&nbsp;<var>N</var>&nbsp;&le;&nbsp;20 and  &sum;f(N) = 13343 for 1&nbsp;&le;&nbsp;<var>N</var>&nbsp;&le;&nbsp;500.</p>
+<p>Juga, &sum;f(N) = 83 untuk 1&nbsp;&le;&nbsp;<var>N</var>&nbsp;&le;&nbsp;20 dan  &sum;f(N) = 13343 untuk 1&nbsp;&le;&nbsp;<var>N</var>&nbsp;&le;&nbsp;500.</p>
 
-<p>Find &sum;f(N) for 1&nbsp;&le;&nbsp;<var>N</var>&nbsp;&le;&nbsp;10<sup>12</sup>. Give the last 8 digits of your answer.</p>
+<p>Carilah &sum;f(N) untuk 1&nbsp;&le;&nbsp;<var>N</var>&nbsp;&le;&nbsp;10<sup>12</sup>. Berikan 8 digit terakhir dari jawaban Anda.</p>
 
